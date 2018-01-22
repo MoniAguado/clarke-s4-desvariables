@@ -493,7 +493,9 @@ header {
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
   padding: 2px;
   border: solid 1px;
+
   background-color: #ffffff;
+
   border-radius: 5px;
 }
 
@@ -738,7 +740,9 @@ header {
 input[type=checkbox] {
   -webkit-transform: scale(1.2);
  /* Safari and Chrome */
+
   color: #000;
+
 }
 
 #hobbies-form {
@@ -1375,7 +1379,7 @@ input[type=checkbox] {
     top: 22px;
     left: 319px;
     border: medium solid rgba(125, 190, 165, 0.36);
-    border: medium solid rgba(125, 190, 165, 0.36);
+
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent rgba(125, 190, 165, 0.36);
   }

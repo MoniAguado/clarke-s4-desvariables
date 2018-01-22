@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 body{
-	background-color: #FFFEFA;
+	background-color: $whitishBackground;
 	margin: 0;
 	padding: 0;
 	font-family: 'Gabriela', serif;
@@ -32,21 +32,21 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	margin-bottom: 10px;
 	width: 90%;
 	height: 40px;
-	background-color: #7DBEA5;
+	background-color: $inputAndButtons;
 	border-radius: 8px;
 	display: flex;
 	align-items: center;
-	box-shadow: rgba(0,0,0,1) 0 1px 0;
-	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	box-shadow: $boxShadowInputs 0 1px 0;
+	text-shadow: $textShadowInputs 0 1px 0;
 }
 .title-container:hover {
-  border-top-color: #5A392B;
-  background: #5A392B;
+  border-top-color: $inputsActive;
+  background: $inputsActive;
   color: #ccc;
 }
 .title-container:active {
-	border-top-color: #5A392B;
-	background: #5A392B;
+	border-top-color: $inputsActive;
+	background: $inputsActive;
 }
 .open-section-button {
 	background: none;
@@ -81,22 +81,22 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 
 /*Botones añadir y guardar*/
 .buttons-save-general {
-	background-color: #E1F7E7;
+	background-color: $addSaveButtons;
 	padding: 5px;
-	text-shadow: rgba(0,0,0,.4) 0 1px 0;
-	box-shadow: #E1F7E7 0 1px 0;
+	text-shadow: $textShadowInputs 0 1px 0;
+	box-shadow: $addSaveButtons 0 1px 0;
 	display: inline-block;
 	margin: 13px 0;
 	width: 70px;
 	border-radius:7px;
 }
 .buttons-save-general:hover {
-	background: #7DBEA5;
-  box-shadow: inset 0 0 20px #7DBEA5, 0 0 20px #7DBEA5;
+	background: $inputAndButtons;
+  box-shadow: inset 0 0 20px $inputAndButtons, 0 0 20px $inputAndButtons;
   outline-offset: 80px;
-	color: #fff;
+	color: $white;
 	font-weight: bold;
-	border-color:#7DBEA5;
+	border-color: $inputAndButtons;
 }
 /*Ocultar secciones*/
 .net-social-hidden, .invisible, #languages-form, #hobbies-form, #read, #travel, #game, #sports, #cinema, #music, #files, #ventana2, #sound-efx {
@@ -211,7 +211,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 header{
 	width: 100%;
 	height: 60px;
-	background-color: #2E2B24;
+	background-color: $headerBackground;
 	position: fixed;
 	display: flex;
 	justify-content: space-between;
@@ -235,7 +235,7 @@ header{
 	font-size: 1.5em;
 	font-family: 'American Typewriter Bold', Arial;
 	font-weight: bold;
-	color: #5a392b;
+	color: $percentageBar;
 }
 #button-down {
 	background: none;
@@ -243,16 +243,16 @@ header{
 }
 /* cargar imagen*/
 .thumb{
-	border: 1px solid #000;
+	border: 1px solid $black;
 	margin: 10px 5px 0 0;
 	width: 200px;
 	height: 200px;
 	border-radius: 100px;
-	-webkit-box-shadow: 8px 14px 42px 1px #3d3d29;
+	-webkit-box-shadow: 8px 14px 42px 1px $imageBoxShadow;
 }
 /*fin cargar imagen*/
 .separador {
-  color: #7DBEA5;
+  color: $inputAndButtons;
 	width: 100%;
 	text-align: center;
 	padding: 4%;
@@ -284,7 +284,7 @@ header{
 	display: flex;
 	align-self: center;
 	background-image: url("../images/addimg.png");
-	background-color: #cdf7e6;
+	background-color: $imageBackground;
 	background-size: 150px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -311,7 +311,7 @@ header{
 	margin-top: -20px;
 }
 .thumb2{
-	border: 1px solid #000;
+	border: 1px solid $black;
 	margin: 10px 5px 0 0;
 	width: 200px;
 	height: 200px;
@@ -366,10 +366,10 @@ header{
 	text-align: center;
 }
 .select-styles{
-	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	text-shadow: $textShadowInputs 0 1px 0;
 	padding: 2px;
 	border: solid 1px;
-	background-color: #fff;
+	background-color: $white;
 	border-radius: 5px;
 }
 .buttons-container{
@@ -384,7 +384,7 @@ header{
 /*Experience and Education preview*/
 .section-title{
 	text-align: center;
-	color: #5A392B;
+	color: $inputsActive;
 }
 /* La timeline*/
 .timeline {
@@ -397,7 +397,7 @@ header{
   content: '';
   position: absolute;
   width: 10px;
-  background-color: #5A392B;
+  background-color: $inputsActive;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -418,7 +418,7 @@ header{
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid #5A392B;
+  border: 4px solid $inputsActive;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -444,9 +444,9 @@ header{
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid rgba(125, 190, 165, 0.36);
+  border: medium solid $timeline;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent rgba(125, 190, 165, 0.36);
+  border-color: transparent transparent transparent $timeline;
 }
 /* Añade flechas en el contenido de la derecha apuntando hacia la izquierda. */
 .right::before {
@@ -457,14 +457,14 @@ header{
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid rgba(125, 190, 165, 0.36);
+  border: medium solid $timeline;
   border-width: 10px 10px 10px 0;
-  border-color: transparent rgba(125, 190, 165, 0.36) transparent transparent;
+  border-color: transparent $timeline transparent transparent;
 }
 /* Estilo de las cajas con el contenido */
 .content-timeline {
   padding: 10px 30px;
-  background-color: rgba(125, 190, 165, 0.36);
+  background-color: $timeline;
   position: relative;
   border-radius: 6px;
 	font-size: 14px;
@@ -479,7 +479,7 @@ header{
 }
 /*Estilos de texto dentro de cajas*/
 .title-year {
-  color: #5A392B;
+  color: $inputsActive;
 	margin: 8px;
 	font-size: 20px;
 }
@@ -511,7 +511,7 @@ header{
 .skill {
   margin-top: 5px;
 	margin-right: 1%;
-	color: #5A392B;
+	color: $inputsActive;
 }
 .skill-pre {
 	margin-left: 15%;
@@ -539,7 +539,7 @@ header{
   top: 0;
   left: 0;
   border-radius: 10px;
-  background: #7DBEA5;
+  background: $inputAndButtons;
 }
 /*Languages form container*/
 #languages-form-container, #hobbies-form-container {
@@ -548,24 +548,24 @@ header{
 	align-items: center;
 }
 .text-form-button {
-	color: #ffffff;
+	color: $white;
 }
 #languages-preview, #hobbies-preview, .social {
 	padding-left: 7%;
 	padding-right: 7%;
 }
 .languages-bar-preview {
-	background-color: #e0e0e0;
+	background-color: $languagesBackground;
 	margin-bottom: 1em;
 }
 .text-bar-preview {
 	text-align: left;
-	color: #ffffff;
+	color: $white;
 	line-height: 2em;
 	padding-left: 1em;
 }
 .percentage-bar {
-	background-color: #5a392b;
+	background-color: $percentageBar;
 }
 .input-lang, .input-skill{
 	padding-bottom: 1em;
@@ -585,7 +585,7 @@ header{
 }
 input[type=checkbox]{
 	-webkit-transform: scale(1.2); /* Safari and Chrome */
-	color: #000000;
+	color: $black;
 }
 #hobbies-form {
 	padding-bottom: 2%;
@@ -668,13 +668,13 @@ text-align: center;
 }
 /*Ventana de alert de error de fecha introducida*/
 .alert-dates{
-	background-color: #FFFEFA;
+	background-color: $whitishBackground;
 	width: 230px;
   height: 110px;
   position: fixed;
   top: 220px;
   left: 17%;
-	border: 2px solid #7DBEA5;
+	border: 2px solid #{$inputAndButtons};
 }
 .button-alert-img{
 	background-color: transparent;
@@ -688,7 +688,7 @@ text-align: center;
 	font-size: 13px;
   margin: 30px 30px;
   text-align: justify;
-  color: #e64d4d;
+  color: $alerts;
 	font-weight: bold;
 }
 .alert-cruise{
@@ -697,9 +697,9 @@ text-align: center;
 }
 /*footer*/
 .infooter{
-	background-color: #252525;
+	background-color: $footer;
 	font-size: 0.8em;
-	color: #555555;
+	color: $footerLetters;
 	padding: 5px;
 	display: flex;
 	flex-wrap: wrap;
@@ -713,12 +713,12 @@ text-align: center;
 	margin-right: auto;
 }
 .contacto{
-	color: #d5d4cd;
+	color: $whitishBackground;
 	text-decoration: none;
 	margin-top: 20px;
 }
 .contacto:hover{
-	color: #7DBEA5;
+	color: $inputAndButtons;
 }
 .logo{
 	min-width: 200px ;
@@ -797,8 +797,8 @@ text-align: center;
 }
 .cajas{
   width: 100%;
-	background-color: #F4EDDD;
-	border: solid 1px #514336;
+	background-color: $whitishBackground;
+	border: solid 1px $inputsActive;
 	padding: 0 12px;
 	height: 40px;
 	border-radius: 9px;
@@ -809,7 +809,7 @@ text-align: center;
 	padding-top: 6px;
 }
 .cajas:focus{
-	border-color: #514336;
+	border-color: $inputsActive;
 }
 .campos{
  margin: 0 0 1.5rem;
@@ -817,8 +817,8 @@ text-align: center;
  flex-direction: row;
 }
 .boton{
-	color: #514336;
-	background-color: #7DBEA5;
+	color: $inputsActive;
+	background-color: $inputAndButtons;
 	font-size: 15px;
 	font-weight: bold;
 	z-index: 1;
@@ -891,9 +891,9 @@ text-align: center;
 	/* Para que todas las flechas apunten a la izquierda */
 	.container-timeline::before {
 		left: 60px;
-		border: medium solid rgba(125, 190, 165, 0.36);
+		border: medium solid $timeline;
 		border-width: 10px 10px 10px 0;
-		border-color: transparent rgba(125, 190, 165, 0.36) transparent transparent;
+		border-color: transparent $timeline transparent transparent;
 	}
 	/* Para que todos los círculos estén alineados */
 	.left::after, .right::after {
@@ -1097,15 +1097,16 @@ text-align: center;
 	.left::before {
 	  top: 22px;
 	  left: 319px;
-	  border: medium solid rgba(125, 190, 165, 0.36);
+	  border: medium solid $timeline;
+	  border: medium solid $timeline;
 	  border-width: 10px 0 10px 10px;
-	  border-color: transparent transparent transparent rgba(125, 190, 165, 0.36);
+	  border-color: transparent transparent transparent $timeline;
 	}
 	.right::before {
 	  top: 22px;
 	  left: 30px;
-	  border: medium solid rgba(125, 190, 165, 0.36);
+	  border: medium solid $timeline;
 	  border-width: 10px 10px 10px 0;
-	  border-color: transparent rgba(125, 190, 165, 0.36) transparent transparent;
+	  border-color: transparent $timeline transparent transparent;
 	}
 }

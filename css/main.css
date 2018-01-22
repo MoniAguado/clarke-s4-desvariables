@@ -891,7 +891,7 @@ input[type=checkbox] {
 }
 
 .contacto {
-  color: #FFFEFA;
+  color: #d5d4cd;
   text-decoration: none;
   margin-top: 20px;
 }
@@ -1004,8 +1004,8 @@ input[type=checkbox] {
 
 .cajas {
   width: 100%;
-  background-color: #FFFEFA;
-  border: solid 1px #5A392B;
+  background-color: #F4EDDD;
+  border: solid 1px #514336;
   padding: 0 12px;
   height: 40px;
   border-radius: 9px;
@@ -1018,7 +1018,7 @@ input[type=checkbox] {
 }
 
 .cajas:focus {
-  border-color: #5A392B;
+  border-color: #514336;
 }
 
 .campos {
@@ -1033,7 +1033,7 @@ input[type=checkbox] {
 }
 
 .boton {
-  color: #5A392B;
+  color: #514336;
   background-color: #7DBEA5;
   font-size: 15px;
   font-weight: bold;

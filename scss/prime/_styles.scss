@@ -713,7 +713,7 @@ text-align: center;
 	margin-right: auto;
 }
 .contacto{
-	color: $whitishBackground;
+	color: $contactColor;
 	text-decoration: none;
 	margin-top: 20px;
 }
@@ -797,8 +797,8 @@ text-align: center;
 }
 .cajas{
   width: 100%;
-	background-color: $whitishBackground;
-	border: solid 1px $inputsActive;
+	background-color: $boxBackgroundColor;
+	border: solid 1px $boxBorderColor;
 	padding: 0 12px;
 	height: 40px;
 	border-radius: 9px;
@@ -809,7 +809,7 @@ text-align: center;
 	padding-top: 6px;
 }
 .cajas:focus{
-	border-color: $inputsActive;
+	border-color: $boxBorderColor;
 }
 .campos{
  margin: 0 0 1.5rem;
@@ -817,7 +817,7 @@ text-align: center;
  flex-direction: row;
 }
 .boton{
-	color: $inputsActive;
+	color: $buttonColor;
 	background-color: $inputAndButtons;
 	font-size: 15px;
 	font-weight: bold;

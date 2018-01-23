@@ -1,4 +1,4 @@
-@charset "UTF-8";/*Estilos generales*/* {
+@charset "UTF-8";/*footer*//*Estilos generales*/* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -45,14 +45,14 @@ main {
 }
 
 .title-container:hover {
-  border-top-color: #514336;
-  background: #514336;
+  border-top-color: #5a392b;
+  background: #5a392b;
   color: #ccc;
 }
 
 .title-container:active {
-  border-top-color: #514336;
-  background: #514336;
+  border-top-color: #5a392b;
+  background: #5a392b;
 }
 
 .open-section-button {
@@ -515,7 +515,7 @@ header {
   margin-top: 5px;
 }/*Experience and Education preview*/.section-title {
   text-align: center;
-  color: #514336;
+  color: #5a392b;
 }/* La timeline*/.timeline {
   position: relative;
   max-width: 1200px;
@@ -524,7 +524,7 @@ header {
   content: '';
   position: absolute;
   width: 10px;
-  background-color: #514336;
+  background-color: #5a392b;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -541,7 +541,7 @@ header {
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid #514336;
+  border: 4px solid #5a392b;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -596,7 +596,7 @@ header {
   margin-bottom: 7px;
   margin-top: 5px;
 }/*Estilos de texto dentro de cajas*/.title-year {
-  color: #514336;
+  color: #5a392b;
   margin: 8px;
   font-size: 20px;
 }
@@ -643,7 +643,7 @@ header {
 .skill {
   margin-top: 5px;
   margin-right: 1%;
-  color: #514336;
+  color: #5a392b;
 }
 
 .skill-pre {
@@ -866,51 +866,6 @@ input[type=checkbox] {
 .alert-cruise {
   width: 20px;
   height: 20px;
-}/*footer*/.infooter {
-  background-color: #252525;
-  font-size: 0.8em;
-  color: #555555;
-  padding: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.end {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.contacto {
-  color: #FFFEFA;
-  text-decoration: none;
-  margin-top: 20px;
-}
-
-.contacto:hover {
-  color: #7DBEA5;
-}
-
-.logo {
-  min-width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.logoadalab {
-  display: block;
-  margin: 5px auto;
-  max-width: 200px;
-  width: 75%;
 }/*flecha subir arriba*/#arriba {
   width: 5px;
   padding: 5px;
@@ -1004,7 +959,7 @@ input[type=checkbox] {
 
 .cajas {
   width: 100%;
-  background-color: #FFFEFA;
+  background-color: #F4EDDD;
   border: solid 1px #514336;
   padding: 0 12px;
   height: 40px;
@@ -1170,7 +1125,7 @@ input[type=checkbox] {
     padding: 3px;
   }
 
-  .containerleters {
+  .containerletters {
     width: 1000px;
   }
 
@@ -1209,7 +1164,7 @@ input[type=checkbox] {
     max-width: 74%;
   }
 
-  .containerleters {
+  .containerletters {
     width: 1000px;
   }
 

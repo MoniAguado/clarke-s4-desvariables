@@ -40,13 +40,13 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	text-shadow: $textShadowInputs 0 1px 0;
 }
 .title-container:hover {
-  border-top-color: $inputsActive;
-  background: $inputsActive;
+  border-top-color: $percentageBarAndInputsAcc;
+  background: $percentageBarAndInputsAcc;
   color: #ccc;
 }
 .title-container:active {
-	border-top-color: $inputsActive;
-	background: $inputsActive;
+	border-top-color: $percentageBarAndInputsAcc;
+	background: $percentageBarAndInputsAcc;
 }
 .open-section-button {
 	background: none;
@@ -235,7 +235,7 @@ header{
 	font-size: 1.5em;
 	font-family: 'American Typewriter Bold', Arial;
 	font-weight: bold;
-	color: $percentageBar;
+	color: $percentageBarAndInputsAcc;
 }
 #button-down {
 	background: none;
@@ -384,7 +384,7 @@ header{
 /*Experience and Education preview*/
 .section-title{
 	text-align: center;
-	color: $inputsActive;
+	color: $percentageBarAndInputsAcc;
 }
 /* La timeline*/
 .timeline {
@@ -397,7 +397,7 @@ header{
   content: '';
   position: absolute;
   width: 10px;
-  background-color: $inputsActive;
+  background-color: $percentageBarAndInputsAcc;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -418,7 +418,7 @@ header{
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid $inputsActive;
+  border: 4px solid $percentageBarAndInputsAcc;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -479,7 +479,7 @@ header{
 }
 /*Estilos de texto dentro de cajas*/
 .title-year {
-  color: $inputsActive;
+  color: $percentageBarAndInputsAcc;
 	margin: 8px;
 	font-size: 20px;
 }
@@ -511,7 +511,7 @@ header{
 .skill {
   margin-top: 5px;
 	margin-right: 1%;
-	color: $inputsActive;
+	color: $percentageBarAndInputsAcc;
 }
 .skill-pre {
 	margin-left: 15%;
@@ -565,7 +565,7 @@ header{
 	padding-left: 1em;
 }
 .percentage-bar {
-	background-color: $percentageBar;
+	background-color: $percentageBarAndInputsAcc;
 }
 .input-lang, .input-skill{
 	padding-bottom: 1em;
@@ -798,7 +798,7 @@ text-align: center;
 .cajas{
   width: 100%;
 	background-color: $boxBackgroundColor;
-	border: solid 1px $boxBorderColor;
+	border: solid 1px $boxBorderAndButtonColor;
 	padding: 0 12px;
 	height: 40px;
 	border-radius: 9px;
@@ -809,7 +809,7 @@ text-align: center;
 	padding-top: 6px;
 }
 .cajas:focus{
-	border-color: $boxBorderColor;
+	border-color: $boxBorderAndButtonColor;
 }
 .campos{
  margin: 0 0 1.5rem;
@@ -817,7 +817,7 @@ text-align: center;
  flex-direction: row;
 }
 .boton{
-	color: $buttonColor;
+	color: $boxBorderAndButtonColor;
 	background-color: $inputAndButtons;
 	font-size: 15px;
 	font-weight: bold;

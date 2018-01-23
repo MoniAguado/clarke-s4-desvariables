@@ -1,0 +1,85 @@
+.headlog{
+	height: 70px;
+	min-width: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+.containerlogo{
+	display: flex;
+	flex-direction: row;
+}
+.machinelog{
+	margin-top: 5px;
+	display: block;
+	margin-left: 5px;
+	max-width: 60px;
+	width: 100%;
+}
+.letterslog{
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 10px;
+	max-width: 150px;
+	width: 100%;
+	margin-top: 10px;
+}
+.containericonos{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.icons{
+	height: 30px;
+  width: 30px;
+  margin-left: 5px;
+  background-size: cover;
+  align-items: flex-end;
+  text-align: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  border-style: none;
+  cursor: pointer;
+}
+/*mediaqueries*/
+@media all and (min-width: 350px){
+	.headlog{
+		display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+		}
+	.containerlogo{
+		margin-left: 30px;
+	}
+	.containericonos{
+		margin-right: 20px;
+	}
+@media all and (max-width: 600px){
+	.icons{
+		height: 28px;
+		width: 28px;
+	}
+}
+@media all and (min-width: 810px){
+	.containerlogo{
+		height: 80px;
+		width: 41%;
+		margin-bottom: 8px;
+	}
+	.machinelog{
+		max-width: 74%;
+	}
+	.containerleters{
+		width: 1000px;
+	}
+	.letterslog{
+		max-width: 100%;
+		padding-top: 10px;
+		padding-left: -5px;
+	}
+}
+@media print {
+	header {
+		display: none;
+	}
+}

@@ -115,44 +115,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 }
 /*Fin estilos generales*/
 /*Header logo formulario*/
-.headlog{
-	height: 70px;
-	min-width: 60px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-}
-.containerlogo{
-	display: flex;
-	flex-direction: row;
-}
-.machinelog{
-	margin-top: 5px;
-	display: block;
-	margin-left: 5px;
-	max-width: 60px;
-	width: 100%;
-}
-.letterslog{
-	margin-top: 10px;
-	margin-left: 5px;
-	margin-right: 10px;
-	max-width: 150px;
-	width: 100%;
-	margin-top: 10px;
-}
-.icons{
-	height: 30px;
-  width: 30px;
-  margin-left: 5px;
-  background-size: cover;
-  align-items: flex-end;
-  text-align: center;
-  background-color: transparent;
-  box-sizing: border-box;
-  border-style: none;
-  cursor: pointer;
-}
+
 .iconsprev{
 	height: 30px;
   width: 30px;
@@ -166,11 +129,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
   cursor: pointer
 }
 /*header parte marta*/
-.containericonos{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
+
 .cajaiconsprev{
 	display: flex;
 	flex-direction: row;
@@ -827,20 +786,7 @@ text-align: center;
 	width: 100px;
   margin-left: auto;
 }
-/*mediaqueries*/
-@media all and (min-width: 350px){
-	.headlog{
-		display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-		}
-	.containerlogo{
-		margin-left: 30px;
-	}
-	.containericonos{
-		margin-right: 20px;
-	}
-}
+
 @media all and (min-width: 400px){
 	.headercreatucv{
 	height: 60vh;
@@ -936,9 +882,6 @@ text-align: center;
 	.headercreatucv{
 		height: 500vh;
 	}
-	.headlog{
-		height: 100px;
-	}
 	.cajaiconsprev{
 		margin-top: 37px;
 	}
@@ -978,22 +921,7 @@ text-align: center;
 	#btnshareprev, #btnprintprev, #btndownloadprev {
 		display: none;
 	}
-	.containerlogo{
-		height: 80px;
-		width: 41%;
-		margin-bottom: 8px;
-	}
-	.machinelog{
-		max-width: 74%;
-	}
-	.containerleters{
-		width: 1000px;
-	}
-	.letterslog{
-		max-width: 100%;
-		padding-top: 10px;
-		padding-left: -5px;
-	}
+
 	#header-fondo{
 		width: cover;
 		background-image: url(../images/group.png);

@@ -1042,10 +1042,9 @@ input[type=checkbox] {
   border-radius: 0.6em;
   width: 100px;
   margin-left: auto;
-}/*mediaqueries*//*.textcrea{
-		font-size: 40px;
-		margin-top: 50px;
-	}*/@font-face {
+}
+
+@font-face {
   font-family:'American Typewriter Bold';font-style:normal;font-weight:normal;src:local("American Typewriter Bold"), url("ufonts.com_american-typewriter-bold.woff") format("woff");
 }
 
@@ -1170,7 +1169,7 @@ input[type=checkbox] {
     padding: 3px;
   }
 
-  .containerleters {
+  .containerletters {
     width: 1000px;
   }
 
@@ -1209,7 +1208,7 @@ input[type=checkbox] {
     max-width: 74%;
   }
 
-  .containerleters {
+  .containerletters {
     width: 1000px;
   }
 

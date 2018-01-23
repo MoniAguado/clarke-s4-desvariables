@@ -695,42 +695,7 @@ text-align: center;
 	width: 20px;
   height: 20px;
 }
-/*footer*/
-.infooter{
-	background-color: $footer;
-	font-size: 0.8em;
-	color: $footerLetters;
-	padding: 5px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	margin-top: 20px;
-}
 
-.end{
-	margin-left: auto;
-	margin-right: auto;
-}
-.contacto{
-	color: $contactColor;
-	text-decoration: none;
-	margin-top: 20px;
-}
-.contacto:hover{
-	color: $inputAndButtons;
-}
-.logo{
-	min-width: 200px ;
-	margin-left: auto;
-	margin-right: auto;
-}
-.logoadalab{
-	display: block;
-	margin: 5px auto;
-	max-width: 200px;
-	width: 75%;
-}
 /*flecha subir arriba*/
 #arriba {
 	width: 5px;

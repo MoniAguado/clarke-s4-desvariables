@@ -1,4 +1,49 @@
-@charset "UTF-8";/*Estilos generales*/* {
+@charset "UTF-8";/*footer*//*footer*/.infooter {
+  background-color: #252525;
+  font-size: 0.8em;
+  color: #555555;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.end {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contacto {
+  color: #d5d4cd;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.contacto:hover {
+  color: #7DBEA5;
+}
+
+.logo {
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logoadalab {
+  display: block;
+  margin: 5px auto;
+  max-width: 200px;
+  width: 75%;
+}/*Estilos generales*/* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -493,9 +538,7 @@ header {
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
   padding: 2px;
   border: solid 1px;
-
   background-color: #ffffff;
-
   border-radius: 5px;
 }
 
@@ -740,9 +783,7 @@ header {
 input[type=checkbox] {
   -webkit-transform: scale(1.2);
  /* Safari and Chrome */
-
   color: #000;
-
 }
 
 #hobbies-form {
@@ -870,51 +911,6 @@ input[type=checkbox] {
 .alert-cruise {
   width: 20px;
   height: 20px;
-}/*footer*/.infooter {
-  background-color: #252525;
-  font-size: 0.8em;
-  color: #555555;
-  padding: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.end {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.contacto {
-  color: #d5d4cd;
-  text-decoration: none;
-  margin-top: 20px;
-}
-
-.contacto:hover {
-  color: #7DBEA5;
-}
-
-.logo {
-  min-width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.logoadalab {
-  display: block;
-  margin: 5px auto;
-  max-width: 200px;
-  width: 75%;
 }/*flecha subir arriba*/#arriba {
   width: 5px;
   padding: 5px;
@@ -1046,10 +1042,9 @@ input[type=checkbox] {
   border-radius: 0.6em;
   width: 100px;
   margin-left: auto;
-}/*mediaqueries*//*.textcrea{
-		font-size: 40px;
-		margin-top: 50px;
-	}*/@font-face {
+}
+
+@font-face {
   font-family:'American Typewriter Bold';font-style:normal;font-weight:normal;src:local("American Typewriter Bold"), url("ufonts.com_american-typewriter-bold.woff") format("woff");
 }
 
@@ -1174,7 +1169,7 @@ input[type=checkbox] {
     padding: 3px;
   }
 
-  .containerleters {
+  .containerletters {
     width: 1000px;
   }
 
@@ -1213,7 +1208,7 @@ input[type=checkbox] {
     max-width: 74%;
   }
 
-  .containerleters {
+  .containerletters {
     width: 1000px;
   }
 
@@ -1379,7 +1374,7 @@ input[type=checkbox] {
     top: 22px;
     left: 319px;
     border: medium solid rgba(125, 190, 165, 0.36);
-
+    border: medium solid rgba(125, 190, 165, 0.36);
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent rgba(125, 190, 165, 0.36);
   }

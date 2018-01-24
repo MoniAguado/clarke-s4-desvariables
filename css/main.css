@@ -1,4 +1,4 @@
-@charset "UTF-8";/*footer*//*footer*/.infooter {
+@charset "UTF-8";/*footer*//*botones*//*footer*/.infooter {
   background-color: #252525;
   font-size: 0.8em;
   color: #555555;
@@ -1012,7 +1012,7 @@ input[type=checkbox] {
   -webkit-box-shadow: #E1F7E7 0 1px 0;
   box-shadow: #E1F7E7 0 1px 0;
   display: inline-block;
-  margin: 13px 0;
+  margin: 13px 0px;
   width: 70px;
   border-radius: 7px;
 }
@@ -1040,7 +1040,6 @@ input[type=checkbox] {
 .cruz-section-button {
   background: none;
   border: none;
-  margin-top: 10%;
   cursor: pointer;
   margin-top: 30px;
 }

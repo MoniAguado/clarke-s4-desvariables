@@ -1,4 +1,3 @@
-
 @charset "UTF-8";/*footer*//*Estilos generales*/
 * {
   -webkit-box-sizing: border-box;
@@ -57,25 +56,6 @@ main {
   background: #5a392b;
 }
 
-.open-section-button {
-  background: none;
-  margin-left: auto;
-}
-
-.close-section-button {
-  background: none;
-  border: none;
-  margin-left: auto;
-}
-
-.cruz-section-button {
-  background: none;
-  border: none;
-  margin-top: 10%;
-  cursor: pointer;
-  margin-top: 30px;
-}
-
 .inputs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,37 +68,6 @@ main {
   border-radius: 5px;
   width: 225px;
   font-style: arial;
-}/*botones compartir en redes sociales*/#btrs {
-  text-align: center;
-}
-
-.sl:hover,.lkdn:hover,.fb:hover,.twtr:hover,.glg:hover,.pnt:hover {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
-  -moz-transition: all .5s;
-  -webkit-transition: all .5s;
-}/*Botones añadir y guardar*/.buttons-save-general {
-  background-color: #E1F7E7;
-  padding: 5px;
-  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
-  -webkit-box-shadow: #E1F7E7 0 1px 0;
-  box-shadow: #E1F7E7 0 1px 0;
-  display: inline-block;
-  margin: 13px 0;
-  width: 70px;
-  border-radius: 7px;
-}
-
-.buttons-save-general:hover {
-  background: #7DBEA5;
-  -webkit-box-shadow: inset 0 0 20px #7DBEA5, 0 0 20px #7DBEA5;
-  box-shadow: inset 0 0 20px #7DBEA5, 0 0 20px #7DBEA5;
-  outline-offset: 80px;
-  color: #ffffff;
-  font-weight: bold;
-  border-color: #7DBEA5;
 }/*Ocultar secciones*/.net-social-hidden,.invisible,#languages-form,#hobbies-form,#read,#travel,#game,#sports,#cinema,#music,#files,#ventana2,#sound-efx {
   display: none;
 }
@@ -899,91 +848,57 @@ input[type=checkbox] {
   border-radius: 0.6em;
   width: 100px;
   margin-left: auto;
-}/*mediaqueries*/.header {
-  width: 100%;
-  height: 70px;
-  min-width: 60px;
-  background-color: #2E2B24;
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding-top: 0px;
-  margin-top: 0px;
-  z-index: 99;
-  padding-right: 10px;
-}
-
-.header-background {
-  background-image: url(../images/groupMobile.png);
-  background-position: center;
-  background-size: cover;
-  height: 80vh;
-  margin-bottom: 5px;
-}
-
-.container-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.machine-logo {
-  margin-top: 5px;
-  display: block;
-  margin-left: 5px;
-  max-width: 60px;
-  width: 100%;
-}
-
-.letters-log {
-  margin-top: 10px;
-  margin-left: 5px;
-  margin-right: 10px;
-  max-width: 150px;
-  width: 100%;
-  margin-top: 10px;
-}
-
-.container-icons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.icons {
-  height: 30px;
-  width: 30px;
-  margin-left: 5px;
-  background-size: cover;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+}/*mediaqueries*//*.textcrea{
+		font-size: 40px;
+		margin-top: 50px;
+	}*//*botones compartir en redes sociales*/#btrs {
   text-align: center;
-  background-color: transparent;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border-style: none;
+}
+
+.sl:hover,.lkdn:hover,.fb:hover,.twtr:hover,.glg:hover,.pnt:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+}/*Botones añadir y guardar*/.buttons-save-general {
+  background-color: #E1F7E7;
+  padding: 5px;
+  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+  -webkit-box-shadow: #E1F7E7 0 1px 0;
+  box-shadow: #E1F7E7 0 1px 0;
+  display: inline-block;
+  margin: 13px 0px;
+  width: 70px;
+  border-radius: 7px;
+}
+
+.buttons-save-general:hover {
+  background: #7DBEA5;
+  -webkit-box-shadow: inset 0 0 20px #7DBEA5, 0 0 20px #7DBEA5;
+  box-shadow: inset 0 0 20px #7DBEA5, 0 0 20px #7DBEA5;
+  outline-offset: 80px;
+  color: #ffffff;
+  font-weight: bold;
+  border-color: #7DBEA5;
+}/*botones mostrar y ocultar info form*/.open-section-button {
+  background: none;
+  border: none;
+  margin-left: auto;
+}
+
+.close-section-button {
+  background: none;
+  border: none;
+  margin-left: auto;
+}
+
+.cross-section-button {
+  background: none;
+  border: none;
   cursor: pointer;
+  margin-top: 30px;
 }
 
 @font-face {

@@ -184,13 +184,7 @@ header{
   z-index: 99;
 	padding-right: 10px;
 }
-#header-fondo {
-	background-image: url(../images/groupMobile.png);
-	background-position: center;
-	background-size: cover;
-	height: 80vh;
-	margin-bottom: 5px;
-}
+
 .text-crea {
 	margin-top: 20%;
 	margin-left: 20px;
@@ -807,10 +801,6 @@ text-align: center;
 	}
 }
 @media all and (min-width:600px) {
-	#header-fondo {
-		background-image: url(../images/group.png);
-		height: 100vh;
-	}
 	#button-down {
 		display: none;
 	}
@@ -850,11 +840,7 @@ text-align: center;
 	#btnshareprev, #btnprintprev, #btndownloadprev {
 		display: none;
 	}
-	#header-fondo{
-		width: cover;
-		background-image: url(../images/group.png);
-		height: 100vh;
-	}
+
 	.flexible::before{
 		left: 0;
 		top: 0;

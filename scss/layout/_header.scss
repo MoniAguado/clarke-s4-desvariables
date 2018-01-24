@@ -5,6 +5,13 @@
 	flex-wrap: wrap;
 	justify-content: flex-end;
 }
+.header-background {
+	background-image: url(../images/groupMobile.png);
+	background-position: center;
+	background-size: cover;
+	height: 80vh;
+	margin-bottom: 5px;
+}
 .container-logo{
 	display: flex;
 	flex-direction: row;
@@ -43,8 +50,6 @@
 }
 @media all and (min-width: 350px){
 	.header{
-		display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 	}
 	.container-icons{
@@ -55,6 +60,10 @@
 	.icons{
 		height: 28px;
 	  width: 28px;
+	}
+	.header-background {
+		background-image: url(../images/group.png);
+		height: 100vh;
 	}
 }
 @media all and (min-width: 810px){
@@ -87,6 +96,11 @@
 	}
 }
 @media all and (min-width:900px) {
+	.header-background{
+		width: cover;
+		background-image: url(../images/group.png);
+		height: 100vh;
+	}
 	.machine-logo{
 		max-width: 74%;
 	}

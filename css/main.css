@@ -224,14 +224,6 @@ header {
   padding-right: 10px;
 }
 
-#header-fondo {
-  background-image: url(../images/groupMobile.png);
-  background-position: center;
-  background-size: cover;
-  height: 80vh;
-  margin-bottom: 5px;
-}
-
 .text-crea {
   margin-top: 20%;
   margin-left: 20px;
@@ -941,6 +933,14 @@ input[type=checkbox] {
   justify-content: flex-end;
 }
 
+.header-background {
+  background-image: url(../images/groupMobile.png);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  margin-bottom: 5px;
+}
+
 .container-logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1007,11 +1007,6 @@ input[type=checkbox] {
   }
 
   .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -1042,11 +1037,6 @@ input[type=checkbox] {
 }
 
 @media all and (min-width: 600px) {
-  #header-fondo {
-    background-image: url(../images/group.png);
-    height: 100vh;
-  }
-
   #button-down {
     display: none;
   }
@@ -1128,12 +1118,6 @@ input[type=checkbox] {
     display: none;
   }
 
-  #header-fondo {
-    width: cover;
-    background-image: url(../images/group.png);
-    height: 100vh;
-  }
-
   .flexible::before {
     left: 0;
     top: 0;
@@ -1210,6 +1194,12 @@ input[type=checkbox] {
     margin-right: 1%;
   }
 
+  .header-background {
+    width: cover;
+    background-image: url(../images/group.png);
+    height: 100vh;
+  }
+
   .machine-logo {
     max-width: 74%;
   }
@@ -1254,6 +1244,11 @@ input[type=checkbox] {
   .icons {
     height: 28px;
     width: 28px;
+  }
+
+  .header-background {
+    background-image: url(../images/group.png);
+    height: 100vh;
   }
 }
 

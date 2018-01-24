@@ -1,21 +1,5 @@
 /*Estilos generales*/
 
-*{
-	box-sizing: border-box;
-}
-body{
-	background-color: $whitishBackground;
-	margin: 0;
-	padding: 0;
-	font-family: 'Gabriela', serif;
-}
-main{
-	padding-top: 50px;
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}
 #empty-container {
 	height: 70px;
 }
@@ -115,9 +99,6 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 /*Fin estilos generales*/
 /*Header logo formulario*/
 
-
-
-
 .iconsprev{
 	height: 30px;
   width: 30px;
@@ -130,7 +111,6 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
   border-style: none;
   cursor: pointer
 }
-/*header parte marta*/
 
 .cajaiconsprev{
 	display: flex;

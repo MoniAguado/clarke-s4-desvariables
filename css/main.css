@@ -1,30 +1,4 @@
-@charset "UTF-8";/*footer*//*Estilos generales*/* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #FFFEFA;
-  margin: 0;
-  padding: 0;
-  font-family: 'Gabriela', serif;
-}
-
-main {
-  padding-top: 50px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-#empty-container {
+@charset "UTF-8";/*footer*//*Estilos generales*/#empty-container {
   height: 70px;
 }/*Estilos generales de la sección de desplegables*/.title-container {
   padding-left: 20px;
@@ -147,7 +121,9 @@ main {
   box-sizing: border-box;
   border-style: none;
   cursor: pointer;
-}/*header parte marta*/.cajaiconsprev {
+}
+
+.cajaiconsprev {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -982,6 +958,32 @@ input[type=checkbox] {
   box-sizing: border-box;
   border-style: none;
   cursor: pointer;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #FFFEFA;
+  margin: 0;
+  padding: 0;
+  font-family: 'Gabriela', serif;
+}
+
+.main-wrapper {
+  padding-top: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 @font-face {

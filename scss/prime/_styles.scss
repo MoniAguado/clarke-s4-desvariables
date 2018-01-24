@@ -40,30 +40,13 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	text-shadow: $textShadowInputs 0 1px 0;
 }
 .title-container:hover {
-  border-top-color: $inputsActive;
-  background: $inputsActive;
+  border-top-color: $percentageBarAndInputsAcc;
+  background: $percentageBarAndInputsAcc;
   color: #ccc;
 }
 .title-container:active {
-	border-top-color: $inputsActive;
-	background: $inputsActive;
-}
-.open-section-button {
-	background: none;
-	border: none;
-	margin-left: auto;
-}
-.close-section-button {
-	background: none;
-	border: none;
-	margin-left: auto;
-}
-.cruz-section-button {
-	background: none;
-	border: none;
-	margin-top: 10%;
-	cursor: pointer;
-	margin-top: 30px;
+	border-top-color: $percentageBarAndInputsAcc;
+	background: $percentageBarAndInputsAcc;
 }
 .inputs {
 	display: flex;
@@ -76,28 +59,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	width: 225px;
 	font-style: arial;
 }
-/*botones compartir en redes sociales*/
-#btrs{ text-align:center;}.sl:hover, .lkdn:hover, .fb:hover, .twtr:hover, .glg:hover,.pnt:hover {-webkit-transform: rotate(360deg);-moz-transform: rotate(360deg);transform: rotate(360deg);transition:all .3s ease-out;-moz-transition: all .5s;-webkit-transition: all .5s;}
 
-/*Botones añadir y guardar*/
-.buttons-save-general {
-	background-color: $addSaveButtons;
-	padding: 5px;
-	text-shadow: $textShadowInputs 0 1px 0;
-	box-shadow: $addSaveButtons 0 1px 0;
-	display: inline-block;
-	margin: 13px 0;
-	width: 70px;
-	border-radius:7px;
-}
-.buttons-save-general:hover {
-	background: $inputAndButtons;
-  box-shadow: inset 0 0 20px $inputAndButtons, 0 0 20px $inputAndButtons;
-  outline-offset: 80px;
-	color: $white;
-	font-weight: bold;
-	border-color: $inputAndButtons;
-}
 /*Ocultar secciones*/
 .net-social-hidden, .invisible, #languages-form, #hobbies-form, #read, #travel, #game, #sports, #cinema, #music, #files, #ventana2, #sound-efx {
 	display: none;
@@ -115,44 +77,10 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 }
 /*Fin estilos generales*/
 /*Header logo formulario*/
-.headlog{
-	height: 70px;
-	min-width: 60px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-}
-.containerlogo{
-	display: flex;
-	flex-direction: row;
-}
-.machinelog{
-	margin-top: 5px;
-	display: block;
-	margin-left: 5px;
-	max-width: 60px;
-	width: 100%;
-}
-.letterslog{
-	margin-top: 10px;
-	margin-left: 5px;
-	margin-right: 10px;
-	max-width: 150px;
-	width: 100%;
-	margin-top: 10px;
-}
-.icons{
-	height: 30px;
-  width: 30px;
-  margin-left: 5px;
-  background-size: cover;
-  align-items: flex-end;
-  text-align: center;
-  background-color: transparent;
-  box-sizing: border-box;
-  border-style: none;
-  cursor: pointer;
-}
+
+
+
+
 .iconsprev{
 	height: 30px;
   width: 30px;
@@ -166,11 +94,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
   cursor: pointer
 }
 /*header parte marta*/
-.containericonos{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-}
+
 .cajaiconsprev{
 	display: flex;
 	flex-direction: row;
@@ -208,34 +132,15 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	background-image: url("../images/btndown.png");
 		display: block;
 }
-header{
-	width: 100%;
-	height: 60px;
-	background-color: $headerBackground;
-	position: fixed;
-	display: flex;
-	justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-	padding-top: 0px;
-	margin-top: 0px;
-  z-index: 99;
-	padding-right: 10px;
-}
-#header-fondo {
-	background-image: url(../images/groupMobile.png);
-	background-position: center;
-	background-size: cover;
-	height: 80vh;
-	margin-bottom: 5px;
-}
+
+
 .text-crea {
 	margin-top: 20%;
 	margin-left: 20px;
 	font-size: 1.5em;
 	font-family: 'American Typewriter Bold', Arial;
 	font-weight: bold;
-	color: $percentageBar;
+	color: $percentageBarAndInputsAcc;
 }
 #button-down {
 	background: none;
@@ -384,7 +289,7 @@ header{
 /*Experience and Education preview*/
 .section-title{
 	text-align: center;
-	color: $inputsActive;
+	color: $percentageBarAndInputsAcc;
 }
 /* La timeline*/
 .timeline {
@@ -397,7 +302,7 @@ header{
   content: '';
   position: absolute;
   width: 10px;
-  background-color: $inputsActive;
+  background-color: $percentageBarAndInputsAcc;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -418,7 +323,7 @@ header{
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid $inputsActive;
+  border: 4px solid $percentageBarAndInputsAcc;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -479,7 +384,7 @@ header{
 }
 /*Estilos de texto dentro de cajas*/
 .title-year {
-  color: $inputsActive;
+  color: $percentageBarAndInputsAcc;
 	margin: 8px;
 	font-size: 20px;
 }
@@ -511,7 +416,7 @@ header{
 .skill {
   margin-top: 5px;
 	margin-right: 1%;
-	color: $inputsActive;
+	color: $percentageBarAndInputsAcc;
 }
 .skill-pre {
 	margin-left: 15%;
@@ -565,7 +470,7 @@ header{
 	padding-left: 1em;
 }
 .percentage-bar {
-	background-color: $percentageBar;
+	background-color: $percentageBarAndInputsAcc;
 }
 .input-lang, .input-skill{
 	padding-bottom: 1em;
@@ -763,7 +668,7 @@ text-align: center;
 .cajas{
   width: 100%;
 	background-color: $boxBackgroundColor;
-	border: solid 1px $boxBorderColor;
+	border: solid 1px $boxBorderAndButtonColor;
 	padding: 0 12px;
 	height: 40px;
 	border-radius: 9px;
@@ -774,7 +679,7 @@ text-align: center;
 	padding-top: 6px;
 }
 .cajas:focus{
-	border-color: $boxBorderColor;
+	border-color: $boxBorderAndButtonColor;
 }
 .campos{
  margin: 0 0 1.5rem;
@@ -782,7 +687,7 @@ text-align: center;
  flex-direction: row;
 }
 .boton{
-	color: $buttonColor;
+	color: $boxBorderAndButtonColor;
 	background-color: $inputAndButtons;
 	font-size: 15px;
 	font-weight: bold;
@@ -794,22 +699,11 @@ text-align: center;
 }
 /*mediaqueries*/
 @media all and (min-width: 350px){
-	.headlog{
-		display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-		}
-	.containerlogo{
+	.container-logo{
 		margin-left: 30px;
-	}
-	.containericonos{
-		margin-right: 20px;
 	}
 }
 @media all and (min-width: 400px){
-	.headercreatucv{
-	height: 60vh;
-	}
 	.nets{
 		display: flex;
 		flex-direction: row;
@@ -822,22 +716,12 @@ text-align: center;
 	}
 }
 @media all and (min-width: 490px){
-	.headercreatucv{
-		height: 80vh;
-	}
 }
-	/*.textcrea{
-		font-size: 40px;
-		margin-top: 50px;
-	}*/
 @media all and (max-width: 600px){
 	.text-form-button{
 		font-size: 18px;
 	}
-	.icons{
-		height: 28px;
-	  width: 28px;
-	}
+
 	/*Mediaqueries de preview de Experiencia y Formación*/
 	/* Poner la línea a la izquierda */
 	.timeline::after {
@@ -866,10 +750,6 @@ text-align: center;
 	}
 }
 @media all and (min-width:600px) {
-	#header-fondo {
-		background-image: url(../images/group.png);
-		height: 100vh;
-	}
 	#button-down {
 		display: none;
 	}
@@ -898,71 +778,16 @@ text-align: center;
 	}
 }
 @media all and (min-width: 810px){
-	.headercreatucv{
-		height: 500vh;
-	}
-	.headlog{
-		height: 100px;
-	}
 	.cajaiconsprev{
 		margin-top: 37px;
 	}
-	.icons{
-		height: 34px;
-		width: 34px;
-		margin: 8px;
-	}
-	.containerlogo{
-		height: 80px;
-		width: 41%;
-		margin-bottom: 0px;
-		margin-top: 0px;
-	}
-	.machinelog{
-		max-width: 85%;
-		margin: 0px;
-		padding: 3px;
-	}
-	.containerleters{
-			width: 1000px;
-	}
-	.letterslog{
-		max-width: 100%;
-		padding-top: 10px;
-		padding-left: -5px;
-	}
 }
 @media all and (min-width:900px) {
-	.headercreatucv{
-		height: 120vh;
-		width: 100%;
-	}
 	#ventana2, #btnshare, #btnprint, #btndownload {
 		display: block;
 	}
 	#btnshareprev, #btnprintprev, #btndownloadprev {
 		display: none;
-	}
-	.containerlogo{
-		height: 80px;
-		width: 41%;
-		margin-bottom: 8px;
-	}
-	.machinelog{
-		max-width: 74%;
-	}
-	.containerleters{
-		width: 1000px;
-	}
-	.letterslog{
-		max-width: 100%;
-		padding-top: 10px;
-		padding-left: -5px;
-	}
-	#header-fondo{
-		width: cover;
-		background-image: url(../images/group.png);
-		height: 100vh;
 	}
 	.flexible::before{
 		left: 0;
@@ -1019,12 +844,6 @@ text-align: center;
 	}
 }
 @media all and (min-width: 810px){
-	.headercreatucv{
-		height: 120vh;
-	}
-	.headlog{
-		// height: ;
-	}
 }
 @media print {
 	.barra, .content-timeline, .languages-bar-preview, .timeline, .printnet {

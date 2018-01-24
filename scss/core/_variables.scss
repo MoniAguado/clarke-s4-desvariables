@@ -5,13 +5,11 @@ $inputAndButtons: #7DBEA5;
 $alerts: #e64d4d;
 $footer: #252525;
 $footerLetters: #555555;
-$inputsActive: #5A392B;
 $timeline: rgba(125, 190, 165, 0.36);
-$percentageBar: #5a392b;
+$percentageBarAndInputsAcc: #5a392b;
 $headerBackground: #2E2B24;
 $boxShadowInputs: rgba(0,0,0,1);
-$boxBorderColor: #514336;
-$buttonColor: #514336;
+$boxBorderAndButtonColor: #514336;
 $boxBackgroundColor: #F4EDDD;
 $textShadowInputs: rgba(0,0,0,.4);
 $languagesBackground: #e0e0e0;
@@ -25,3 +23,12 @@ $footerPadding: 5px;
 $footerMarginTop: 20px;
 $logoWidth: 200px;
 $logoWidthPercentaje: 75%;
+
+/*botones*/
+
+$buttonPadding: 5px;
+$buttonMargin: 13px 0px;
+$buttonWidth: 70px;
+$buttonBorderRadius: 7px;
+$cruzButtonMarginTop: 30px;
+$buttonOutline: 80px;

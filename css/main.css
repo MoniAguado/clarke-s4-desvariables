@@ -22,16 +22,6 @@
   margin-right: auto;
 }
 
-.contacto {
-  color: #d5d4cd;
-  text-decoration: none;
-  margin-top: 20px;
-}
-
-.contacto:hover {
-  color: #7DBEA5;
-}
-
 .logo {
   min-width: 200px;
   margin-left: auto;
@@ -43,6 +33,16 @@
   margin: 5px auto;
   max-width: 200px;
   width: 75%;
+}
+
+.link-contact {
+  color: #d5d4cd;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.link-contact:hover {
+  color: #7DBEA5;
 }/*Estilos generales*/* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

@@ -1,4 +1,4 @@
-@charset "UTF-8";/*footer*//*footer*/.infooter {
+@charset "UTF-8";/*footer*//*footer*/.footer {
   background-color: #252525;
   font-size: 0.8em;
   color: #555555;
@@ -22,13 +22,13 @@
   margin-right: auto;
 }
 
-.contacto {
+.contact {
   color: #d5d4cd;
   text-decoration: none;
   margin-top: 20px;
 }
 
-.contacto:hover {
+.contact:hover {
   color: #7DBEA5;
 }
 
@@ -38,7 +38,7 @@
   margin-right: auto;
 }
 
-.logoadalab {
+.logo-adalab {
   display: block;
   margin: 5px auto;
   max-width: 200px;

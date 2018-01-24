@@ -1,9 +1,17 @@
 .header{
+	width: 100%;
 	height: 70px;
 	min-width: 60px;
+	background-color: $headerBackground;
+	position: fixed;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+	padding-top: 0px;
+	margin-top: 0px;
+  z-index: 99;
+	padding-right: 10px;
 }
 .header-background {
 	background-image: url(../images/groupMobile.png);

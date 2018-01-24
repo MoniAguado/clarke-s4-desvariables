@@ -355,10 +355,7 @@ header{
 	display: none;
 	padding-bottom: 10px;
 }
-.subtitle-section{
-	margin: 10px 0;
-	text-align: center;
-}
+
 .dates-boxes{
 	margin: 8px 8px;
 	width: 220px;
@@ -382,10 +379,7 @@ header{
 	margin-top: 5px;
 }
 /*Experience and Education preview*/
-.section-title{
-	text-align: center;
-	color: $percentageBarAndInputsAcc;
-}
+
 /* La timeline*/
 .timeline {
   position: relative;
@@ -547,9 +541,7 @@ header{
 	flex-direction: column;
 	align-items: center;
 }
-.text-form-button {
-	color: $white;
-}
+
 #languages-preview, #hobbies-preview, .social {
 	padding-left: 7%;
 	padding-right: 7%;
@@ -831,9 +823,6 @@ text-align: center;
 		margin-top: 50px;
 	}*/
 @media all and (max-width: 600px){
-	.text-form-button{
-		font-size: 18px;
-	}
 	.icons{
 		height: 28px;
 	  width: 28px;
@@ -876,11 +865,7 @@ text-align: center;
 	#empty-container {
 		height: 20px;
 	}
-	.text-crea {
-		margin-top: 15%;
-		margin-left: 20px;
-		font-size: 2em;
-	}
+
 
 	/*Footer*/
 	.infooter{

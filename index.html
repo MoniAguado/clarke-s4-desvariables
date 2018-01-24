@@ -29,7 +29,7 @@
 		<main class="bloque">
 			<!--cabecera-->
 			<div id="header-fondo">
-      	<h1 class="text-crea"></h1>
+      	<h1 class="title-crea text-crea"></h1>
         <audio id="sound-efx" src="styles/typewriter.wav"></audio>
 			</div>
       <button id="button-down" type="button" name="button-down"><a href="index.html#empty-container"><img src="images/expand-button-medium.png" alt="rellena-los-campos"></a></button>
@@ -38,7 +38,7 @@
 				<section class="formulario-sec" id="ventana1">
 					<form class="form-section-container" id=principal-section action="index.html" method="post">
 						<div class="title-container">
-							<h2 class="text-form-button" onclick="editar('principal-box')">Datos principales</h2>
+							<h2 class="title-form" onclick="editar('principal-box')">Datos principales</h2>
 							<button id="openButtonPrincipal" class="open-section-button shown" type="button" name="principales-button" onclick="editar('principal-box')" value="openButton">
 								<img src="images/expand-button.png" alt="addButton">
 							</button>
@@ -63,7 +63,7 @@
 					<!---ABOUT-->
 					<form class="form-section-container" action="index.html" method="post"> <!--Mostrado-->
 						<div class="title-container">
-							<h2 class="text-form-button" onclick="editar('content-about')">Sobre mí</h2>
+							<h2 class="title-form" onclick="editar('content-about')">Sobre mí</h2>
 							<button id="openButtonAbout" class="open-section-button shown" type="button" name="about-me-button" onclick="editar('content-about')" value="openButton">
 								<img src="images/expand-button.png" alt="addButton">
 							</button>
@@ -80,7 +80,7 @@
 					<!--Sección de Experiencia-->
 					<form class="form-section-container" id=experience-section action="index.html" method="post">
 						<div class="title-container">
-							<h2 class="text-form-button" onclick="editar('job-box')">Experiencia laboral</h2>
+							<h2 class="title-form" onclick="editar('job-box')">Experiencia laboral</h2>
 							<button id="openButtonExperience" class="open-section-button shown" type="button" name="experience-button" onclick="editar('job-box')" value="openButton">
 								<img src="images/expand-button.png" alt="addButton">
 							</button>
@@ -117,7 +117,7 @@
 					<!--Sección de Formación-->
 					<form class="form-section-container" id="education-section" action="index.html" method="post">
 						<div class="title-container">
-							<h2 class="text-form-button" onclick="editar('education-box')">Formación</h2>
+							<h2 class="title-form" onclick="editar('education-box')">Formación</h2>
 							<button id="openButtonFormac" class="open-section-button shown" type="button" name="languageButton" onclick="editar('education-box')" value="openButton">
 								<img src="images/expand-button.png" alt="addButton">
 							</button>
@@ -152,7 +152,7 @@
 					<!--Skills -->
 					<section  class="form-section-container">
 						<div class="title-container">
-							<h2 class="text-form-button">Habilidades</h2><!--Mostrado-->
+							<h2 class="title-form">Habilidades</h2><!--Mostrado-->
 							<button id="openButtonSkill" class="open-section-button shown" type="button" name="skills-button" onclick="editar('content-skills')" value="openButton">
 								<img src="images/expand-button.png" alt="addButton">
 							</button>
@@ -185,7 +185,7 @@
 	        <!--Languages form section-->
 	        <section id="languages-form-container">
 	          <div class="title-container">
-	            <h2 class="text-form-button">Idiomas</h2>
+	            <h2 class="title-form">Idiomas</h2>
 	            <button id="openButtonlanguages" class="open-section-button shown" type="button" name="languageButton" onclick="editar('languages-form')" value="openButton"><img src="images/expand-button.png" alt="addButton"></button>
 							<button id="closeButtonlanguages" class="close-section-button hidden" type="button" name="job-box-button" onclick="ocultar('languages-form')" value="closeButton">
 							<img src="images/expand-arrow.png" alt="minusbuttom"></button>
@@ -208,7 +208,7 @@
 	        <!--Hobbies form section-->
 	        <section id="hobbies-form-container">
 	          <div class="title-container">
-	            <h2 class="text-form-button">Hobbies</h2>
+	            <h2 class="title-form">Hobbies</h2>
 	            <button id="openButtonHobbies" class="addLanguageButton open-section-button shown" type="button" name="languageButton" onclick="editar('hobbies-form')" value="openButton"><img src="images/expand-button.png" alt="addButton"></button>
 							<button id="closeButtonHobbies" class="close-section-button hidden" type="button" name="hobbiesForm-button" onclick="ocultar('hobbies-form')" value="closeButton">
 							<img src="images/expand-arrow.png" alt="minusbuttom">
@@ -244,7 +244,7 @@
 					<!--Sección de Redes sociales -->
         	<form class="form-section-container" action="index.html" method="post">
             <div class="title-container">
-              <h2 class="text-form-button">Redes Sociales</h2>
+              <h2 class="title-form">Redes Sociales</h2>
   						  <button id="openButtonNet" class="open-section-button shown" type="button" name="networksButton" onclick="showNetsocial()" value="openButton">
   								<img src="images/expand-button.png" alt="addButton"></button>
 								<button id="closeButtonNet" class="close-section-button hidden" type="button" name="minredes-button" onclick="ocultar('minredes')" value="closeButton">
@@ -277,7 +277,7 @@
          <!--Sección de Portfolio-->
          	<form class="form-section-container" action="index.html" method="post">
  						<div class="title-container">
-             	<h2 class="text-form-button">Portfolio</h2>
+             	<h2 class="title-form">Portfolio</h2>
  							<button  id="openButtonQr" class="open-section-button shown" type="button" name="networksButton" onclick="editar('showNetsocial')" value="openButton">
  								<img src="images/expand-button.png" alt="addButton">
 							</button>
@@ -320,21 +320,21 @@
 				<!--Sección About Me-->
 				<p class="separador">* * * * * * * * * * * * * * * </p>
 				<section class="">
-					<h2 class="section-title">Sobre mí</h2>
-						<p id="aboutMe-preview" class="section-title"></p>
+					<h2 class="title-section">Sobre mí</h2>
+						<p id="aboutMe-preview" class="title-section"></p>
 				</section>
 
 				<!--Sección de Experiencia y Formación-->
         <p class="separador">* * * * * * * * * * * * * * * </p>
 				<section class="">
-					<h2 class="section-title">Experiencia y Formación</h2>
+					<h2 class="title-section">Experiencia y Formación</h2>
 					<section class="timeline">
 					</section>
 				</section>
 <!--___________________________Skills_______________________________________-->
 			<p class="separador">* * * * * * * * * * * * * * * </p>
 				<section class="section-skills">
-					<h2 class="section-title">Habilidades</h2>
+					<h2 class="title-section">Habilidades</h2>
 					<div class="skill-pre">
     				<div class="skill-title" id="skill1-preview"></div>
     				<div class="barra">
@@ -358,7 +358,7 @@
         <!--Languages preview section-->
         <p class="separador">* * * * * * * * * * * * * * * </p>
         <section id="languages-preview">
-          <h2 class="section-title">Idiomas</h2>
+          <h2 class="title-section">Idiomas</h2>
           <div class="languages-bar-preview">
             <div class="percentage-bar">
               <p class="text-bar-preview"></p>
@@ -379,7 +379,7 @@
         <!--Hobbies section-->
         <p class="separador">* * * * * * * * * * * * * * * </p>
         <section id="hobbies-preview">
-          <h2 class="section-title">Hobbies</h2>
+          <h2 class="title-section">Hobbies</h2>
           <div class="all-hobbies-preview">
             <img id="read" src="images/readSmall.png" alt="read hobbie">
             <img id="travel" src="images/travelSmall.png" alt="travel hobbie">

@@ -1,0 +1,40 @@
+.header{
+	height: 70px;
+	min-width: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+.container-logo{
+	display: flex;
+	flex-direction: row;
+}
+.machine-logo{
+	margin-top: 5px;
+	display: block;
+	margin-left: 5px;
+	max-width: 60px;
+	width: 100%;
+}
+@media all and (min-width: 350px){
+	.header{
+		display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+		}
+}
+@media all and (min-width: 810px){
+	.header{
+		height: 100px;
+	}
+	.machine-logo{
+		max-width: 85%;
+		margin: 0px;
+		padding: 3px;
+	}
+}
+@media all and (min-width:900px) {
+	.machine-logo{
+		max-width: 74%;
+	}
+}

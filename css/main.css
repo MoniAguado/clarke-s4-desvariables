@@ -134,38 +134,7 @@ main {
 .hidden {
  /*visibility: hidden;*/
   display: none;
-}/*Fin estilos generales*//*Header logo formulario*/.headlog {
-  height: 70px;
-  min-width: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-}
-
-.containerlogo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.machinelog {
-  margin-top: 5px;
-  display: block;
-  margin-left: 5px;
-  max-width: 60px;
-  width: 100%;
-}
-
-.letterslog {
+}/*Fin estilos generales*//*Header logo formulario*/.letterslog {
   margin-top: 10px;
   margin-left: 5px;
   margin-right: 10px;
@@ -1000,12 +969,51 @@ input[type=checkbox] {
 }/*mediaqueries*//*.textcrea{
 		font-size: 40px;
 		margin-top: 50px;
-	}*/@font-face {
+	}*/.header {
+  height: 70px;
+  min-width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.container-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.machine-logo {
+  margin-top: 5px;
+  display: block;
+  margin-left: 5px;
+  max-width: 60px;
+  width: 100%;
+}
+
+@font-face {
   font-family:'American Typewriter Bold';font-style:normal;font-weight:normal;src:local("American Typewriter Bold"), url("ufonts.com_american-typewriter-bold.woff") format("woff");
 }
 
 @media all and (min-width: 350px) {
-  .headlog {
+  .container-logo {
+    margin-left: 30px;
+  }
+
+  .containericonos {
+    margin-right: 20px;
+  }
+
+  .header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1014,14 +1022,6 @@ input[type=checkbox] {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-  }
-
-  .containerlogo {
-    margin-left: 30px;
-  }
-
-  .containericonos {
-    margin-right: 20px;
   }
 }
 
@@ -1098,10 +1098,6 @@ input[type=checkbox] {
     height: 500vh;
   }
 
-  .headlog {
-    height: 100px;
-  }
-
   .cajaiconsprev {
     margin-top: 37px;
   }
@@ -1112,17 +1108,11 @@ input[type=checkbox] {
     margin: 8px;
   }
 
-  .containerlogo {
+  .container-logo {
     height: 80px;
     width: 41%;
     margin-bottom: 0px;
     margin-top: 0px;
-  }
-
-  .machinelog {
-    max-width: 85%;
-    margin: 0px;
-    padding: 3px;
   }
 
   .containerletters {
@@ -1137,6 +1127,16 @@ input[type=checkbox] {
 
   .headercreatucv {
     height: 120vh;
+  }
+
+  .header {
+    height: 100px;
+  }
+
+  .machine-logo {
+    max-width: 85%;
+    margin: 0px;
+    padding: 3px;
   }
 }
 
@@ -1154,14 +1154,10 @@ input[type=checkbox] {
     display: none;
   }
 
-  .containerlogo {
+  .container-logo {
     height: 80px;
     width: 41%;
     margin-bottom: 8px;
-  }
-
-  .machinelog {
-    max-width: 74%;
   }
 
   .containerletters {
@@ -1254,6 +1250,10 @@ input[type=checkbox] {
 
   .language {
     margin-right: 1%;
+  }
+
+  .machine-logo {
+    max-width: 74%;
   }
 }
 

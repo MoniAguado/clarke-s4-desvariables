@@ -115,24 +115,8 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 }
 /*Fin estilos generales*/
 /*Header logo formulario*/
-.headlog{
-	height: 70px;
-	min-width: 60px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-end;
-}
-.containerlogo{
-	display: flex;
-	flex-direction: row;
-}
-.machinelog{
-	margin-top: 5px;
-	display: block;
-	margin-left: 5px;
-	max-width: 60px;
-	width: 100%;
-}
+
+
 .letterslog{
 	margin-top: 10px;
 	margin-left: 5px;
@@ -794,12 +778,7 @@ text-align: center;
 }
 /*mediaqueries*/
 @media all and (min-width: 350px){
-	.headlog{
-		display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-		}
-	.containerlogo{
+	.container-logo{
 		margin-left: 30px;
 	}
 	.containericonos{
@@ -901,9 +880,6 @@ text-align: center;
 	.headercreatucv{
 		height: 500vh;
 	}
-	.headlog{
-		height: 100px;
-	}
 	.cajaiconsprev{
 		margin-top: 37px;
 	}
@@ -912,17 +888,13 @@ text-align: center;
 		width: 34px;
 		margin: 8px;
 	}
-	.containerlogo{
+	.container-logo{
 		height: 80px;
 		width: 41%;
 		margin-bottom: 0px;
 		margin-top: 0px;
 	}
-	.machinelog{
-		max-width: 85%;
-		margin: 0px;
-		padding: 3px;
-	}
+
 	.containerletters{
 			width: 1000px;
 	}
@@ -943,14 +915,12 @@ text-align: center;
 	#btnshareprev, #btnprintprev, #btndownloadprev {
 		display: none;
 	}
-	.containerlogo{
+	.container-logo{
 		height: 80px;
 		width: 41%;
 		margin-bottom: 8px;
 	}
-	.machinelog{
-		max-width: 74%;
-	}
+
 	.containerletters{
 		width: 1000px;
 	}
@@ -1021,9 +991,6 @@ text-align: center;
 @media all and (min-width: 810px){
 	.headercreatucv{
 		height: 120vh;
-	}
-	.headlog{
-		// height: ;
 	}
 }
 @media print {

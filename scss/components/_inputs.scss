@@ -1,0 +1,37 @@
+.info-preview{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.inputs {
+	display: flex;
+	text-align: center;
+	font-size: 15px;
+	margin-top: 5px;
+	padding: 2px;
+	border: solid 1px;
+	border-radius: 5px;
+	width: 225px;
+	font-style: arial;
+}
+
+.name{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.input-lang, .input-skill{
+	padding-bottom: 1em;
+}
+
+.skill {
+  margin-top: 5px;
+	margin-right: 1%;
+	color: $percentageBarAndInputsAcc;
+}
+
+.skill, .language, .skill-percent, .percentage {
+	width: 160px;
+}

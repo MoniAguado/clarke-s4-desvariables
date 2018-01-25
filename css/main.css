@@ -90,14 +90,14 @@ main {
 }
 
 .title-container:hover {
-  border-top-color: #5A392B;
-  background: #5A392B;
+  border-top-color: #5a392b;
+  background: #5a392b;
   color: #ccc;
 }
 
 .title-container:active {
-  border-top-color: #5A392B;
-  background: #5A392B;
+  border-top-color: #5a392b;
+  background: #5a392b;
 }
 
 .open-section-button {
@@ -118,20 +118,6 @@ main {
   margin-top: 10%;
   cursor: pointer;
   margin-top: 30px;
-}
-
-.inputs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  font-size: 15px;
-  margin-top: 5px;
-  padding: 2px;
-  border: solid 1px;
-  border-radius: 5px;
-  width: 225px;
-  font-style: arial;
 }/*botones compartir en redes sociales*/#btrs {
   text-align: center;
 }
@@ -489,12 +475,7 @@ header {
   justify-content: space-around;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-}/*Fin de estilos generales*//*ABOUT*/.textarea {
-  font-family: arial;
-  font-size: 15px;
-}
-
-#aboutMe-preview {
+}/*Fin de estilos generales*//*ABOUT*/#aboutMe-preview {
   text-align: justify;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -560,7 +541,7 @@ header {
   margin-top: 5px;
 }/*Experience and Education preview*/.section-title {
   text-align: center;
-  color: #5A392B;
+  color: #5a392b;
 }/* La timeline*/.timeline {
   position: relative;
   max-width: 1200px;
@@ -569,7 +550,7 @@ header {
   content: '';
   position: absolute;
   width: 10px;
-  background-color: #5A392B;
+  background-color: #5a392b;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -586,7 +567,7 @@ header {
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid #5A392B;
+  border: 4px solid #5a392b;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -641,7 +622,7 @@ header {
   margin-bottom: 7px;
   margin-top: 5px;
 }/*Estilos de texto dentro de cajas*/.title-year {
-  color: #5A392B;
+  color: #5a392b;
   margin: 8px;
   font-size: 20px;
 }
@@ -688,7 +669,7 @@ header {
 .skill {
   margin-top: 5px;
   margin-right: 1%;
-  color: #5A392B;
+  color: #5a392b;
 }
 
 .skill-pre {
@@ -1042,9 +1023,10 @@ input[type=checkbox] {
   border-radius: 0.6em;
   width: 100px;
   margin-left: auto;
-}
-
-@font-face {
+}/*mediaqueries*//*.textcrea{
+		font-size: 40px;
+		margin-top: 50px;
+	}*/@font-face {
   font-family:'American Typewriter Bold';font-style:normal;font-weight:normal;src:local("American Typewriter Bold"), url("ufonts.com_american-typewriter-bold.woff") format("woff");
 }
 

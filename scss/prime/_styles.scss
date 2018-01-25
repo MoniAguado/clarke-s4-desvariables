@@ -65,17 +65,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	cursor: pointer;
 	margin-top: 30px;
 }
-.inputs {
-	display: flex;
-	text-align: center;
-	font-size: 15px;
-	margin-top: 5px;
-	padding: 2px;
-	border: solid 1px;
-	border-radius: 5px;
-	width: 225px;
-	font-style: arial;
-}
+
 /*botones compartir en redes sociales*/
 #btrs{ text-align:center;}.sl:hover, .lkdn:hover, .fb:hover, .twtr:hover, .glg:hover,.pnt:hover {-webkit-transform: rotate(360deg);-moz-transform: rotate(360deg);transform: rotate(360deg);transition:all .3s ease-out;-moz-transition: all .5s;-webkit-transition: all .5s;}
 
@@ -334,10 +324,7 @@ header{
 /*Fin de estilos generales*/
 
 /*ABOUT*/
-.textarea {
-	font-family: arial;
-	font-size: 15px;
-}
+
 #aboutMe-preview{
 	text-align: justify;
 	display: flex;

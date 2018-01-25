@@ -112,7 +112,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
   cursor: pointer
 }
 
-.cajaiconsprev{
+.box-icons-preview{
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
@@ -163,22 +163,6 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	background: none;
 	border: none;
 }
-/* cargar imagen*/
-.thumb{
-	border: 1px solid $black;
-	margin: 10px 5px 0 0;
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;
-	-webkit-box-shadow: 8px 14px 42px 1px $imageBoxShadow;
-}
-/*fin cargar imagen*/
-.separador {
-  color: $inputAndButtons;
-	width: 100%;
-	text-align: center;
-	padding: 4%;
-}
 .containerinfo{
 	display: flex;
 	flex-direction: column;
@@ -186,10 +170,6 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 .containerfoto{
 	display: flex;
 	justify-content: center;
-}
-.name{
-	font-size: 20px;
-	font-weight: bold;
 }
 .datosprin{
 	margin-top: 30px;
@@ -218,28 +198,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	align-items: center;
 	-webkit-box-shadow: 5px 8px 42px 1px #3d3d29;
 }
-/*styles pre*/
-.preprincipales p{
-	margin: 2px;
-	margin-top: 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.containerprefoto{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: -20px;
-}
-.thumb2{
-	border: 1px solid $black;
-	margin: 10px 5px 0 0;
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;
-	-webkit-box-shadow: 8px 14px 42px 1px #3d3d29;
-}
+
 /*ventana previsualizar*/
 .textcrea{
 	font-size: 40px;
@@ -247,12 +206,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	}
 /*fin parte marta*/
 
-.all-hobbies-preview {
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
+
 /*Fin de estilos generales*/
 
 /*ABOUT*/
@@ -303,166 +257,13 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 .month, .year{
 	margin-top: 5px;
 }
-/*Experience and Education preview*/
-.section-title{
-	text-align: center;
-	color: $percentageBarAndInputsAcc;
-}
-/* La timeline*/
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-/* La propia timeline (línea vertical) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 10px;
-  background-color: $percentageBarAndInputsAcc;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-/* Contenido alrededor de la timeline */
-.container-timeline {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-/* Círculos de la timeline */
-.container-timeline::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid $percentageBarAndInputsAcc;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-/* Situar los contenidos de la izquierda*/
-.left {
-  left: 0;
-}
-/* Situar los contenidos de la derecha */
-.right {
-  left: 50%;
-}
-/* Arregla la posición de los círculos del contenido de la derecha */
-.right::after {
-  left: -16px;
-}
-/* Añade flechas en el contenido de la izquierda apuntando a la derecha */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid $timeline;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent $timeline;
-}
-/* Añade flechas en el contenido de la derecha apuntando hacia la izquierda. */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid $timeline;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent $timeline transparent transparent;
-}
-/* Estilo de las cajas con el contenido */
-.content-timeline {
-  padding: 10px 30px;
-  background-color: $timeline;
-  position: relative;
-  border-radius: 6px;
-	font-size: 14px;
-}
-.dates-container {
-	display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 0px;
-  margin-bottom: 7px;
-	margin-top: 5px;
-}
-/*Estilos de texto dentro de cajas*/
-.title-year {
-  color: $percentageBarAndInputsAcc;
-	margin: 8px;
-	font-size: 20px;
-}
-.job-title, .education-title {
-  font-weight: bold;
-}
-.dates-output-container {
-  display:flex;
-  flex-direction: row;
-  justify-content: space-around;
-	padding: 0 20px;
-	margin: 4px 40px;
-}
-.work-information-output-container{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
- }
-.work-information-output-container > p{
-  margin-top: 0px;
-	text-align: center;
-}
-/*End Experience and Education preview*/
-/*SKILLS*/
-.section-skills {
-	margin-left: 15px;
-	margin-right: 20px
-}
+
 .skill {
   margin-top: 5px;
 	margin-right: 1%;
 	color: $percentageBarAndInputsAcc;
 }
-.skill-pre {
-	margin-left: 15%;
-}
-.skill-title {
-  /*font-family: sans-serif;*/
-  font-size: 14px;
-	margin-top: 5px;
-}
-.barra {
-  background-color: #E0E0E0 ;
-  border-radius: 10px;
-  width: 85%;
-  height: 10px;
-  margin-left: 0;
-	margin-right: 0;
-  position: relative;
-	display: none;
-	margin-top: 5px;
-}
-.barra_front {
-	width: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 10px;
-  background: $inputAndButtons;
-}
+
 /*Languages form container*/
 #languages-form-container, #hobbies-form-container {
 	display:flex;
@@ -476,19 +277,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	padding-left: 7%;
 	padding-right: 7%;
 }
-.languages-bar-preview {
-	background-color: $languagesBackground;
-	margin-bottom: 1em;
-}
-.text-bar-preview {
-	text-align: left;
-	color: $white;
-	line-height: 2em;
-	padding-left: 1em;
-}
-.percentage-bar {
-	background-color: $percentageBarAndInputsAcc;
-}
+
 .input-lang, .input-skill{
 	padding-bottom: 1em;
 }
@@ -498,7 +287,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-}
+}//divs q contienen los inputs, mío o Noe?
 /*Checkbox styles*/
 .check-box-hobbies {
 	display: flex;
@@ -511,53 +300,6 @@ input[type=checkbox]{
 }
 #hobbies-form {
 	padding-bottom: 2%;
-}
-
-
-.linkedin a{
-	background: url('../images/linkedin.png');
-	overflow: hidden;
-	display: block;
-	background-size: 40px 40px;
-	padding-top: 40px;
-	height: 0;
-	width: 40px;
-}
-.facebook a{
-	background: url('../images/facebook.png');
-	overflow: hidden;
-	display: block;
-	background-size: 40px 40px;
-	padding-top: 40px;
-	height: 0;
-	width: 40px;
-}
-.github a{
-	background: url('../images/github.png');
-	overflow: hidden;
-	display: block;
-	background-size: 40px 40px;
-	padding-top: 40px;
-	height: 0;
-	width: 40px;
-}
-.twitter a{
-	background: url('../images/twitter.png');
-	overflow: hidden;
-	display: block;
-	background-size: 40px 40px;
-	padding-top: 40px;
-	height: 0;
-	width: 40px;
-}
-.instagram a{
-	background: url('../images/instagram.png');
-	overflow: hidden;
-	display: block;
-	background-size: 40px 40px;
-	padding-top: 40px;
-	height: 0;
-	width: 40px;
 }
 .socialLabel{
 	margin-top: 7px;
@@ -715,11 +457,7 @@ text-align: center;
   margin-left: auto;
 }
 /*mediaqueries*/
-@media all and (min-width: 350px){
-	.container-logo{
-		margin-left: 30px;
-	}
-}
+
 @media all and (min-width: 400px){
 	.nets{
 		display: flex;
@@ -732,40 +470,14 @@ text-align: center;
 		 right: 27px;
 	}
 }
-@media all and (min-width: 490px){
-}
+
 @media all and (max-width: 600px){
 	.text-form-button{
 		font-size: 18px;
 	}
-
-	/*Mediaqueries de preview de Experiencia y Formación*/
-	/* Poner la línea a la izquierda */
-	.timeline::after {
-		left: 31px;
-	}
-	/* Para que se ajusten los contenedores a la pantalla */
-	.container-timeline {
-		width: 100%;
-		padding-left: 70px;
-		padding-right: 25px;
-	}
-	/* Poner los contenedores de la derecha debajo de los de la izquierda */
-	.right {
-		left: 0%;
-	}
-	/* Para que todas las flechas apunten a la izquierda */
-	.container-timeline::before {
-		left: 60px;
-		border: medium solid $timeline;
-		border-width: 10px 10px 10px 0;
-		border-color: transparent $timeline transparent transparent;
-	}
-	/* Para que todos los círculos estén alineados */
-	.left::after, .right::after {
-		left: 15px;
-	}
 }
+	/*Mediaqueries de preview de Experiencia y Formación*/
+
 @media all and (min-width:600px) {
 	#button-down {
 		display: none;
@@ -778,7 +490,6 @@ text-align: center;
 		margin-left: 20px;
 		font-size: 2em;
 	}
-
 	/*Footer*/
 	.infooter{
 		display: flex;
@@ -794,11 +505,7 @@ text-align: center;
 		opacity: 0.9;
 	}
 }
-@media all and (min-width: 810px){
-	.cajaiconsprev{
-		margin-top: 37px;
-	}
-}
+
 @media all and (min-width:900px) {
 	#ventana2, #btnshare, #btnprint, #btndownload {
 		display: block;
@@ -824,11 +531,6 @@ text-align: center;
 		justify-content: space-around;
 		margin-top: 67px;
 	}
-	main {
-		box-sizing: border-box;
-		display: flex;
-		flex-direction: column;
-	}
 	.skill, .language, .skill-percent, .percentage {
 		width: 160px;
 	}
@@ -836,15 +538,8 @@ text-align: center;
 		height: 100%;
 		width: 40%
 	}
-	.previsualizacion-sec{
-		height: 100%;
-		width: 50%
-	}
 	.cruz-section-button{
 		display: none;
-	}
-	.separador{
-		margin-top: 1.5em;
 	}
 	/*Footer*/
 	.logo{
@@ -853,7 +548,6 @@ text-align: center;
 	.end{
 		margin-left: auto;
 	}
-
 	.input-lang, .input-skill{
 		display:flex;
 	}
@@ -861,12 +555,8 @@ text-align: center;
 		margin-right: 1%;
 	}
 }
-@media all and (min-width: 810px){
-}
+
 @media print {
-	.barra, .content-timeline, .languages-bar-preview, .timeline, .printnet {
-			-webkit-print-color-adjust: exact;
-		}
 	header, footer, nav {
 		display: none;
 	}
@@ -875,40 +565,5 @@ text-align: center;
 	}
 	.formulario-sec {
 		  display: none;
-	}
-	.timeline::after {
-	  left: 50%;
-	}
-	.container-timeline {
-	  padding: 10px 40px;
-	  width: 50%;
-	}
-	.container-timeline::after {
-	  left: 343px;
-	  top: 15px;
-	}
-	.left {
-	  left: 0;
-	}
-	.right {
-	  left: 50%;
-	}
-	.right::after {
-	  left: -16px;
-	}
-	.left::before {
-	  top: 22px;
-	  left: 319px;
-	  border: medium solid $timeline;
-	  border: medium solid $timeline;
-	  border-width: 10px 0 10px 10px;
-	  border-color: transparent transparent transparent $timeline;
-	}
-	.right::before {
-	  top: 22px;
-	  left: 30px;
-	  border: medium solid $timeline;
-	  border-width: 10px 10px 10px 0;
-	  border-color: transparent $timeline transparent transparent;
 	}
 }

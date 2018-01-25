@@ -1,5 +1,7 @@
 @import 'core/variables';
 
+@import 'prime/styles';
+
 @import 'layout/footer';
 @import 'layout/header';
 
@@ -11,6 +13,3 @@
 @import 'components/preview';
 @import 'components/select';
 @import 'components/titles';
-
-
-@import 'prime/styles';

@@ -298,6 +298,7 @@
 <!--______Comienza la seccion de previsualización______-->
 
 
+<<<<<<< HEAD
 		 <section class="preview-section" id="ventana2">
 				 <div class="box-icons-preview">
 					 <button class="cruz-section-button" type="button" name="cruz-button" onclick="closePreview('ventana2')">
@@ -317,6 +318,28 @@
 				 <p id="preemail">Email</p>
 				 <p id="pretelefono">Telefono</p>
 			 </section>
+=======
+		<section class="previsualizacion-sec" id="ventana2">
+				<div class="containerprev">
+					<div class="cajaiconsprev">
+						<button class="cross-section-button" type="button" name="cruz-button" onclick="closePreview('ventana2')">
+						<img src="images/btnclose.png" alt="cruzbuttom"></button>
+						<input class="iconsprev" type="button" onclick="printCurriculum()" id="btnprintprev" title="Imprimir">
+						<input class="iconsprev" type="button" onclick="download()" id="btndownloadprev" title="Descargar">
+					</div>
+				<!--datos principales-->
+				<section class="containerprefoto">
+					<div id="prefoto" class="prefoto"></div>
+				</section>
+				<p class="separador">* * * * * * * * * * * * * * * </p>
+				<section class="preprincipales" id="preprincipales-link">
+					<p id="prenombre" class="name">Nombre</p>
+					<p id="preapellidos">Apellido</p>
+					<p id="preprofesion">Profesion</p>
+					<p id="preemail">Email</p>
+					<p id="pretelefono">Telefono</p>
+				</section>
+>>>>>>> bdd6017d86f88c19939ed6f34e4f7036da0222c7
 
 			 <!--Sección About Me-->
 			 <p class="separator">* * * * * * * * * * * * * * * </p>
@@ -458,23 +481,24 @@ var uw="whatsapp://share?url="+"https://adalab.github.io/clarke-s2-scriptoras";
 <a href="javascript:void(0);" onclick="window.open(ul,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en linkedin+"><img alt="Compartir en likedin" class="lkdn" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/linkedin-long.png" title="Compartir en Likedin" width="40" /></a>
 <a href="javascript:void(0);" data-action=”share/whatsapp/share” onclick="window.open(uw,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en WhatsApp+"><img alt="Compartir en WhatsApp " class="lkdn" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/whatsapp-long.png" title="Compartir en WhatsApp " width="40" /></a>
 </div>
-	 <footer class="infooter">
-		 <div class="end"><h3>Scriptoras &copy; 2017</h3></div>
-		 <div class="end">
-			 <p><a class="contacto" href="contact.html">Contacta con nosotras</a></p>
-		 </div>
-		 <div class="logo">
-			 <a href="http://adalab.es/" target="blank">
-				 <img src="images/logo-adalab.png" alt="Logo Adalab" class="logoadalab">
-			 </a>
-		 </div>
-		 <a id="arriba" title="Arriba" class="invisible">
-			 <img src="images/arriba.png" title="Arriba" alt="Arriba">
-		 </a>
-	 </footer>
-	 <!-- End Footer-->
-	 <!-- JavaScript Code -->
-	 <script type="text/javascript" src="js/main.js"></script>
-	 <script type="text/javascript" src="js/qrcode.js"></script>
- </body>
+	  <footer class="footer">
+			<div class="end"><h3>Scriptoras &copy; 2017</h3></div>
+			<div class="end">
+				<p><a class="link-contact" href="contact.html">Contacta con nosotras</a></p>
+		  </div>
+		  <div class="logo">
+			  <a href="http://adalab.es/" target="blank">
+				  <img src="images/logo-adalab.png" alt="Logo Adalab" class="logo-adalab">
+			  </a>
+		  </div>
+      <a id="arriba" title="Arriba" class="invisible">
+    		<img src="images/arriba.png" title="Arriba" alt="Arriba">
+    	</a>
+	  </footer>
+	  <!-- End Footer-->
+		<!-- JavaScript Code -->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/qrcode.js"></script>
+  </body>
 </html>
+footer

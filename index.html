@@ -30,7 +30,7 @@
 			<!--cabecera-->
 			<div id="header-fondo">
       	<h1 class="text-crea"></h1>
-        <audio id="sound-efx" src="styles/typewriter.wav"></audio>
+        <!-- <audio id="sound-efx" src="styles/typewriter.wav"></audio> -->
 			</div>
       <button id="button-down" type="button" name="button-down"><a href="index.html#empty-container"><img src="images/expand-button-medium.png" alt="rellena-los-campos"></a></button>
       <div id="empty-container"></div>
@@ -48,14 +48,15 @@
 						</div>
 						<div class="boxes-container" id="principal-box">
 							<div class="containerinfo">
+								<!-- subir imagen -->
 								<input type="file" id="files" name="files[]" class=""/>
 								<div class="foto" title="Subir imagen" onclick="simularClick()"></div>
-								<div class="datosprin">
-									<input type="text" name="name" placeholder="Introduce nombre" class="inputs name" required id="nombreformulario">
-									<input type="text" name="surname" placeholder="Introduce apellidos" class="inputs" required id="apellidoformulario">
-									<input type="text" name="profesion" placeholder="Introduce profesión" class="inputs" required id="profesionformulario">
-									<input type="email" name="mail" placeholder="Introduce email" class="inputs" id="emailformulario">
-									<input type="tel" name="telephone" placeholder="Introduce teléfono móvil" class="inputs" id="telefonoformulario">
+								<div class="info-preview">
+									<input type="text" name="name" placeholder="Introduce nombre" class="inputs name" required id="nameForm">
+									<input type="text" name="surname" placeholder="Introduce apellidos" class="inputs" required id="surnameForm">
+									<input type="text" name="profesion" placeholder="Introduce profesión" class="inputs" required id="professionForm">
+									<input type="email" name="mail" placeholder="Introduce email" class="inputs" id="mailForm">
+									<input type="tel" name="telephone" placeholder="Introduce teléfono móvil" class="inputs" id="phoneForm">
 								</div>
 							</div>
 						</div>
@@ -68,7 +69,7 @@
 								<img src="images/expand-button.png" alt="addButton">
 							</button>
 							<button id="closeButtonAbout" class="close-section-button hidden" type="button" name="about-me-button" onclick="ocultar('content-about')" value="closeButton">
-								<img src="images/expand-arrow.png" alt="minusbuttom">
+				nameFormages/expand-arrow.png" alt="minusbuttom">
 							</button>
 						</div>
 						<div  id="content-about" class="boxes-container"><!--Oculto-->
@@ -109,8 +110,8 @@
 								<select class="select-styles year" id="year-job-end" name="job-end-year"></select>
 							</div>
 							<div class="buttons-container">
-								<input class="buttons-save-general experiencia" id="button-add-exp" type="button" name="add-exp" value="Añadir">
-								<input class="buttons-save-general experiencia" id="button-delete-exp" type="button" name="delete-exp" value="Borrar">
+								<button class="buttons-save-general experiencia" id="button-add-exp" type="button" name="add-exp" value="Añadir">Añadir</button>
+								<button class="buttons-save-general experiencia" id="button-delete-exp" type="button" name="delete-exp" value="Borrar">Borrar</button>
 							</div>
 						</div>
 					</form>
@@ -144,8 +145,8 @@
 								<select class="select-styles year" id="year-training-end" name="training-end-year"></select>
 							</div>
 							<div class="buttons-container">
-								<input type="button" value="Añadir" name="add-ed" id="button-add-ed" class="buttons-save-general formacion">
-								<input type="button" value="Borrar" name="delete-ed" id="button-delete-ed" class="buttons-save-general formacion">
+								<button type="button" name="add-ed" id="button-add-ed" class="buttons-save-general formacion" value="Añadir">Añadir</button>
+								<button type="button" name="delete-ed" id="button-delete-ed" class="buttons-save-general formacion" value="Borrar">Borrar</button>
 							</div>
 						</div>
 					</form>
@@ -288,7 +289,7 @@
             <div class="boxes-container net-social-hidden" id="showNetsocial">
              <div class="nets">
                <input class="inputPortfolio" id="inputQr" type="text" name="inputQr" placeholder=" Contenido para generar QR">
-               <input type="button" id="button-generateqr" value="Generar" class="buttons-save-general">
+               <button type="button" id="button-generateqr" class="buttons-save-general" value="Generar">Generar</button>
              </div>
            </div>
  			   </form>
@@ -301,8 +302,8 @@
 					<div class="cajaiconsprev">
 						<button class="cruz-section-button" type="button" name="cruz-button" onclick="closePreview('ventana2')">
 						<img src="images/btnclose.png" alt="cruzbuttom"></button>
-						<input class="iconsprev" type="button" onclick="printCurriculum()" id="btnprintprev" title="Imprimir">
-						<input class="iconsprev" type="button" onclick="download()" id="btndownloadprev" title="Descargar">
+						<button class="iconsprev" type="button" onclick="printCurriculum()" id="btnprintprev" title="Imprimir"></button>
+						<button class="iconsprev" type="button" onclick="download()" id="btndownloadprev" title="Descargar"></button>
 					</div>
 				<!--datos principales-->
 				<section class="containerprefoto">

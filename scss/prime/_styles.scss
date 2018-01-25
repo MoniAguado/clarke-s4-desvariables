@@ -65,17 +65,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	cursor: pointer;
 	margin-top: 30px;
 }
-.inputs {
-	display: flex;
-	text-align: center;
-	font-size: 15px;
-	margin-top: 5px;
-	padding: 2px;
-	border: solid 1px;
-	border-radius: 5px;
-	width: 225px;
-	font-style: arial;
-}
+
 /*botones compartir en redes sociales*/
 #btrs{ text-align:center;}.sl:hover, .lkdn:hover, .fb:hover, .twtr:hover, .glg:hover,.pnt:hover {-webkit-transform: rotate(360deg);-moz-transform: rotate(360deg);transform: rotate(360deg);transition:all .3s ease-out;-moz-transition: all .5s;-webkit-transition: all .5s;}
 
@@ -265,16 +255,7 @@ header{
 	display: flex;
 	justify-content: center;
 }
-.name{
-	font-size: 20px;
-	font-weight: bold;
-}
-.datosprin{
-	margin-top: 30px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
+
 .foto{
 	width: 200px;
   height: 200px;
@@ -508,11 +489,7 @@ header{
 	margin-left: 15px;
 	margin-right: 20px
 }
-.skill {
-  margin-top: 5px;
-	margin-right: 1%;
-	color: $percentageBarAndInputsAcc;
-}
+
 .skill-pre {
 	margin-left: 15%;
 }
@@ -567,9 +544,7 @@ header{
 .percentage-bar {
 	background-color: $percentageBarAndInputsAcc;
 }
-.input-lang, .input-skill{
-	padding-bottom: 1em;
-}
+
 /*Hobbies*/
 .all-hobbies-preview, .socialNetworks, .social {
 	width: 100%;
@@ -986,9 +961,7 @@ text-align: center;
 		display: flex;
 		flex-direction: column;
 	}
-	.skill, .language, .skill-percent, .percentage {
-		width: 160px;
-	}
+	
 	.formulario-sec {
 		height: 100%;
 		width: 40%

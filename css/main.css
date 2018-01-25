@@ -1,5 +1,49 @@
-@charset "UTF-8";/*footer*//*Estilos generales*/
-* {
+@charset "UTF-8";/*footer*//*botones*//*footer*/.footer {
+  background-color: #252525;
+  font-size: 0.8em;
+  color: #555555;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.end {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-adalab {
+  display: block;
+  margin: 5px auto;
+  max-width: 200px;
+  width: 75%;
+}
+
+.link-contact {
+  color: #d5d4cd;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.link-contact:hover {
+  color: #7DBEA5;
+}/*Estilos generales*/* {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -195,25 +239,6 @@ main {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-}
-
-.name {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.datosprin {
-  margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .foto {
@@ -491,12 +516,6 @@ main {
   margin-right: 20px;
 }
 
-.skill {
-  margin-top: 5px;
-  margin-right: 1%;
-  color: #5a392b;
-}
-
 .skill-pre {
   margin-left: 15%;
 }
@@ -563,10 +582,6 @@ main {
 
 .percentage-bar {
   background-color: #5a392b;
-}
-
-.input-lang,.input-skill {
-  padding-bottom: 1em;
 }/*Hobbies*/.all-hobbies-preview,.socialNetworks,.social {
   width: 100%;
   display: -webkit-box;
@@ -848,10 +863,92 @@ input[type=checkbox] {
   border-radius: 0.6em;
   width: 100px;
   margin-left: auto;
-}/*mediaqueries*//*.textcrea{
-		font-size: 40px;
-		margin-top: 50px;
-/*botones compartir en redes sociales*/#btrs {
+}/*mediaqueries*/.header {
+  width: 100%;
+  height: 70px;
+  min-width: 60px;
+  background-color: #2E2B24;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-top: 0px;
+  margin-top: 0px;
+  z-index: 99;
+  padding-right: 10px;
+}
+
+.header-background {
+  background-image: url(../images/groupMobile.png);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  margin-bottom: 5px;
+}
+
+.container-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.machine-logo {
+  margin-top: 5px;
+  display: block;
+  margin-left: 5px;
+  max-width: 60px;
+  width: 100%;
+}
+
+.letters-log {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 10px;
+  max-width: 150px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.container-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.icons {
+  height: 30px;
+  width: 30px;
+  margin-left: 5px;
+  background-size: cover;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  text-align: center;
+  background-color: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-style: none;
+  cursor: pointer;
+}/*botones compartir en redes sociales*/#btrs {
   text-align: center;
 }
 
@@ -995,8 +1092,8 @@ input[type=checkbox] {
     margin-bottom: 0px;
     margin-top: 0px;
   }
-  
-  .container-letters { 
+
+  .container-letters {
     width: 1000px;
   }
 
@@ -1021,7 +1118,7 @@ input[type=checkbox] {
   #btnshareprev,#btnprintprev,#btndownloadprev {
     display: none;
   }
-  
+
   .flexible::before {
     left: 0;
     top: 0;
@@ -1058,10 +1155,6 @@ input[type=checkbox] {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-  }
-
-  .skill,.language,.skill-percent,.percentage {
-    width: 160px;
   }
 
   .formulario-sec {

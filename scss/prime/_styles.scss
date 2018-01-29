@@ -1,75 +1,77 @@
 /*Estilos generales*/
 
-*{
-	box-sizing: border-box;
-}
-body{
-	background-color: $whitishBackground;
-	margin: 0;
-	padding: 0;
-}
-main{
-	padding-top: 50px;
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}
-#empty-container {
-	height: 70px;
-}
+// *{
+// 	box-sizing: border-box;
+// }
+// body{
+// 	background-color: $whitishBackground;
+// 	margin: 0;
+// 	padding: 0;
+// }
+// main{
+// 	padding-top: 50px;
+// 	box-sizing: border-box;
+// 	display: flex;
+// 	flex-direction: column;
+// 	min-height: 100vh;
+// }
+// #empty-container {
+// 	height: 70px;
+// }
 
 
 /*Estilos generales de la sección de desplegables*/
-.title-container {
-	padding-left: 20px;
-	margin-bottom: 10px;
-	width: 90%;
-	height: 40px;
-	background-color: $inputAndButtons;
-	border-radius: 8px;
-	display: flex;
-	align-items: center;
-	box-shadow: $boxShadowInputs 0 1px 0;
-	text-shadow: $textShadowInputs 0 1px 0;
-}
-.title-container:hover {
-  border-top-color: $percentageBarAndInputsAcc;
-  background: $percentageBarAndInputsAcc;
-  color: #ccc;
-}
-.title-container:active {
-	border-top-color: $percentageBarAndInputsAcc;
-	background: $percentageBarAndInputsAcc;
-}
+// .title-container {
+// 	padding-left: 20px;
+// 	margin-bottom: 10px;
+// 	width: 90%;
+// 	height: 40px;
+// 	background-color: $inputAndButtons;
+// 	border-radius: 8px;
+// 	display: flex;
+// 	align-items: center;
+// 	box-shadow: $boxShadowInputs 0 1px 0;
+// 	text-shadow: $textShadowInputs 0 1px 0;
+// }
+// .title-container:hover {
+//   border-top-color: $percentageBarAndInputsAcc;
+//   background: $percentageBarAndInputsAcc;
+//   color: #ccc;
+// }
+// .title-container:active {
+// 	border-top-color: $percentageBarAndInputsAcc;
+// 	background: $percentageBarAndInputsAcc;
+// }
 
-.inputs {
-	display: flex;
-	text-align: center;
-	font-size: 15px;
-	margin-top: 5px;
-	padding: 2px;
-	border: solid 1px;
-	border-radius: 5px;
-	width: 225px;
-	font-style: arial;
-}
+// .inputs {
+// 	display: flex;
+// 	text-align: center;
+// 	font-size: 15px;
+// 	margin-top: 5px;
+// 	padding: 2px;
+// 	border: solid 1px;
+// 	border-radius: 5px;
+// 	width: 225px;
+// 	font-style: arial;
+// }
 
 /*Ocultar secciones*/
-.net-social-hidden, .invisible, #languages-form, #hobbies-form, #read, #travel, #game, #sports, #cinema, #music, #files, #ventana2, #sound-efx {
-	display: none;
-}
-.visible {
-	display: block;
-}
-.shown{
-	/*visibility: visible;*/
-	display: block;
-}
-.hidden{
-	/*visibility: hidden;*/
-	display: none;
-}
+
+// .net-social-hidden, .invisible, #languages-form, #hobbies-form, #read, #travel, #game, #sports, #cinema, #music, #files, #ventana2, #sound-efx {
+// 	display: none;
+// }
+// .visible {
+// 	display: block;
+// }
+// .shown{
+// 	/*visibility: visible;*/
+// 	display: block;
+// }
+// .hidden{
+// 	/*visibility: hidden;*/
+// 	display: none;
+// }
+
 /*Fin estilos generales*/
 /*Header logo formulario*/
 
@@ -125,14 +127,14 @@ main{
 }
 
 
-.text-crea {
-	margin-top: 20%;
-	margin-left: 20px;
-	font-size: 1.5em;
-	font-family: 'American Typewriter Bold', Arial;
-	font-weight: bold;
-	color: $percentageBarAndInputsAcc;
-}
+// .text-crea {
+// 	margin-top: 20%;
+// 	margin-left: 20px;
+// 	font-size: 1.5em;
+// 	font-family: 'American Typewriter Bold', Arial;
+// 	font-weight: bold;
+// 	color: $percentageBarAndInputsAcc;
+// }
 #button-down {
 	background: none;
 	border: none;
@@ -230,165 +232,165 @@ main{
 .month, .year{
 	margin-top: 5px;
 }
-.skill {
-  margin-top: 5px;
-	margin-right: 1%;
-	color: $percentageBarAndInputsAcc;
-}
+// .skill {
+//   margin-top: 5px;
+// 	margin-right: 1%;
+// 	color: $percentageBarAndInputsAcc;
+// }
 
 /*Experience and Education preview*/
 
 /* La timeline*/
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+// .timeline {
+//   position: relative;
+//   max-width: 1200px;
+//   margin: 0 auto;
+// }
 /* La propia timeline (línea vertical) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 10px;
-  background-color: $percentageBarAndInputsAcc;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
+// .timeline::after {
+//   content: '';
+//   position: absolute;
+//   width: 10px;
+//   background-color: $percentageBarAndInputsAcc;
+//   top: 0;
+//   bottom: 0;
+//   left: 50%;
+//   margin-left: -3px;
+// }
 /* Contenido alrededor de la timeline */
-.container-timeline {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
+// .container-timeline {
+//   padding: 10px 40px;
+//   position: relative;
+//   background-color: inherit;
+//   width: 50%;
+// }
 /* Círculos de la timeline */
-.container-timeline::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid $percentageBarAndInputsAcc;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
+// .container-timeline::after {
+//   content: '';
+//   position: absolute;
+//   width: 25px;
+//   height: 25px;
+//   right: -17px;
+//   background-color: white;
+//   border: 4px solid $percentageBarAndInputsAcc;
+//   top: 15px;
+//   border-radius: 50%;
+//   z-index: 1;
+// }
 /* Situar los contenidos de la izquierda*/
-.left {
-  left: 0;
-}
+// .left {
+//   left: 0;
+// }
 /* Situar los contenidos de la derecha */
-.right {
-  left: 50%;
-}
+// .right {
+//   left: 50%;
+// }
 /* Arregla la posición de los círculos del contenido de la derecha */
-.right::after {
-  left: -16px;
-}
+// .right::after {
+//   left: -16px;
+// }
 /* Añade flechas en el contenido de la izquierda apuntando a la derecha */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid $timeline;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent $timeline;
-}
+// .left::before {
+//   content: " ";
+//   height: 0;
+//   position: absolute;
+//   top: 22px;
+//   width: 0;
+//   z-index: 1;
+//   right: 30px;
+//   border: medium solid $timeline;
+//   border-width: 10px 0 10px 10px;
+//   border-color: transparent transparent transparent $timeline;
+// }
 /* Añade flechas en el contenido de la derecha apuntando hacia la izquierda. */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid $timeline;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent $timeline transparent transparent;
-}
+// .right::before {
+//   content: " ";
+//   height: 0;
+//   position: absolute;
+//   top: 22px;
+//   width: 0;
+//   z-index: 1;
+//   left: 30px;
+//   border: medium solid $timeline;
+//   border-width: 10px 10px 10px 0;
+//   border-color: transparent $timeline transparent transparent;
+// }
 /* Estilo de las cajas con el contenido */
-.content-timeline {
-  padding: 10px 30px;
-  background-color: $timeline;
-  position: relative;
-  border-radius: 6px;
-	font-size: 14px;
-}
-.dates-container {
-	display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 0px;
-  margin-bottom: 7px;
-	margin-top: 5px;
-}
+// .content-timeline {
+//   padding: 10px 30px;
+//   background-color: $timeline;
+//   position: relative;
+//   border-radius: 6px;
+// 	font-size: 14px;
+// }
+// .dates-container {
+// 	display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   line-height: 0px;
+//   margin-bottom: 7px;
+// 	margin-top: 5px;
+// }
 /*Estilos de texto dentro de cajas*/
-.title-year {
-  color: $percentageBarAndInputsAcc;
-	margin: 8px;
-	font-size: 20px;
-}
-.job-title, .education-title {
-  font-weight: bold;
-}
-.dates-output-container {
-  display:flex;
-  flex-direction: row;
-  justify-content: space-around;
-	padding: 0 20px;
-	margin: 4px 40px;
-}
-.work-information-output-container{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
- }
-.work-information-output-container > p{
-  margin-top: 0px;
-	text-align: center;
-}
+// .title-year {
+//   color: $percentageBarAndInputsAcc;
+// 	margin: 8px;
+// 	font-size: 20px;
+// }
+// .job-title, .education-title {
+//   font-weight: bold;
+// }
+// .dates-output-container {
+//   display:flex;
+//   flex-direction: row;
+//   justify-content: space-around;
+// 	padding: 0 20px;
+// 	margin: 4px 40px;
+// }
+// .work-information-output-container{
+//   display:flex;
+//   flex-direction: column;
+//   align-items: center;
+//  }
+// .work-information-output-container > p{
+//   margin-top: 0px;
+// 	text-align: center;
+// }
 /*End Experience and Education preview*/
 /*SKILLS*/
-.section-skills {
-	margin-left: 15px;
-	margin-right: 20px
-}
-
-.skill-pre {
-	margin-left: 15%;
-}
-.skill-title {
-  /*font-family: sans-serif;*/
-  font-size: 14px;
-	margin-top: 5px;
-}
-.barra {
-  background-color: #E0E0E0 ;
-  border-radius: 10px;
-  width: 85%;
-  height: 10px;
-  margin-left: 0;
-	margin-right: 0;
-  position: relative;
-	display: none;
-	margin-top: 5px;
-}
-.barra_front {
-	width: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 10px;
-  background: $inputAndButtons;
-}
+// .section-skills {
+// 	margin-left: 15px;
+// 	margin-right: 20px
+// }
+//
+// .skill-pre {
+// 	margin-left: 15%;
+// }
+// .skill-title {
+//   /*font-family: sans-serif;*/
+//   font-size: 14px;
+// 	margin-top: 5px;
+// }
+// .barra {
+//   background-color: #E0E0E0 ;
+//   border-radius: 10px;
+//   width: 85%;
+//   height: 10px;
+//   margin-left: 0;
+// 	margin-right: 0;
+//   position: relative;
+// 	display: none;
+// 	margin-top: 5px;
+// }
+// .barra_front {
+// 	width: 0;
+//   height: 100%;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   border-radius: 10px;
+//   background: $inputAndButtons;
+// }
 
 /*Languages form container*/
 #languages-form-container, #hobbies-form-container {
@@ -402,22 +404,22 @@ main{
 	padding-right: 7%;
 }
 
-.input-lang, .input-skill{
-	padding-bottom: 1em;
-}
-.languages-bar-preview {
-	background-color: $languagesBackground;
-	margin-bottom: 1em;
-}
-.text-bar-preview {
-	text-align: left;
-	color: $white;
-	line-height: 2em;
-	padding-left: 1em;
-}
-.percentage-bar {
-	background-color: $percentageBarAndInputsAcc;
-}
+// .input-lang, .input-skill{
+// 	padding-bottom: 1em;
+// }
+// .languages-bar-preview {
+// 	background-color: $languagesBackground;
+// 	margin-bottom: 1em;
+// }
+// .text-bar-preview {
+// 	text-align: left;
+// 	color: $white;
+// 	line-height: 2em;
+// 	padding-left: 1em;
+// }
+// .percentage-bar {
+// 	background-color: $percentageBarAndInputsAcc;
+// }
 
 /*Hobbies*/
 .all-hobbies-preview, .socialNetworks, .social {
@@ -674,9 +676,9 @@ text-align: center;
 		margin-top: 67px;
 	}
 
-	.skill, .language, .skill-percent, .percentage {
-		width: 160px;
-	}
+	// .skill, .language, .skill-percent, .percentage {
+	// 	width: 160px;
+	// }
 
 	main {
 		box-sizing: border-box;
@@ -697,9 +699,9 @@ text-align: center;
 	.end{
 		margin-left: auto;
 	}
-	.input-lang, .input-skill{
-		display:flex;
-	}
+	// .input-lang, .input-skill{
+	// 	display:flex;
+	// }
 	.language{
 		margin-right: 1%;
 	}

@@ -506,8 +506,8 @@ function printCurriculum() { //Generamos la función que llamaremos desde el bot
 		printPopup.document.write('</html>');
 		printPopup.document.close();
 
-		var cajaiconsprev = printPopup.document.querySelector('div.cajaiconsprev');//variable que captura la caja de los iconos
-		cajaiconsprev.style.display = 'none';//bloquea los iconos de imprimir, descargar...
+		var boxIconsPreview = printPopup.document.querySelector('div.box-icons-preview');//variable que captura la caja de los iconos
+		boxIconsPreview.style.display = 'none';//bloquea los iconos de imprimir, descargar...
 
 		printPopup.addEventListener('load', function() {
 			printPopup.print();//función que imprime el contenido

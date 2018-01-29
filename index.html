@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
  <head>
 	 <meta charset="utf-8">
 	 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,7 +41,7 @@
 			 <section class="formulario-sec" id="ventana1">
 				 <form class="form-section-container" id=principal-section action="index.html" method="post">
 					 <div class="title-container">
-						 <h2 class="text-form-button" onclick="editar('principal-box')">Datos principales</h2>
+						 <h2 class="title-form text-form-button" onclick="editar('principal-box')">Datos principales</h2>
 						 <button id="openButtonPrincipal" class="open-section-button shown" type="button" name="principales-button" onclick="editar('principal-box')" value="openButton">
 							 <img src="images/expand-button.png" alt="addButton">
 						 </button>
@@ -53,11 +54,11 @@
 							 <input type="file" id="files" name="files[]" class=""/>
 							 <div class="foto" title="Subir imagen" onclick="simularClick()"></div>
 							 <div class="datosprin">
-								 <input type="text" name="name" placeholder="Introduce nombre" class="inputs name" required id="nombreformulario">
-								 <input type="text" name="surname" placeholder="Introduce apellidos" class="inputs" required id="apellidoformulario">
-								 <input type="text" name="profesion" placeholder="Introduce profesión" class="inputs" required id="profesionformulario">
-								 <input type="email" name="mail" placeholder="Introduce email" class="inputs" id="emailformulario">
-								 <input type="tel" name="telephone" placeholder="Introduce teléfono móvil" class="inputs" id="telefonoformulario">
+								 <input type="text" name="name" placeholder="Introduce nombre" class="inputs name title-name" required id="nameForm">
+								 <input type="text" name="surname" placeholder="Introduce apellidos" class="inputs" required id="surnameForm">
+								 <input type="text" name="profesion" placeholder="Introduce profesión" class="inputs" required id="professionForm">
+								 <input type="email" name="mail" placeholder="Introduce email" class="inputs" id="mailForm">
+								 <input type="tel" name="telephone" placeholder="Introduce teléfono móvil" class="inputs" id="phoneForm">
 							 </div>
 						 </div>
 					 </div>
@@ -65,7 +66,7 @@
 				 <!---ABOUT-->
 				 <form class="form-section-container" action="index.html" method="post"> <!--Mostrado-->
 					 <div class="title-container">
-						 <h2 class="text-form-button" onclick="editar('content-about')">Sobre mí</h2>
+						 <h2 class="title-form text-form-button" onclick="editar('content-about')">Sobre mí</h2>
 						 <button id="openButtonAbout" class="open-section-button shown" type="button" name="about-me-button" onclick="editar('content-about')" value="openButton">
 							 <img src="images/expand-button.png" alt="addButton">
 						 </button>
@@ -82,7 +83,7 @@
 				 <!--Sección de Experiencia-->
 				 <form class="form-section-container" id=experience-section action="index.html" method="post">
 					 <div class="title-container">
-						 <h2 class="text-form-button" onclick="editar('job-box')">Experiencia laboral</h2>
+						 <h2 class="title-form text-form-button" onclick="editar('job-box')">Experiencia laboral</h2>
 						 <button id="openButtonExperience" class="open-section-button shown" type="button" name="experience-button" onclick="editar('job-box')" value="openButton">
 							 <img src="images/expand-button.png" alt="addButton">
 						 </button>
@@ -119,7 +120,7 @@
 				 <!--Sección de Formación-->
 				 <form class="form-section-container" id="education-section" action="index.html" method="post">
 					 <div class="title-container">
-						 <h2 class="text-form-button" onclick="editar('education-box')">Formación</h2>
+						 <h2 class="title-form text-form-button" onclick="editar('education-box')">Formación</h2>
 						 <button id="openButtonFormac" class="open-section-button shown" type="button" name="languageButton" onclick="editar('education-box')" value="openButton">
 							 <img src="images/expand-button.png" alt="addButton">
 						 </button>
@@ -154,7 +155,7 @@
 				 <!--Skills -->
 				 <section  class="form-section-container">
 					 <div class="title-container">
-						 <h2 class="text-form-button">Habilidades</h2><!--Mostrado-->
+						 <h2 class="title-form text-form-button">Habilidades</h2><!--Mostrado-->
 						 <button id="openButtonSkill" class="open-section-button shown" type="button" name="skills-button" onclick="editar('content-skills')" value="openButton">
 							 <img src="images/expand-button.png" alt="addButton">
 						 </button>
@@ -187,7 +188,7 @@
 				 <!--Languages form section-->
 				 <section id="languages-form-container">
 					 <div class="title-container">
-						 <h2 class="text-form-button">Idiomas</h2>
+						 <h2 class="title-form text-form-button">Idiomas</h2>
 						 <button id="openButtonlanguages" class="open-section-button shown" type="button" name="languageButton" onclick="editar('languages-form')" value="openButton"><img src="images/expand-button.png" alt="addButton"></button>
 						 <button id="closeButtonlanguages" class="close-section-button hidden" type="button" name="job-box-button" onclick="ocultar('languages-form')" value="closeButton">
 						 <img src="images/expand-arrow.png" alt="minusbuttom"></button>
@@ -210,7 +211,7 @@
 				 <!--Hobbies form section-->
 				 <section id="hobbies-form-container">
 					 <div class="title-container">
-						 <h2 class="text-form-button">Hobbies</h2>
+						 <h2 class="title-form text-form-button">Hobbies</h2>
 						 <button id="openButtonHobbies" class="addLanguageButton open-section-button shown" type="button" name="languageButton" onclick="editar('hobbies-form')" value="openButton"><img src="images/expand-button.png" alt="addButton"></button>
 						 <button id="closeButtonHobbies" class="close-section-button hidden" type="button" name="hobbiesForm-button" onclick="ocultar('hobbies-form')" value="closeButton">
 						 <img src="images/expand-arrow.png" alt="minusbuttom">
@@ -246,7 +247,7 @@
 				 <!--Sección de Redes sociales -->
 				 <form class="form-section-container" action="index.html" method="post">
 					 <div class="title-container">
-						 <h2 class="text-form-button">Redes Sociales</h2>
+						 <h2 class="title-form text-form-button">Redes Sociales</h2>
 							 <button id="openButtonNet" class="open-section-button shown" type="button" name="networksButton" onclick="showNetsocial()" value="openButton">
 								 <img src="images/expand-button.png" alt="addButton"></button>
 							 <button id="closeButtonNet" class="close-section-button hidden" type="button" name="minredes-button" onclick="ocultar('minredes')" value="closeButton">
@@ -279,7 +280,7 @@
 				<!--Sección de Portfolio-->
 				 <form class="form-section-container" action="index.html" method="post">
 					 <div class="title-container">
-						 <h2 class="text-form-button">Portfolio</h2>
+						 <h2 class="title-form text-form-button">Portfolio</h2>
 						 <button  id="openButtonQr" class="open-section-button shown" type="button" name="networksButton" onclick="editar('showNetsocial')" value="openButton">
 							 <img src="images/expand-button.png" alt="addButton">
 						 </button>
@@ -295,6 +296,7 @@
 					</div>
 				</form>
 			</section>
+
 <!--______Comienza la seccion de previsualización______-->
 
 		 <section class="preview-section" id="ventana2">
@@ -334,7 +336,7 @@
 <!--___________________________Skills_______________________________________-->
 		 <p class="separator">* * * * * * * * * * * * * * * </p>
 			 <section class="section-skills">
-				 <h2 class="section-title">Habilidades</h2>
+				 <h2 class="title-section">Habilidades</h2>
 				 <div class="skill-pre">
 					 <div class="skill-title" id="skill1-preview"></div>
 					 <div class="barra">
@@ -358,7 +360,7 @@
 			 <!--Languages preview section-->
 			 <p class="separator">* * * * * * * * * * * * * * * </p>
 			 <section id="languages-preview">
-				 <h2 class="section-title">Idiomas</h2>
+				 <h2 class="title-section">Idiomas</h2>
 				 <div class="languages-bar-preview">
 					 <div class="percentage-bar">
 						 <p class="text-bar-preview"></p>
@@ -379,7 +381,7 @@
 			 <!--Hobbies section-->
 			 <p class="separator">* * * * * * * * * * * * * * * </p>
 			 <section id="hobbies-preview">
-				 <h2 class="section-title">Hobbies</h2>
+				 <h2 class="title-section">Hobbies</h2>
 				 <div class="all-hobbies-preview">
 					 <img id="read" src="images/readSmall.png" alt="read hobbie">
 					 <img id="travel" src="images/travelSmall.png" alt="travel hobbie">
@@ -477,4 +479,3 @@ var uw="whatsapp://share?url="+"https://adalab.github.io/clarke-s2-scriptoras";
     <script type="text/javascript" src="js/qrcode.js"></script>
   </body>
 </html>
-footer

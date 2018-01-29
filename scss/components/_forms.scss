@@ -1,0 +1,81 @@
+/*Estilos generales de la sección de desplegables*/
+.form-section-container{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+.title-container {
+	padding-left: 20px;
+	margin-bottom: 10px;
+	width: 90%;
+	height: 40px;
+	background-color: $inputAndButtons;
+	border-radius: 8px;
+	display: flex;
+	align-items: center;
+	box-shadow: $boxShadowInputs 0 1px 0;
+	text-shadow: $textShadowInputs 0 1px 0;
+}
+.title-container:hover {
+  border-top-color: $percentageBarAndInputsAcc;
+  background: $percentageBarAndInputsAcc;
+  color: #ccc;
+}
+.title-container:active {
+	border-top-color: $percentageBarAndInputsAcc;
+	background: $percentageBarAndInputsAcc;
+}
+/*ocultar secciones*/
+.net-social-hidden, .invisible, #languages-form, #hobbies-form, #read, #travel, #game, #sports, #cinema, #music, #files, #ventana2, #sound-efx {
+	display: none;
+}
+.visible {
+	display: block;
+}
+.shown{
+/*visibility: visible;*/
+	display: block;
+}
+.hidden{
+/*visibility: hidden;*/
+	display: none;
+}
+/*Fin estilos generales*/
+/* cargar imagen*/
+.thumb{
+	border: 1px solid $black;
+	margin: 10px 5px 0 0;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	-webkit-box-shadow: 8px 14px 42px 1px $imageBoxShadow;
+}
+.photo{
+	width: 200px;
+  height: 200px;
+	border-radius: 100px;
+	margin-top: 40px;
+	-webkit-box-shadow: 5px 8px 42px 1px #3d3d29;
+	display: flex;
+	align-self: center;
+	background-image: url("../images/addimg.png");
+	background-color: $imageBackground;
+	background-size: 150px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.container-info{
+	display: flex;
+	flex-direction: column;
+}
+@media all and (min-width:900px) {
+	.form-sec {
+		height: 100%;
+		width: 40%
+	}
+}
+@media print {
+	.form-sec {
+		  display: none;
+	}
+}

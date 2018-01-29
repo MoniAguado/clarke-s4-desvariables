@@ -1,0 +1,30 @@
+.title-crea {
+	margin-top: $titleCreaMarginTop;
+	margin-left: $titleCreaMarginLeft;
+	font-size: $titleCreaSize;
+}
+
+.title-form {
+	color: $white;
+}
+
+.title-section{
+	text-align: center;
+	color: $percentageBarAndInputsAcc;
+}
+
+.subtitle-section{
+	margin: $subtitleSectionMargin;
+	text-align: center;
+}
+
+.title-name{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+@media all and (max-width: 600px){
+	.title-form{
+		font-size: $titleFormSizeMvl;
+	}
+}

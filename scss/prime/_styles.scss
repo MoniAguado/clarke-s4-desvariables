@@ -1,14 +1,24 @@
 /*Estilos generales*/
 
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: $whitishBackground;
+	margin: 0;
+	padding: 0;
+}
+main{
+	padding-top: 50px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
 #empty-container {
 	height: 70px;
 }
-@font-face {
-font-family: 'American Typewriter Bold';
-font-style: normal;
-font-weight: normal;
-src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold.woff') format('woff');
-}
+
 
 /*Estilos generales de la sección de desplegables*/
 .title-container {

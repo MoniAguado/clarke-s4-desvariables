@@ -8,7 +8,7 @@
 	 <link rel="stylesheet" href="css/main.css">
 	 <link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet">
  </head>
- <body id="contenedorPrincipal">
+ <body class="wrapper" id="contenedorPrincipal">
 	 <!-- Header -->
 	 <header class="header">
 		 <div class="container-logo">
@@ -29,7 +29,7 @@
 	 </header>
 	 <!-- End Header -->
 	 <!-- Container -->
-	 <main class="bloque">
+	 <main class="main-wrapper bloque">
 		 <!--cabecera-->
 		 <div id="header-fondo" class="header-background">
 			 <h1 class="text-crea"></h1>
@@ -129,7 +129,7 @@
 						 </button>
 					 </div>
 					 <div class="boxes-container" id="education-box">
-						 <h3 class="subtitle-section">Titulación</h3>
+						 <h3 class="pic-previewtex-bar-preview">Titulación</h3>
 						 <div>
 							 <input class="inputs" id="educ-title" type="text" name="title-name" placeholder="Indica el nombre de la titulación"/>
 						 </div>
@@ -299,103 +299,42 @@
 
 <!--______Comienza la seccion de previsualización______-->
 
+		 <section class="preview-section" id="ventana2">
+				 <div class="box-icons-preview">
+					 <button class="cross-section-button" type="button" name="cruz-button" onclick="closePreview('ventana2')">
+					 <img src="images/btnclose.png" alt="cruzbuttom"></button>
+					 <input class="iconsprev" type="button" onclick="printCurriculum()" id="btnprintprev" title="Imprimir">
+					 <input class="iconsprev" type="button" onclick="download()" id="btndownloadprev" title="Descargar">
+				 </div>
+			 <!--datos principales-->
+			 <section class="container-pic-preview">
+				 <div id="prefoto"></div>
+			 </section>
+			 <p class="separator">* * * * * * * * * * * * * * * </p>
+			 <section class="main-details-preview" id="preprincipales-link">
+				 <p id="prenombre" class="name">Nombre</p>
+				 <p id="preapellidos">Apellido</p>
+				 <p id="preprofesion">Profesion</p>
+				 <p id="preemail">Email</p>
+				 <p id="pretelefono">Telefono</p>
+			 </section>
 
-		<section class="previsualizacion-sec" id="ventana2">
-				<div class="containerprev">
-					<div class="cajaiconsprev">
-						<button class="cross-section-button" type="button" name="cruz-button" onclick="closePreview('ventana2')">
-						<img src="images/btnclose.png" alt="cruzbuttom"></button>
-						<button class="iconsprev" type="button" onclick="printCurriculum()" id="btnprintprev" title="Imprimir"></button>
-						<button class="iconsprev" type="button" onclick="download()" id="btndownloadprev" title="Descargar"></button>
-					</div>
-				<!--datos principales-->
-				<section class="containerprefoto">
-					<div id="prefoto" class="prefoto"></div>
-				</section>
-				<p class="separador">* * * * * * * * * * * * * * * </p>
-				<section class="preprincipales" id="preprincipales-link">
-					<p id="prenombre" class="name">Nombre</p>
-					<p id="preapellidos">Apellido</p>
-					<p id="preprofesion">Profesion</p>
-					<p id="preemail">Email</p>
-					<p id="pretelefono">Telefono</p>
-				</section>
+			 <!--Sección About Me-->
+			 <p class="separator">* * * * * * * * * * * * * * * </p>
+			 <section>
+				 <h2 class="section-title">Sobre mí</h2>
+					 <p id="aboutMe-preview" class="section-title"></p>
+			 </section>
 
-				<!--Sección About Me-->
-				<p class="separador">* * * * * * * * * * * * * * * </p>
-				<section class="">
-					<h2 class="title-section">Sobre mí</h2>
-						<p id="aboutMe-preview" class="title-section"></p>
-        </section>
-				<!--Sección de Experiencia y Formación-->
-        <p class="separador">* * * * * * * * * * * * * * * </p>
-				<section class="">
-					<h2 class="title-section">Experiencia y Formación</h2>
-					<section class="timeline">
-					</section>
-				</section>
+			 <!--Sección de Experiencia y Formación-->
+			 <p class="separator">* * * * * * * * * * * * * * * </p>
+			 <section>
+				 <h2 class="section-title">Experiencia y Formación</h2>
+				 <section class="timeline">
+				 </section>
+			 </section>
 <!--___________________________Skills_______________________________________-->
-
-			<p class="separador">* * * * * * * * * * * * * * * </p>
-				<section class="section-skills">
-					<h2 class="title-section">Habilidades</h2>
-					<div class="skill-pre">
-    				<div class="skill-title" id="skill1-preview"></div>
-    				<div class="barra">
-        			<div class="barra_front" id="barra1"></div>
-    				</div>
-    					<div class="skill-title" id="skill2-preview"></div>
-    					<div class="barra">
-        				<div class="barra_front" id="barra2"></div>
-    					</div>
-    					<div class="skill-title" id="skill3-preview"></div>
-    					<div class="barra">
-        				<div class="barra_front" id="barra3"></div>
-    					</div>
-							<div class="skill-title" id="skill4-preview"></div>
-							<div class="barra">
-								<div class="barra_front" id="barra4"></div>
-							</div>
-						</div>
-				</section>
-<!--___________________________END SKILLS_______________________________________-->
-        <!--Languages preview section-->
-        <p class="separador">* * * * * * * * * * * * * * * </p>
-        <section id="languages-preview">
-          <h2 class="title-section">Idiomas</h2>
-          <div class="languages-bar-preview">
-            <div class="percentage-bar">
-              <p class="text-bar-preview"></p>
-            </div>
-          </div>
-          <div class="languages-bar-preview">
-            <div class="percentage-bar">
-              <p class="text-bar-preview"></p>
-            </div>
-          </div>
-          <div class="languages-bar-preview">
-            <div class="percentage-bar">
-              <p class="text-bar-preview"></p>
-            </div>
-          </div>
-        </section>
-
-        <!--Hobbies section-->
-        <p class="separador">* * * * * * * * * * * * * * * </p>
-        <section id="hobbies-preview">
-          <h2 class="title-section">Hobbies</h2>
-          <div class="all-hobbies-preview">
-            <img id="read" src="images/readSmall.png" alt="read hobbie">
-            <img id="travel" src="images/travelSmall.png" alt="travel hobbie">
-            <img id="game" src="images/videogameSmall.png" alt="game hobbie">
-            <img id="sports" src="images/sportsSmall.png" alt="sports hobbie">
-            <img id="cinema" src="images/cinemaSmall.png" alt="cinema hobbie">
-            <img id="music" src="images/musicSmall.png" alt="music hobbie">
-					</div>
-        </section>
-
-
-		 <p class="separador">* * * * * * * * * * * * * * * </p>
+		 <p class="separator">* * * * * * * * * * * * * * * </p>
 			 <section class="section-skills">
 				 <h2 class="title-section">Habilidades</h2>
 				 <div class="skill-pre">
@@ -419,7 +358,7 @@
 			 </section>
 <!--___________________________END SKILLS_______________________________________-->
 			 <!--Languages preview section-->
-			 <p class="separador">* * * * * * * * * * * * * * * </p>
+			 <p class="separator">* * * * * * * * * * * * * * * </p>
 			 <section id="languages-preview">
 				 <h2 class="title-section">Idiomas</h2>
 				 <div class="languages-bar-preview">
@@ -440,7 +379,7 @@
 			 </section>
 
 			 <!--Hobbies section-->
-			 <p class="separador">* * * * * * * * * * * * * * * </p>
+			 <p class="separator">* * * * * * * * * * * * * * * </p>
 			 <section id="hobbies-preview">
 				 <h2 class="title-section">Hobbies</h2>
 				 <div class="all-hobbies-preview">
@@ -454,7 +393,7 @@
 			 </section>
 
 			 <!--Sección de Redes sociales -->
-			 <p class="separador">* * * * * * * * * * * * * * * </p>
+			 <p class="separator">* * * * * * * * * * * * * * * </p>
 			 <section>
 				 <div class="sociality">
 					 <div class="socialNetworks">
@@ -482,7 +421,6 @@
 					</div>
 
 			 </section>
-			 </div>
 		 </section>
 
 		 </div>

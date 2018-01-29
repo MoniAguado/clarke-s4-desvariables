@@ -1,21 +1,5 @@
 /*Estilos generales*/
 
-*{
-	box-sizing: border-box;
-}
-body{
-	background-color: $whitishBackground;
-	margin: 0;
-	padding: 0;
-	font-family: 'Gabriela', serif;
-}
-main{
-	padding-top: 50px;
-	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}
 #empty-container {
 	height: 70px;
 }
@@ -79,9 +63,6 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 /*Fin estilos generales*/
 /*Header logo formulario*/
 
-
-
-
 .iconsprev{
 	height: 30px;
   width: 30px;
@@ -94,9 +75,8 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
   border-style: none;
   cursor: pointer
 }
-/*header parte marta*/
 
-.cajaiconsprev{
+.box-icons-preview{
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
@@ -147,22 +127,6 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	background: none;
 	border: none;
 }
-/* cargar imagen*/
-.thumb{
-	border: 1px solid $black;
-	margin: 10px 5px 0 0;
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;
-	-webkit-box-shadow: 8px 14px 42px 1px $imageBoxShadow;
-}
-/*fin cargar imagen*/
-.separador {
-  color: $inputAndButtons;
-	width: 100%;
-	text-align: center;
-	padding: 4%;
-}
 .containerinfo{
 	display: flex;
 	flex-direction: column;
@@ -170,6 +134,13 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 .containerfoto{
 	display: flex;
 	justify-content: center;
+}
+
+.datosprin{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .foto{
@@ -193,28 +164,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	align-items: center;
 	-webkit-box-shadow: 5px 8px 42px 1px #3d3d29;
 }
-/*styles pre*/
-.preprincipales p{
-	margin: 2px;
-	margin-top: 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.containerprefoto{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: -20px;
-}
-.thumb2{
-	border: 1px solid $black;
-	margin: 10px 5px 0 0;
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;
-	-webkit-box-shadow: 8px 14px 42px 1px #3d3d29;
-}
+
 /*ventana previsualizar*/
 .textcrea{
 	font-size: 40px;
@@ -222,12 +172,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	}
 /*fin parte marta*/
 
-.all-hobbies-preview {
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
+
 /*Fin de estilos generales*/
 
 /*ABOUT*/
@@ -275,6 +220,12 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 .month, .year{
 	margin-top: 5px;
 }
+.skill {
+  margin-top: 5px;
+	margin-right: 1%;
+	color: $percentageBarAndInputsAcc;
+}
+
 /*Experience and Education preview*/
 
 /* La timeline*/
@@ -428,6 +379,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
   border-radius: 10px;
   background: $inputAndButtons;
 }
+
 /*Languages form container*/
 #languages-form-container, #hobbies-form-container {
 	display:flex;
@@ -438,6 +390,10 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 #languages-preview, #hobbies-preview, .social {
 	padding-left: 7%;
 	padding-right: 7%;
+}
+
+.input-lang, .input-skill{
+	padding-bottom: 1em;
 }
 .languages-bar-preview {
 	background-color: $languagesBackground;
@@ -459,7 +415,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-}
+}//divs q contienen los inputs, mío o Noe?
 /*Checkbox styles*/
 .check-box-hobbies {
 	display: flex;
@@ -472,53 +428,6 @@ input[type=checkbox]{
 }
 #hobbies-form {
 	padding-bottom: 2%;
-}
-
-
-.linkedin a{
-	background: url('../images/linkedin.png');
-	overflow: hidden;
-	display: block;
-	background-size: 40px 40px;
-	padding-top: 40px;
-	height: 0;
-	width: 40px;
-}
-.facebook a{
-	background: url('../images/facebook.png');
-	overflow: hidden;
-	display: block;
-	background-size: 40px 40px;
-	padding-top: 40px;
-	height: 0;
-	width: 40px;
-}
-.github a{
-	background: url('../images/github.png');
-	overflow: hidden;
-	display: block;
-	background-size: 40px 40px;
-	padding-top: 40px;
-	height: 0;
-	width: 40px;
-}
-.twitter a{
-	background: url('../images/twitter.png');
-	overflow: hidden;
-	display: block;
-	background-size: 40px 40px;
-	padding-top: 40px;
-	height: 0;
-	width: 40px;
-}
-.instagram a{
-	background: url('../images/instagram.png');
-	overflow: hidden;
-	display: block;
-	background-size: 40px 40px;
-	padding-top: 40px;
-	height: 0;
-	width: 40px;
 }
 .socialLabel{
 	margin-top: 7px;
@@ -676,11 +585,7 @@ text-align: center;
   margin-left: auto;
 }
 /*mediaqueries*/
-@media all and (min-width: 350px){
-	.container-logo{
-		margin-left: 30px;
-	}
-}
+
 @media all and (min-width: 400px){
 	.nets{
 		display: flex;
@@ -693,8 +598,7 @@ text-align: center;
 		 right: 27px;
 	}
 }
-@media all and (min-width: 490px){
-}
+
 @media all and (max-width: 600px){
 	.icons{
 		height: 28px;
@@ -703,34 +607,9 @@ text-align: center;
 	.text-form-button{
 		font-size: 18px;
 	}
-
-	/*Mediaqueries de preview de Experiencia y Formación*/
-	/* Poner la línea a la izquierda */
-	.timeline::after {
-		left: 31px;
-	}
-	/* Para que se ajusten los contenedores a la pantalla */
-	.container-timeline {
-		width: 100%;
-		padding-left: 70px;
-		padding-right: 25px;
-	}
-	/* Poner los contenedores de la derecha debajo de los de la izquierda */
-	.right {
-		left: 0%;
-	}
-	/* Para que todas las flechas apunten a la izquierda */
-	.container-timeline::before {
-		left: 60px;
-		border: medium solid $timeline;
-		border-width: 10px 10px 10px 0;
-		border-color: transparent $timeline transparent transparent;
-	}
-	/* Para que todos los círculos estén alineados */
-	.left::after, .right::after {
-		left: 15px;
-	}
 }
+	/*Mediaqueries de preview de Experiencia y Formación*/
+
 @media all and (min-width:600px) {
 	#button-down {
 		display: none;
@@ -739,7 +618,11 @@ text-align: center;
 		height: 20px;
 	}
 
-
+	.text-crea {
+		margin-top: 15%;
+		margin-left: 20px;
+		font-size: 2em;
+	}
 	/*Footer*/
 	.infooter{
 		display: flex;
@@ -755,11 +638,7 @@ text-align: center;
 		opacity: 0.9;
 	}
 }
-@media all and (min-width: 810px){
-	.cajaiconsprev{
-		margin-top: 37px;
-	}
-}
+
 @media all and (min-width:900px) {
 	#ventana2, #btnshare, #btnprint, #btndownload {
 		display: block;
@@ -784,25 +663,22 @@ text-align: center;
 		justify-content: space-around;
 		margin-top: 67px;
 	}
+
+	.skill, .language, .skill-percent, .percentage {
+		width: 160px;
+	}
+
 	main {
 		box-sizing: border-box;
 		display: flex;
 		flex-direction: column;
 	}
-
 	.formulario-sec {
 		height: 100%;
 		width: 40%
 	}
-	.previsualizacion-sec{
-		height: 100%;
-		width: 50%
-	}
 	.cruz-section-button{
 		display: none;
-	}
-	.separador{
-		margin-top: 1.5em;
 	}
 	/*Footer*/
 	.logo{
@@ -811,7 +687,6 @@ text-align: center;
 	.end{
 		margin-left: auto;
 	}
-
 	.input-lang, .input-skill{
 		display:flex;
 	}
@@ -819,12 +694,8 @@ text-align: center;
 		margin-right: 1%;
 	}
 }
-@media all and (min-width: 810px){
-}
+
 @media print {
-	.barra, .content-timeline, .languages-bar-preview, .timeline, .printnet {
-			-webkit-print-color-adjust: exact;
-		}
 	header, footer, nav {
 		display: none;
 	}
@@ -833,40 +704,5 @@ text-align: center;
 	}
 	.formulario-sec {
 		  display: none;
-	}
-	.timeline::after {
-	  left: 50%;
-	}
-	.container-timeline {
-	  padding: 10px 40px;
-	  width: 50%;
-	}
-	.container-timeline::after {
-	  left: 343px;
-	  top: 15px;
-	}
-	.left {
-	  left: 0;
-	}
-	.right {
-	  left: 50%;
-	}
-	.right::after {
-	  left: -16px;
-	}
-	.left::before {
-	  top: 22px;
-	  left: 319px;
-	  border: medium solid $timeline;
-	  border: medium solid $timeline;
-	  border-width: 10px 0 10px 10px;
-	  border-color: transparent transparent transparent $timeline;
-	}
-	.right::before {
-	  top: 22px;
-	  left: 30px;
-	  border: medium solid $timeline;
-	  border-width: 10px 10px 10px 0;
-	  border-color: transparent $timeline transparent transparent;
 	}
 }

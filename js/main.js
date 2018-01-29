@@ -86,7 +86,7 @@ function viewprev(){
 	document.getElementById('header-fondo').style.display="none";
 	document.getElementById('button-down').style.display="none";
 	document.getElementById('empty-container').style.display="none";
-	document.querySelector('.cruz-section-button').style.display="block";
+	document.querySelector('.cross-section-button').style.display="block";
 	}
 
 // //Add typed text.
@@ -146,7 +146,7 @@ function closePreview(idContent){
 	if (tamañoPantalla >= 900) {
 		document.getElementById('ventana1').style.display = 'block';
 		document.getElementById('ventana2').style.display = 'block';
-		document.querySelector('.cruz-section-button').style.display = 'none';
+		document.querySelector('.cross-section-button').style.display = 'none';
 	}
 	else {
 		document.getElementById('ventana1').style.display = 'block';

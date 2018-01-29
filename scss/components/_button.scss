@@ -39,3 +39,9 @@
 	cursor: pointer;
 	margin-top: $cruzButtonMarginTop;
 }
+
+@media all and (min-width:900px) {
+.cross-section-button{
+	display: none;
+}
+}

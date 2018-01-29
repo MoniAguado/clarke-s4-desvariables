@@ -14,18 +14,28 @@
 Number.prototype.clamp = function(min, max) {
   return Math.min(Math.max(this, min), max);
 };
+// function rectArea(x, y) {
+//   return x * y;
+// }
+//
+// // ES6
+// const rectArea = (x, y) => {
+//   return x * y;
+// };
+//
+// const rectArea = (x, y) => x * y;
 
 //marta
 //prueba cargar imagen
 function archivo(evt) {
-  var files = evt.target.files; // FileList object
+  const files = evt.target.files; // FileList object
 	//Obtenemos la imagen del campo "file".
-    for (var i = 0, f; f = files[i]; i++) {
+    for (let i = 0, f; f = files[i]; i++) {
     //Solo admitimos imágenes.
       if (!f.type.match('image.*')) {
         continue;
         }
-  var reader = new FileReader();
+  const reader = new FileReader();
     reader.onload = (function(theFile) {
     	return function(e) {
       // Creamos la imagen.
@@ -38,14 +48,14 @@ function archivo(evt) {
 		 		document.getElementById('files').addEventListener('change', archivo, false);
 // duplico para img prev
 function archivo2(evt) {
-	var files = evt.target.files; // FileList object
+	const files = evt.target.files; // FileList object
 	//Obtenemos la imagen del campo "file".
-	for (var i = 0, f; f = files[i]; i++) {
+	for (let i = 0, f; f = files[i]; i++) {
 	//Solo admitimos imágenes.
 		if (!f.type.match('image.*')) {
 			                continue;
 			           }
-		var reader = new FileReader();
+		const reader = new FileReader();
 		reader.onload = (function(theFile) {
 			               return function(e) {
 			// Creamos la imagen.
@@ -69,15 +79,15 @@ function guardarDatosPrincipales(){
 	document.getElementById('preemail').innerHTML = document.getElementById('mailForm').value;
 	document.getElementById('pretelefono').innerHTML = document.getElementById('phoneForm').value;
 }
-var nameForm = document.getElementById("nameForm");
+const nameForm = document.getElementById("nameForm");
 nameForm.onkeyup = guardarDatosPrincipales;
-var surnameForm = document.getElementById("surnameForm");
+const surnameForm = document.getElementById("surnameForm");
 surnameForm.onkeyup = guardarDatosPrincipales;
-var professionForm = document.getElementById("professionForm");
+const professionForm = document.getElementById("professionForm");
 professionForm.onkeyup = guardarDatosPrincipales;
-var mailForm = document.getElementById("mailForm");
+const mailForm = document.getElementById("mailForm");
 mailForm.onkeyup = guardarDatosPrincipales;
-var phoneForm = document.getElementById("phoneForm");
+const phoneForm = document.getElementById("phoneForm");
 phoneForm.onkeyup = guardarDatosPrincipales;
 //previsualizacion en otra hoja
 function viewprev(){
@@ -90,18 +100,18 @@ function viewprev(){
 	}
 
 // //Add typed text.
-var idx = 0;
-var txt = 'Crea tu CV con estilo...'.split('');
-var speed = 150;
-var waitOnFinish = 3000;
-var soundEfx = document.getElementById('sound-efx');
-var textCreaEl = document.querySelector('.text-crea');
+let idx = 0;
+const txt = 'Crea tu CV con estilo...'.split('');
+const speed = 150;
+const waitOnFinish = 3000;
+const soundEfx = document.getElementById('sound-efx');
+const textCreaEl = document.querySelector('.text-crea');
 
 document.addEventListener('DOMContentLoaded', typeWriter);
 
 function typeWriter() {
   if (idx < txt.length) {
-    var tempTxt = textCreaEl.innerHTML;
+    const tempTxt = textCreaEl.innerHTML;
     textCreaEl.innerHTML += '|';
     setTimeout(function() {
       textCreaEl.innerHTML = tempTxt + txt[idx];
@@ -125,7 +135,7 @@ function typeWriter() {
 function saveAbout(){
 	document.getElementById('aboutMe-preview').innerHTML=document.getElementById('text-about').value;
 }
-var aboutTextArea = document.getElementById('text-about');
+const aboutTextArea = document.getElementById('text-about');
 aboutTextArea.onkeyup = saveAbout;
 /*---------------------------END ABOUT FUNCTION--------------------------------------*/
 
@@ -142,7 +152,7 @@ function closePreview(idContent){
 	document.getElementById(idContent).style.display = 'none';
 	document.getElementById('ventana1').style.display = 'block';
 	document.getElementById('header-fondo').style.display = 'block';
-	var tamañoPantalla = window.innerWidth;
+	const tamañoPantalla = window.innerWidth;
 	if (tamañoPantalla >= 900) {
 		document.getElementById('ventana1').style.display = 'block';
 		document.getElementById('ventana2').style.display = 'block';
@@ -155,63 +165,63 @@ function closePreview(idContent){
 
 //Experiencia y Formación
 //Desplegable mes
-var monthOptions = '<option value="mes">Mes</option><option value="Ene">Enero</option><option value="Feb">Febrero</option><option value="Mar">Marzo</option><option value="Abr">Abril</option><option value="May">Mayo</option><option value="Jun">Junio</option><option value="Jul">Julio</option><option value="Ago">Agosto</option><option value="Sep">Septiembre</option><option value="Oct">Octubre</option><option value="Nov">Noviembre</option><option value="Dic">Diciembre</option>';
+const monthOptions = '<option value="mes">Mes</option><option value="Ene">Enero</option><option value="Feb">Febrero</option><option value="Mar">Marzo</option><option value="Abr">Abril</option><option value="May">Mayo</option><option value="Jun">Junio</option><option value="Jul">Julio</option><option value="Ago">Agosto</option><option value="Sep">Septiembre</option><option value="Oct">Octubre</option><option value="Nov">Noviembre</option><option value="Dic">Diciembre</option>';
 
 //Se aplica en todos los que tengan la clase .month
-var months = document.querySelectorAll('.month');
-	for (var i = 0; i < months.length; i++){
+const months = document.querySelectorAll('.month');
+	for (let i = 0; i < months.length; i++){
 		months[i].innerHTML = monthOptions;
 	}
 
 //desplegable años
-var years = 2030;
-var yearOptions = '<option>Actualmente</option>';; //almacena options de html que van en el select
-	for (var initialYear=1950; initialYear<years; initialYear++) {
+let years = 2030;
+let yearOptions = '<option>Actualmente</option>';; //almacena options de html que van en el select
+	for (let initialYear=1950; initialYear<years; initialYear++) {
 	  yearOptions = yearOptions + '<option>' + initialYear + '</option>';
 	}
 
 //Se aplica en todos los que tengan la clase year
-var yearsAll = document.querySelectorAll('.year');
-for (var i = 0; i < yearsAll.length; i++) {
+let yearsAll = document.querySelectorAll('.year');
+for (let i = 0; i < yearsAll.length; i++) {
 	yearsAll[i].innerHTML = yearOptions;
 }
 //Creamos otro desplegable distinto para la fecha de inicio para que no esté Actualmente
-var yearIniOptions = '';; //almacena options de html que van en el select
-	for (var initialYear=1950; initialYear<years; initialYear++) {
+let yearIniOptions = '';; //almacena options de html que van en el select
+	for (let initialYear=1950; initialYear<years; initialYear++) {
 	  yearIniOptions = yearIniOptions + '<option>' + initialYear + '</option>';
 	}
-var yearsIniAll = document.querySelectorAll('.year-ini');
-	for (var i = 0; i < yearsIniAll.length; i++) {
+let yearsIniAll = document.querySelectorAll('.year-ini');
+	for (let i = 0; i < yearsIniAll.length; i++) {
 		yearsIniAll[i].innerHTML = yearIniOptions;
 	}
 //Función para introducir en la previsualización los datos obtenidos de experiencia
-var jobPreviewBox = document.querySelector('.timeline');
-var buttonAddExp = document.getElementById('button-add-exp');
-var alertDatesDiv = document.querySelector('.alert-dates');
-var closeButtonAlert = document.querySelector('.button-alert-img');
-var buttonDelExp = document.getElementById('button-delete-exp');
-var alertMonthDiv = document.getElementById('alert-month');
-var closeButtonAlertMonth = document.getElementById('close-button-alert-month');
+let jobPreviewBox = document.querySelector('.timeline');
+let buttonAddExp = document.getElementById('button-add-exp');
+let alertDatesDiv = document.querySelector('.alert-dates');
+let closeButtonAlert = document.querySelector('.button-alert-img');
+let buttonDelExp = document.getElementById('button-delete-exp');
+let alertMonthDiv = document.getElementById('alert-month');
+let closeButtonAlertMonth = document.getElementById('close-button-alert-month');
 
 function saveNewExperience(){
-	var startYearJob = document.getElementById("year-job-start").value;
-	var startMonthJob = document.getElementById("month-job-start").value
-	var endYearJob = document.getElementById("year-job-end").value;
-	var endMonthJob = document.getElementById("month-job-end").value;
-	var job = document.getElementById("job").value;
-	var company = document.getElementById("company").value;
-	var jobSectionPreviewBegin = '<div class="container-timeline left" id="container-timeline-left"><div class="content-timeline"><div class="dates-output-container"><div class="dates-container"><h3 id="start-job-year-preview"class="title-year">' + startYearJob +'</h3><p id="start-job-month-preview">' + startMonthJob + '</p></div><h3 class="title-year">-</h3><div class="dates-container">'
-	var jobSectionPreviewEnd = '</div></div><div class="work-information-output-container"><p id="job-preview"class="job-title">' + job + '</p><p id="company-preview">' + company + '</p></div></div></div>'
+	let startYearJob = document.getElementById("year-job-start").value;
+	let startMonthJob = document.getElementById("month-job-start").value
+	let endYearJob = document.getElementById("year-job-end").value;
+	let endMonthJob = document.getElementById("month-job-end").value;
+	let job = document.getElementById("job").value;
+	let company = document.getElementById("company").value;
+	let jobSectionPreviewBegin = '<div class="container-timeline left" id="container-timeline-left"><div class="content-timeline"><div class="dates-output-container"><div class="dates-container"><h3 id="start-job-year-preview"class="title-year">' + startYearJob +'</h3><p id="start-job-month-preview">' + startMonthJob + '</p></div><h3 class="title-year">-</h3><div class="dates-container">'
+	let jobSectionPreviewEnd = '</div></div><div class="work-information-output-container"><p id="job-preview"class="job-title">' + job + '</p><p id="company-preview">' + company + '</p></div></div></div>'
 
 	if ((endMonthJob === 'mes' && endYearJob > 0) || (startMonthJob === 'mes' && startYearJob > 0)) {
 		showAlertMonth();
 	}
 	else if ((endMonthJob === 'mes' && endYearJob === 'Actualmente') || endYearJob === 'Actualmente' ) {
-		var jobSectionPreview = jobSectionPreviewBegin + '<h3 id="end-job-year-preview"class="title-year">Actual</h3><p id="end-job-month-preview"> </p>' + jobSectionPreviewEnd;
+		let jobSectionPreview = jobSectionPreviewBegin + '<h3 id="end-job-year-preview"class="title-year">Actual</h3><p id="end-job-month-preview"> </p>' + jobSectionPreviewEnd;
 		jobPreviewBox.innerHTML += jobSectionPreview;
 	} else {
 
-  var jobSectionPreview = jobSectionPreviewBegin + '<h3 id="end-job-year-preview"class="title-year">' + endYearJob + '</h3><p id="end-job-month-preview">' + endMonthJob + '</p>' + jobSectionPreviewEnd;
+  let jobSectionPreview = jobSectionPreviewBegin + '<h3 id="end-job-year-preview"class="title-year">' + endYearJob + '</h3><p id="end-job-month-preview">' + endMonthJob + '</p>' + jobSectionPreviewEnd;
 
 		if(startYearJob > endYearJob){
 			showAlert();
@@ -250,28 +260,28 @@ function deleteExperience(){
 buttonDelExp.addEventListener('click', deleteExperience);
 
 //Función para introducir en la previsualización los datos obtenidos de formación
-var educationPreviewBox = document.querySelector('.timeline');
-var buttonSaveFirstEd = document.getElementById('button-add-ed');
-var buttonDelEd = document.getElementById('button-delete-ed');
+let educationPreviewBox = document.querySelector('.timeline');
+let buttonSaveFirstEd = document.getElementById('button-add-ed');
+let buttonDelEd = document.getElementById('button-delete-ed');
 
 function saveNewTraining(){
-	var startYearEd = document.getElementById("year-training-start").value;
-	var startMonthEd = document.getElementById("month-training-start").value;
-	var endYearEd = document.getElementById("year-training-end").value;
-	var endMonthEd = document.getElementById("month-training-end").value;
-	var educTitle = document.getElementById("educ-title").value;
-	var educCenter = document.getElementById("center").value;
-	var educSectionPreviewBegin = '<div class="container-timeline right"><div class="content-timeline"><div class="dates-output-container"><div class="dates-container"><h3 id="start-education-year-preview" class="title-year">' + startYearEd + '</h3><p id="start-education-month-preview">' + startMonthEd + '</p></div><h3 class="title-year">-</h3><div class="dates-container">';
-	var educSectionPreviewEnd = '</div></div><div class="work-information-output-container"><p id="education-title-preview" class="education-title">' + educTitle + '</p><p id="education-center-preview">' + educCenter + '</p></div></div></div>';
+	let startYearEd = document.getElementById("year-training-start").value;
+	let startMonthEd = document.getElementById("month-training-start").value;
+	let endYearEd = document.getElementById("year-training-end").value;
+	let endMonthEd = document.getElementById("month-training-end").value;
+	let educTitle = document.getElementById("educ-title").value;
+	let educCenter = document.getElementById("center").value;
+	let educSectionPreviewBegin = '<div class="container-timeline right"><div class="content-timeline"><div class="dates-output-container"><div class="dates-container"><h3 id="start-education-year-preview" class="title-year">' + startYearEd + '</h3><p id="start-education-month-preview">' + startMonthEd + '</p></div><h3 class="title-year">-</h3><div class="dates-container">';
+	let educSectionPreviewEnd = '</div></div><div class="work-information-output-container"><p id="education-title-preview" class="education-title">' + educTitle + '</p><p id="education-center-preview">' + educCenter + '</p></div></div></div>';
 
 	if ((endMonthEd === 'mes' && endYearEd > 0) || (startMonthEd === 'mes' && startYearEd > 0)) {
 		showAlertMonth();
 	}
 	else if ((endMonthEd === 'mes' && endYearEd === 'Actualmente') || endYearEd === 'Actualmente' ) {
-	var educationSectionPreview = educSectionPreviewBegin + '<h3 id="end-education-year-preview" class="title-year">Actual</h3><p id="end-education-month-preview"></p>' + educSectionPreviewEnd;
+	let educationSectionPreview = educSectionPreviewBegin + '<h3 id="end-education-year-preview" class="title-year">Actual</h3><p id="end-education-month-preview"></p>' + educSectionPreviewEnd;
 	educationPreviewBox.innerHTML += educationSectionPreview;
 	} else {
-	var educationSectionPreview = educSectionPreviewBegin + '<h3 id="end-education-year-preview" class="title-year">' + endYearEd + '</h3><p id="end-education-month-preview">' + endMonthEd + '</p>' + educSectionPreviewEnd;
+	let educationSectionPreview = educSectionPreviewBegin + '<h3 id="end-education-year-preview" class="title-year">' + endYearEd + '</h3><p id="end-education-month-preview">' + endMonthEd + '</p>' + educSectionPreviewEnd;
 		if(document.getElementById("year-training-start").value > document.getElementById("year-training-end").value){
 			showAlert();
 		}else {
@@ -301,23 +311,23 @@ function saveSkills(){
 	document.getElementById('skill3-preview').innerHTML = document.getElementById('skill3').value;
 	document.getElementById('skill4-preview').innerHTML = document.getElementById('skill4').value;
 }
-var skillsText1 = document.getElementById("skill1");
+let skillsText1 = document.getElementById("skill1");
 skillsText1.onkeyup = saveSkills;
-var skillsText2 = document.getElementById("skill2");
+let skillsText2 = document.getElementById("skill2");
 skillsText2.onkeyup = saveSkills;
-var skillsText3 = document.getElementById("skill3");
+let skillsText3 = document.getElementById("skill3");
 skillsText3.onkeyup = saveSkills;
-var skillsText4 = document.getElementById("skill4");
+let skillsText4 = document.getElementById("skill4");
 skillsText4.onkeyup = saveSkills;
 
 //PERCENTAGES
-var barParentArr = document.querySelectorAll('.barra');//array todos los elementos barra sombra
-var percentageBoxArr = document.querySelectorAll('.skill-percent');//array de todos los elementos porcentaje
-var barsArr = document.querySelectorAll('.barra_front');//array de todos los elementos barra
+let barParentArr = document.querySelectorAll('.barra');//array todos los elementos barra sombra
+let percentageBoxArr = document.querySelectorAll('.skill-percent');//array de todos los elementos porcentaje
+let barsArr = document.querySelectorAll('.barra_front');//array de todos los elementos barra
 
 function percentageSkill(){
-	for (var i = 0; i < barsArr.length; i++) {
-		var auxValue = parseInt(percentageBoxArr[i].value) || 0;
+	for (let i = 0; i < barsArr.length; i++) {
+		let auxValue = parseInt(percentageBoxArr[i].value) || 0;
 		barsArr[i].style.width = auxValue.clamp(0,100) + "%";
 		if (auxValue > 0)
 			barParentArr[i].style.display = "block";
@@ -325,31 +335,31 @@ function percentageSkill(){
 			barParentArr[i].style.display = "none";
 	}
 }
-var percentageBar1 = document.getElementById("percentage1");
+let percentageBar1 = document.getElementById("percentage1");
 percentageBar1.onkeyup = percentageSkill;
 
-var percentageBar2 = document.getElementById("percentage2");
+let percentageBar2 = document.getElementById("percentage2");
 percentageBar2.onkeyup = percentageSkill;
 
-var percentageBar3 = document.getElementById("percentage3");
+let percentageBar3 = document.getElementById("percentage3");
 percentageBar3.onkeyup = percentageSkill;
 
-var percentageBar4 = document.getElementById("percentage4");
+let percentageBar4 = document.getElementById("percentage4");
 percentageBar4.onkeyup = percentageSkill;
 /*----------------------END SKILLS FUNCTIONS--------------------------*/
 
 //Get languages and percentages
-var newTextLanguage = document.querySelectorAll('.text-bar-preview');
-var inputsLanguage = document.querySelectorAll('.language');
-var inputsPercentage = document.querySelectorAll('.percentage');
+let newTextLanguage = document.querySelectorAll('.text-bar-preview');
+let inputsLanguage = document.querySelectorAll('.language');
+let inputsPercentage = document.querySelectorAll('.percentage');
 
-for (var i = 0; i < inputsLanguage.length; i++) {
+for (let i = 0; i < inputsLanguage.length; i++) {
   inputsLanguage[i].onkeyup = addLanguages;
   inputsPercentage[i].onkeyup = addLanguages;
 }
 
 function addLanguages(){
-  for (var i = 0; i < newTextLanguage.length; i++) {
+  for (let i = 0; i < newTextLanguage.length; i++) {
     newTextLanguage[i].innerHTML = inputsLanguage[i].value;
     newTextLanguage[i].parentElement.style.width = inputsPercentage[i].value + '%';
   }
@@ -357,7 +367,7 @@ function addLanguages(){
 
 //Hobbies Preview
 function showHobbiesPreview(elementId) {
-  var check = document.getElementById(elementId);
+  let check = document.getElementById(elementId);
 
   if (check.style.display == "inline-block"){
     check.style.display = "none";
@@ -389,7 +399,7 @@ function noVisibility(element){
 }
 
 function showNetsocial() {
-  var netSocialDiv = document.querySelector('.net-social-hidden');
+  let netSocialDiv = document.querySelector('.net-social-hidden');
   netSocialDiv.style.display = 'block';
 }
 
@@ -400,8 +410,8 @@ document.getElementById('twitter').addEventListener('keyup', function(){setValue
 document.getElementById('instagram').addEventListener('keyup', function(){setValue('instagram')});
 
 function setValue(net){
-	var inputSocial = document.getElementById(net);
-  var liSocial = document.querySelector('.'+net);
+	let inputSocial = document.getElementById(net);
+  let liSocial = document.querySelector('.'+net);
   if(inputSocial.value != ""){//Si tiene valor el input mostramos el icono
     show(liSocial);
   }else{//Si NO tiene valor el input ocultamos el icono
@@ -411,13 +421,13 @@ function setValue(net){
 }
 
 function setSocialMedia(value, net){
-	var aNet = document.getElementById('a-'+net);
-	var url;
-  var linkedin = "https://www.linkedin.com/in/";
-  var facebook = "https://www.facebook.com/";
-  var github = "https://github.com/";
-  var twitter = "https://twitter.com/";
-  var instagram ="https://www.instagram.com/";
+	let aNet = document.getElementById('a-'+net);
+	let url;
+  let linkedin = "https://www.linkedin.com/in/";
+  let facebook = "https://www.facebook.com/";
+  let github = "https://github.com/";
+  let twitter = "https://twitter.com/";
+  let instagram ="https://www.instagram.com/";
 
 	if(net == 'linkedin'){
 		aNet.href = linkedin + value;
@@ -433,20 +443,20 @@ function setSocialMedia(value, net){
 }
 
 /*enlace codigo qr*/
-var buttonGenerateQr = document.getElementById('button-generateqr');
-var qrLink = document.getElementById('qrlink');
+let buttonGenerateQr = document.getElementById('button-generateqr');
+let qrLink = document.getElementById('qrlink');
 buttonGenerateQr.addEventListener('click', generateQr);
 
 function generateQr(event) {
-  var inputPortfolio = document.querySelector('.inputPortfolio').value;
+  let inputPortfolio = document.querySelector('.inputPortfolio').value;
   qrLink.href = inputPortfolio;
   update_qrcode();
 }
 
 /*flecha*/
 window.onscroll = function(){
-  var arribaButton = document.getElementById('arriba');
-  var scroll = document.documentElement.scrollTop || document.body.scrollTop;
+  let arribaButton = document.getElementById('arriba');
+  let scroll = document.documentElement.scrollTop || document.body.scrollTop;
   if(scroll < 130){
     hide(arribaButton);
   }else{
@@ -454,7 +464,7 @@ window.onscroll = function(){
   }
 }
 //subir al principio de la página cuando se hace click en la flecha arriba
-var arribaButton = document.getElementById('arriba');
+let arribaButton = document.getElementById('arriba');
 arribaButton.onclick = function(){
     window.scrollTo(0,0);
 }
@@ -494,8 +504,8 @@ function listButton(){
 
 /*imprimir*/
 function printCurriculum() { //Generamos la función que llamaremos desde el botón imprimir
-	var divPrint = document.getElementById('ventana2').innerHTML; // Variable que captura la ventana2, que tiene el contenido
-	var printPopup = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');//genera una nueva ventana con las dimensiones establecidad
+	let divPrint = document.getElementById('ventana2').innerHTML; // letiable que captura la ventana2, que tiene el contenido
+	let printPopup = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');//genera una nueva ventana con las dimensiones establecidad
 
 	if (printPopup != null) { // si printPopup no es nullo nos pinta el html que le decimos
 		printPopup.document.write('<html>');
@@ -506,7 +516,7 @@ function printCurriculum() { //Generamos la función que llamaremos desde el bot
 		printPopup.document.write('</html>');
 		printPopup.document.close();
 
-		var cajaiconsprev = printPopup.document.querySelector('div.cajaiconsprev');//variable que captura la caja de los iconos
+		let cajaiconsprev = printPopup.document.querySelector('div.cajaiconsprev');//letiable que captura la caja de los iconos
 		cajaiconsprev.style.display = 'none';//bloquea los iconos de imprimir, descargar...
 
 		printPopup.addEventListener('load', function() {

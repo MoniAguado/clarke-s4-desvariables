@@ -1,0 +1,36 @@
+/*footer*/
+.infooter{
+	background-color: $footer;
+	font-size: 0.8em;
+	color: $footerLetters;
+	padding: $footerPadding;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: $footerMarginTop;
+}
+
+.end{
+	margin-left: auto;
+	margin-right: auto;
+}
+.contacto{
+	color: $contactColor;
+	text-decoration: none;
+	margin-top: $footerMarginTop;
+}
+.contacto:hover{
+	color: $inputAndButtons;
+}
+.logo{
+	min-width: $logoWidth;
+	margin-left: auto;
+	margin-right: auto;
+}
+.logoadalab{
+	display: block;
+	margin: 5px auto;
+	max-width: $logoWidth;
+	width: $logoWidthPercentaje;
+}

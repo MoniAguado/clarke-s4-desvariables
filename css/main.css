@@ -71,23 +71,7 @@
 .alert-cruise {
   width: 20px;
   height: 20px;
-}/*flecha subir arriba*//*formulario*/.seccion {
-  padding: 60px 0 50px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-}
-
-.campos {
+}/*flecha subir arriba*//*formulario*/.campos {
   margin: 0 0 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -242,6 +226,22 @@
   margin: 5px auto;
   max-width: 200px;
   width: 75%;
+}
+
+.section-form {
+  padding: 60px 0 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
 }/*botones*/#btnview {
   background-image: url("../images/btnfile2.png");
 }

@@ -75,56 +75,56 @@
 /*Fin estilos generales*/
 /*Header logo formulario*/
 
-.iconsprev{
-	height: 30px;
-  width: 30px;
-  margin-left: 5px;
-  background-size: cover;
-  align-items: flex-end;
-  text-align: center;
-  background-color: transparent;
-  box-sizing: border-box;
-  border-style: none;
-  cursor: pointer
-}
+// .iconsprev{
+// 	height: 30px;
+//   width: 30px;
+//   margin-left: 5px;
+//   background-size: cover;
+//   align-items: flex-end;
+//   text-align: center;
+//   background-color: transparent;
+//   box-sizing: border-box;
+//   border-style: none;
+//   cursor: pointer
+// }
 
-.box-icons-preview{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: baseline;
-	margin-bottom: 50px;
-	margin-left: 75px;
-	margin-top: 10px;
-	margin-right: 17px;
-}
-#btnview{
-	background-image: url("../images/btnfile2.png");
-}
-#btnshare{
-	background-image: url("../images/btnshare2.png");
-	display: none;
-}
-#btnprint{
-	background-image: url("../images/btnprint2.png");
-	display: none;
-}
-#btndownload{
-	background-image: url("../images/btndownload2.png");
-	display: none;
-}
-#btnshareprev{
-	background-image: url("../images/btnshare3.png");
-	display: block;
-}
-#btnprintprev{
-	background-image: url("../images/btnprint3.png");
-	display: block;
-}
-#btndownloadprev{
-	background-image: url("../images/btndown.png");
-		display: block;
-}
+// .box-icons-preview{
+// 	display: flex;
+// 	flex-direction: row;
+// 	justify-content: flex-end;
+// 	align-items: baseline;
+// 	margin-bottom: 50px;
+// 	margin-left: 75px;
+// 	margin-top: 10px;
+// 	margin-right: 17px;
+// }
+// #btnview{
+// 	background-image: url("../images/btnfile2.png");
+// }
+// #btnshare{
+// 	background-image: url("../images/btnshare2.png");
+// 	display: none;
+// }
+// #btnprint{
+// 	background-image: url("../images/btnprint2.png");
+// 	display: none;
+// }
+// #btndownload{
+// 	background-image: url("../images/btndownload2.png");
+// 	display: none;
+// }
+// #btnshareprev{
+// 	background-image: url("../images/btnshare3.png");
+// 	display: block;
+// }
+// #btnprintprev{
+// 	background-image: url("../images/btnprint3.png");
+// 	display: block;
+// }
+// #btndownloadprev{
+// 	background-image: url("../images/btndown.png");
+// 		display: block;
+// }
 
 
 // .text-crea {
@@ -135,14 +135,14 @@
 // 	font-weight: bold;
 // 	color: $percentageBarAndInputsAcc;
 // }
-#button-down {
-	background: none;
-	border: none;
-}
-.containerinfo{
-	display: flex;
-	flex-direction: column;
-}
+// #button-down {
+// 	background: none;
+// 	border: none;
+// }
+// .containerinfo{
+// 	display: flex;
+// 	flex-direction: column;
+// }
 // .containerfoto{
 // 	display: flex;
 // 	justify-content: center;
@@ -155,20 +155,20 @@
 	align-items: center;
 }
 
-.foto{
-	width: 200px;
-  height: 200px;
-	border-radius: 100px;
-	margin-top: 40px;
-	-webkit-box-shadow: 5px 8px 42px 1px #3d3d29;
-	display: flex;
-	align-self: center;
-	background-image: url("../images/addimg.png");
-	background-color: $imageBackground;
-	background-size: 150px;
-	background-repeat: no-repeat;
-	background-position: center;
-}
+// .foto{
+// 	width: 200px;
+//   height: 200px;
+// 	border-radius: 100px;
+// 	margin-top: 40px;
+// 	-webkit-box-shadow: 5px 8px 42px 1px #3d3d29;
+// 	display: flex;
+// 	align-self: center;
+// 	background-image: url("../images/addimg.png");
+// 	background-color: $imageBackground;
+// 	background-size: 150px;
+// 	background-repeat: no-repeat;
+// 	background-position: center;
+// }
 // .subirfoto{
 // 	width: 95px;
 // 	display: flex;
@@ -192,46 +192,46 @@
 // 	font-family: arial;
 // 	font-size: 15px;
 // }
-#aboutMe-preview{
-	text-align: justify;
-	display: flex;
-	justify-content: center;
-	margin:0;
-	color: black;
-}
+// #aboutMe-preview{
+// 	text-align: justify;
+// 	display: flex;
+// 	justify-content: center;
+// 	margin:0;
+// 	color: black;
+// }
 /*Experience and Education form*/
-.form-section-container{
-	display:flex;
-	flex-direction: column;
-	align-items: center;
-}
-.boxes-container{
-	display: none;
-	padding-bottom: 10px;
-}
+// .form-section-container{
+// 	display:flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// }
+// .boxes-container{
+// 	display: none;
+// 	padding-bottom: 10px;
+// }
 
-.dates-boxes{
-	margin: 8px 8px;
-	width: 220px;
-	padding: 3px;
-	text-align: center;
-}
-.select-styles{
-	text-shadow: $textShadowInputs 0 1px 0;
-	padding: 2px;
-	border: solid 1px;
-	background-color: $white;
-	border-radius: 5px;
-}
-.buttons-container{
-	margin: 10px 0px;
-	display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.month, .year{
-	margin-top: 5px;
-}
+// .dates-boxes{
+// 	margin: 8px 8px;
+// 	width: 220px;
+// 	padding: 3px;
+// 	text-align: center;
+// }
+// .select-styles{
+// 	text-shadow: $textShadowInputs 0 1px 0;
+// 	padding: 2px;
+// 	border: solid 1px;
+// 	background-color: $white;
+// 	border-radius: 5px;
+// }
+// .buttons-container{
+// 	margin: 10px 0px;
+// 	display: flex;
+//   flex-direction: row;
+//   justify-content: center;
+// }
+// .month, .year{
+// 	margin-top: 5px;
+// }
 // .skill {
 //   margin-top: 5px;
 // 	margin-right: 1%;
@@ -393,16 +393,16 @@
 // }
 
 /*Languages form container*/
-#languages-form-container, #hobbies-form-container {
-	display:flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-#languages-preview, #hobbies-preview, .social {
-	padding-left: 7%;
-	padding-right: 7%;
-}
+// #languages-form-container, #hobbies-form-container {
+// 	display:flex;
+// 	flex-direction: column;
+// 	align-items: center;
+// }
+//
+// #languages-preview, #hobbies-preview, .social {
+// 	padding-left: 7%;
+// 	padding-right: 7%;
+// }
 
 // .input-lang, .input-skill{
 // 	padding-bottom: 1em;
@@ -422,33 +422,33 @@
 // }
 
 /*Hobbies*/
-.all-hobbies-preview, .socialNetworks, .social {
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}//divs q contienen los inputs, mío o Noe?
+// .all-hobbies-preview, .socialNetworks, .social {
+// 	width: 100%;
+// 	display: flex;
+// 	justify-content: space-around;
+// 	flex-wrap: wrap;
+// }//divs q contienen los inputs, mío o Noe?
 /*Checkbox styles*/
-.check-box-hobbies {
-	display: flex;
-	justify-content: space-between;
-	padding-bottom: 4%;
-}
-input[type=checkbox]{
-	-webkit-transform: scale(1.2); /* Safari and Chrome */
-	color: $black;
-}
-#hobbies-form {
-	padding-bottom: 2%;
-}
+// .check-box-hobbies {
+// 	display: flex;
+// 	justify-content: space-between;
+// 	padding-bottom: 4%;
+// }
+// input[type=checkbox]{
+// 	-webkit-transform: scale(1.2); /* Safari and Chrome */
+// 	color: $black;
+// }
+// #hobbies-form {
+// 	padding-bottom: 2%;
+// }
 .socialLabel{
 	margin-top: 7px;
 	margin-right: 10px;
 }
-.codigoqr > img{
-	width: 120px;
-	height: 120px;
-}
+// .codigoqr > img{
+// 	width: 120px;
+// 	height: 120px;
+// }
 .nets{
 	display: flex;
 	flex-direction: column;
@@ -466,10 +466,10 @@ input[type=checkbox]{
 	height: 28px;
 	margin-right: 8px;
 }
-.codigoqr{
-padding: 15px;
-text-align: center;
-}
+// .codigoqr{
+// padding: 15px;
+// text-align: center;
+// }
 /*Ventana de alert de error de fecha introducida*/
 .alert-dates{
 	background-color: $whitishBackground;
@@ -501,22 +501,22 @@ text-align: center;
 }
 
 /*flecha subir arriba*/
-#arriba {
-	width: 5px;
-	padding: 5px;
-	position: fixed;
-	bottom: 15px;
-	right: 45px;
-	z-index: 1;
-	opacity: 0.9;
-}
-#arriba img{
-	width: 30px;
-	height: 30px;
-	background-color: white;
-	border-radius: 30px;
-	margin-bottom: 60px;
-}
+// #arriba {
+// 	width: 5px;
+// 	padding: 5px;
+// 	position: fixed;
+// 	bottom: 15px;
+// 	right: 45px;
+// 	z-index: 1;
+// 	opacity: 0.9;
+// }
+// #arriba img{
+// 	width: 30px;
+// 	height: 30px;
+// 	background-color: white;
+// 	border-radius: 30px;
+// 	margin-bottom: 60px;
+// }
 /*formulario*/
 // .flexible{
 // 	display: flex;
@@ -552,9 +552,9 @@ text-align: center;
 // .texto-formulario{
 // 	margin: 15px 35px;
 // }
-.formulario{
-	width: 50%;
-}
+// .formulario{
+// 	width: 50%;
+// }
 // .complete{
 // 	display: flex;
 // 	flex-wrap: wrap;
@@ -573,10 +573,10 @@ text-align: center;
 // 	border-radius: 9px;
 // 	font:15px arial ;
 // }
-#comentarios{
-	height: 80px;
-	padding-top: 6px;
-}
+// #comentarios{
+// 	height: 80px;
+// 	padding-top: 6px;
+// }
 // .cajas:focus{
 // 	border-color: $boxBorderAndButtonColor;
 // }
@@ -604,12 +604,12 @@ text-align: center;
 		flex-direction: row;
 	 }
 }
-@media all and (min-width: 460px){
-	#arriba {
-		 bottom: 15px;
-		 right: 27px;
-	}
-}
+// @media all and (min-width: 460px){
+// 	#arriba {
+// 		 bottom: 15px;
+// 		 right: 27px;
+// 	}
+// }
 
 @media all and (max-width: 600px){
 	.icons{
@@ -623,12 +623,12 @@ text-align: center;
 	/*Mediaqueries de preview de Experiencia y Formación*/
 
 @media all and (min-width:600px) {
-	#button-down {
-		display: none;
-	}
-	#empty-container {
-		height: 20px;
-	}
+// 	#button-down {
+// 		display: none;
+// 	}
+// 	#empty-container {
+// 		height: 20px;
+// 	}
 
 	// .text-crea {
 	// 	margin-top: 15%;
@@ -640,24 +640,24 @@ text-align: center;
 		display: flex;
 		flex-direction: row;
 	}
-	#arriba {
-		width: 5px;
-		padding: 5px;
-		position: fixed;
-		bottom: 15px;
-		right: 45px;
-		z-index: 1;
-		opacity: 0.9;
-	}
+	// #arriba {
+	// 	width: 5px;
+	// 	padding: 5px;
+	// 	position: fixed;
+	// 	bottom: 15px;
+	// 	right: 45px;
+	// 	z-index: 1;
+	// 	opacity: 0.9;
+	// }
 }
 
 @media all and (min-width:900px) {
-	#ventana2, #btnshare, #btnprint, #btndownload {
-		display: block;
-	}
-	#btnshareprev, #btnprintprev, #btndownloadprev {
-		display: none;
-	}
+	// #ventana2, #btnshare, #btnprint, #btndownload {
+	// 	display: block;
+	// }
+	// #btnshareprev, #btnprintprev, #btndownloadprev {
+	// 	display: none;
+	// }
 	.flexible::before{
 		left: 0;
 		top: 0;

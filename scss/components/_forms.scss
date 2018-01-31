@@ -1,4 +1,7 @@
 /*Estilos generales de la sección de desplegables*/
+.form{
+	width: 50%;
+}
 .form-section-container{
 	display:flex;
 	flex-direction: column;
@@ -67,6 +70,16 @@
 .container-info{
 	display: flex;
 	flex-direction: column;
+}
+.boxes-container{
+	display: none;
+	padding-bottom: 10px;
+}
+.buttons-container{
+	margin: 10px 0px;
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 @media all and (min-width:900px) {
 	.form-sec {

@@ -35,3 +35,25 @@
 .skill, .language, .skill-percent, .percentage {
 	width: 160px;
 }
+
+.dates-boxes{
+	margin: 8px 8px;
+	width: 220px;
+	padding: 3px;
+	text-align: center;
+}
+.select-styles{
+	text-shadow: $textShadowInputs 0 1px 0;
+	padding: 2px;
+	border: solid 1px;
+	background-color: $white;
+	border-radius: 5px;
+}
+.month, .year{
+	margin-top: 5px;
+}
+.check-box-hobbies {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 4%;
+}

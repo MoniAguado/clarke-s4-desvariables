@@ -299,6 +299,12 @@
 		left: 15px;
 	}
 }
+.all-hobbies-preview, .socialNetworks, .social {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
 @media all and (min-width: 810px){
 	.box-icons-preview{
 		margin-top: 37px;

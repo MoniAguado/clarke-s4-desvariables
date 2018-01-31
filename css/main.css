@@ -1,89 +1,4 @@
-@charset "UTF-8";/*Colores*//*footer*//*Titulares*//*botones*//*Estilos generales*//*Estilos generales de la sección de desplegables*//*Ocultar secciones*//*Fin estilos generales*//*Header logo formulario*/.iconsprev {
-  height: 30px;
-  width: 30px;
-  margin-left: 5px;
-  background-size: cover;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  text-align: center;
-  background-color: transparent;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border-style: none;
-  cursor: pointer;
-}
-
-.box-icons-preview {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  -webkit-box-align: baseline;
-  -ms-flex-align: baseline;
-  align-items: baseline;
-  margin-bottom: 50px;
-  margin-left: 75px;
-  margin-top: 10px;
-  margin-right: 17px;
-}
-
-#btnview {
-  background-image: url("../images/btnfile2.png");
-}
-
-#btnshare {
-  background-image: url("../images/btnshare2.png");
-  display: none;
-}
-
-#btnprint {
-  background-image: url("../images/btnprint2.png");
-  display: none;
-}
-
-#btndownload {
-  background-image: url("../images/btndownload2.png");
-  display: none;
-}
-
-#btnshareprev {
-  background-image: url("../images/btnshare3.png");
-  display: block;
-}
-
-#btnprintprev {
-  background-image: url("../images/btnprint3.png");
-  display: block;
-}
-
-#btndownloadprev {
-  background-image: url("../images/btndown.png");
-  display: block;
-}
-
-#button-down {
-  background: none;
-  border: none;
-}
-
-.containerinfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.datosprin {
+@charset "UTF-8";/*Colores*//*footer*//*Titulares*//*botones*//*Estilos generales*//*Estilos generales de la sección de desplegables*//*Ocultar secciones*//*Fin estilos generales*//*Header logo formulario*/.datosprin {
   margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,136 +10,9 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.foto {
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  margin-top: 40px;
-  -webkit-box-shadow: 5px 8px 42px 1px #3d3d29;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-  align-self: center;
-  background-image: url("../images/addimg.png");
-  background-color: #cdf7e6;
-  background-size: 150px;
-  background-repeat: no-repeat;
-  background-position: center;
-}/*ventana previsualizar*//*fin parte marta*//*Fin de estilos generales*//*ABOUT*/#aboutMe-preview {
-  text-align: justify;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin: 0;
-  color: black;
-}/*Experience and Education form*/.form-section-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.boxes-container {
-  display: none;
-  padding-bottom: 10px;
-}
-
-.dates-boxes {
-  margin: 8px 8px;
-  width: 220px;
-  padding: 3px;
-  text-align: center;
-}
-
-.select-styles {
-  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
-  padding: 2px;
-  border: solid 1px;
-  background-color: #ffffff;
-  border-radius: 5px;
-}
-
-.buttons-container {
-  margin: 10px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-.month,.year {
-  margin-top: 5px;
-}/*Experience and Education preview*//* La timeline*//* La propia timeline (línea vertical) *//* Contenido alrededor de la timeline *//* Círculos de la timeline *//* Situar los contenidos de la izquierda*//* Situar los contenidos de la derecha *//* Arregla la posición de los círculos del contenido de la derecha *//* Añade flechas en el contenido de la izquierda apuntando a la derecha *//* Añade flechas en el contenido de la derecha apuntando hacia la izquierda. *//* Estilo de las cajas con el contenido *//*Estilos de texto dentro de cajas*//*End Experience and Education preview*//*SKILLS*//*Languages form container*/#languages-form-container,#hobbies-form-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-#languages-preview,#hobbies-preview,.social {
-  padding-left: 7%;
-  padding-right: 7%;
-}/*Hobbies*/.all-hobbies-preview,.socialNetworks,.social {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}/*Checkbox styles*/.check-box-hobbies {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding-bottom: 4%;
-}
-
-input[type=checkbox] {
-  -webkit-transform: scale(1.2);
- /* Safari and Chrome */
-  color: #000;
-}
-
-#hobbies-form {
-  padding-bottom: 2%;
-}
-
-.socialLabel {
+}/*ventana previsualizar*//*fin parte marta*//*Fin de estilos generales*//*ABOUT*//*Experience and Education form*//*Experience and Education preview*//* La timeline*//* La propia timeline (línea vertical) *//* Contenido alrededor de la timeline *//* Círculos de la timeline *//* Situar los contenidos de la izquierda*//* Situar los contenidos de la derecha *//* Arregla la posición de los círculos del contenido de la derecha *//* Añade flechas en el contenido de la izquierda apuntando a la derecha *//* Añade flechas en el contenido de la derecha apuntando hacia la izquierda. *//* Estilo de las cajas con el contenido *//*Estilos de texto dentro de cajas*//*End Experience and Education preview*//*SKILLS*//*Languages form container*//*Hobbies*//*Checkbox styles*/.socialLabel {
   margin-top: 7px;
   margin-right: 10px;
-}
-
-.codigoqr > img {
-  width: 120px;
-  height: 120px;
 }
 
 .nets {
@@ -253,11 +41,6 @@ input[type=checkbox] {
   width: 225px;
   height: 28px;
   margin-right: 8px;
-}
-
-.codigoqr {
-  padding: 15px;
-  text-align: center;
 }/*Ventana de alert de error de fecha introducida*/.alert-dates {
   background-color: #FFFEFA;
   width: 230px;
@@ -288,23 +71,7 @@ input[type=checkbox] {
 .alert-cruise {
   width: 20px;
   height: 20px;
-}/*flecha subir arriba*/#arriba {
-  width: 5px;
-  padding: 5px;
-  position: fixed;
-  bottom: 15px;
-  right: 45px;
-  z-index: 1;
-  opacity: 0.9;
-}
-
-#arriba img {
-  width: 30px;
-  height: 30px;
-  background-color: white;
-  border-radius: 30px;
-  margin-bottom: 60px;
-}/*formulario*/.seccion {
+}/*flecha subir arriba*//*formulario*/.seccion {
   padding: 60px 0 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -318,15 +85,6 @@ input[type=checkbox] {
   align-items: center;
   position: relative;
   z-index: 2;
-}
-
-.formulario {
-  width: 50%;
-}
-
-#comentarios {
-  height: 80px;
-  padding-top: 6px;
 }
 
 .campos {
@@ -484,6 +242,104 @@ input[type=checkbox] {
   margin: 5px auto;
   max-width: 200px;
   width: 75%;
+}/*botones*/#btnview {
+  background-image: url("../images/btnfile2.png");
+}
+
+#btnshare {
+  background-image: url("../images/btnshare2.png");
+  display: none;
+}
+
+#btnprint {
+  background-image: url("../images/btnprint2.png");
+  display: none;
+}
+
+#btndownload {
+  background-image: url("../images/btndownload2.png");
+  display: none;
+}
+
+#btnshareprev {
+  background-image: url("../images/btnshare3.png");
+  display: block;
+}
+
+#btnprintprev {
+  background-image: url("../images/btnprint3.png");
+  display: block;
+}
+
+#btndownloadprev {
+  background-image: url("../images/btndown.png");
+  display: block;
+}
+
+#button-down {
+  background: none;
+  border: none;
+}/*preview*/#aboutMe-preview {
+  text-align: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  color: black;
+}/*languages*/#languages-form-container,#hobbies-form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#languages-preview,#hobbies-preview,.social {
+  padding-left: 7%;
+  padding-right: 7%;
+}/*checkbox*/input[type=checkbox] {
+  -webkit-transform: scale(1.2);
+ /* Safari and Chrome */
+  color: #000;
+}
+
+#hobbies-form {
+  padding-bottom: 2%;
+}/*flechas*/#arriba {
+  width: 5px;
+  padding: 5px;
+  position: fixed;
+  bottom: 15px;
+  right: 45px;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+#arriba img {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 30px;
+  margin-bottom: 60px;
+}/*comentarios*/#comentarios {
+  height: 80px;
+  padding-top: 6px;
+}/*mediaqueries*/.codigoqr > img {
+  width: 120px;
+  height: 120px;
+}
+
+.codigoqr {
+  padding: 15px;
+  text-align: center;
 }
 
 .link-contact {
@@ -542,7 +398,11 @@ input[type=checkbox] {
   border: none;
   cursor: pointer;
   margin-top: 30px;
-}/*Estilos generales de la sección de desplegables*/.form-section-container {
+}/*Estilos generales de la sección de desplegables*/.form {
+  width: 50%;
+}
+
+.form-section-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -635,6 +495,25 @@ input[type=checkbox] {
   flex-direction: column;
 }
 
+.boxes-container {
+  display: none;
+  padding-bottom: 10px;
+}
+
+.buttons-container {
+  margin: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .info-preview {
   margin-top: 30px;
   display: -webkit-box;
@@ -680,6 +559,35 @@ input[type=checkbox] {
 
 .skill,.language,.skill-percent,.percentage {
   width: 160px;
+}
+
+.dates-boxes {
+  margin: 8px 8px;
+  width: 220px;
+  padding: 3px;
+  text-align: center;
+}
+
+.select-styles {
+  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+  padding: 2px;
+  border: solid 1px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.month,.year {
+  margin-top: 5px;
+}
+
+.check-box-hobbies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 4%;
 }
 
 .container-pic-preview {
@@ -993,6 +901,17 @@ input[type=checkbox] {
   width: 40px;
 }
 
+.all-hobbies-preview,.socialNetworks,.social {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 .title-crea {
   margin-top: 15%;
   margin-left: 20px;
@@ -1065,13 +984,7 @@ input[type=checkbox] {
 }
 
 @media all and (min-width: 600px) {
-  #button-down {
-    display: none;
-  }
-
-  #empty-container {
-    height: 20px;
-  }/*Footer*/  .infooter {
+/*Footer*/  .infooter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1079,6 +992,14 @@ input[type=checkbox] {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+  }
+
+  #button-down {
+    display: none;
+  }
+
+  #empty-container {
+    height: 20px;
   }
 
   #arriba {
@@ -1132,14 +1053,6 @@ input[type=checkbox] {
 }
 
 @media all and (min-width: 900px) {
-  #ventana2,#btnshare,#btnprint,#btndownload {
-    display: block;
-  }
-
-  #btnshareprev,#btnprintprev,#btndownloadprev {
-    display: none;
-  }
-
   .flexible::before {
     left: 0;
     top: 0;
@@ -1211,6 +1124,14 @@ input[type=checkbox] {
     max-width: 100%;
     padding-top: 10px;
     padding-left: -5px;
+  }
+
+  #ventana2,#btnshare,#btnprint,#btndownload {
+    display: block;
+  }
+
+  #btnshareprev,#btnprintprev,#btndownloadprev {
+    display: none;
   }
 
   .cross-section-button {

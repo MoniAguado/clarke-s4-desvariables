@@ -1,12 +1,23 @@
 @import 'core/variables';
-
-@import 'components/forms';
-
-@import 'layout/footer';
-
 @import 'prime/styles';
 
+@import 'components/forms';
+@import 'components/button';
+@import 'components/icons';
+@import 'components/inputs';
+@import 'components/links';
+@import 'components/preview';
+@import 'components/select';
+@import 'components/titles';
+@import 'components/typography';
+
+@import 'core/mixins';
+
+@import 'layout/footer';
+@import 'layout/grid';
 @import 'layout/header';
 @import 'layout/wrapper';
 
+
+@import 'pages/contact';
 @import 'pages/index';

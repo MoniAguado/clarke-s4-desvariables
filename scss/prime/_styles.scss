@@ -1,5 +1,21 @@
 /*Estilos generales*/
 
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #FFFEFA;
+	margin: 0;
+	padding: 0;
+	font-family: 'Gabriela', serif;
+}
+main{
+	padding-top: 50px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
 #empty-container {
 	height: 70px;
 }
@@ -11,31 +27,30 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 }
 
 /*Estilos generales de la sección de desplegables*/
-
 .title-container {
 	padding-left: 20px;
 	margin-bottom: 10px;
 	width: 90%;
 	height: 40px;
-	background-color: $inputAndButtons;
+	background-color: #7DBEA5;
 	border-radius: 8px;
 	display: flex;
 	align-items: center;
-	box-shadow: $boxShadowInputs 0 1px 0;
-	text-shadow: $textShadowInputs 0 1px 0;
+	box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
 }
 .title-container:hover {
-  border-top-color: $percentageBarAndInputsAcc;
-  background: $percentageBarAndInputsAcc;
+  border-top-color: #5A392B;
+  background: #5A392B;
   color: #ccc;
 }
 .title-container:active {
-	border-top-color: $percentageBarAndInputsAcc;
-	background: $percentageBarAndInputsAcc;
+	border-top-color: #5A392B;
+	background: #5A392B;
 }
-
 .open-section-button {
 	background: none;
+	border: none;
 	margin-left: auto;
 }
 .close-section-button {
@@ -66,26 +81,78 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 
 /*Botones añadir y guardar*/
 .buttons-save-general {
-	background-color: $addSaveButtons;
+	background-color: #E1F7E7;
 	padding: 5px;
-	text-shadow: $textShadowInputs 0 1px 0;
-	box-shadow: $addSaveButtons 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	box-shadow: #E1F7E7 0 1px 0;
 	display: inline-block;
 	margin: 13px 0;
 	width: 70px;
 	border-radius:7px;
 }
 .buttons-save-general:hover {
-	background: $inputAndButtons;
-  box-shadow: inset 0 0 20px $inputAndButtons, 0 0 20px $inputAndButtons;
+	background: #7DBEA5;
+  box-shadow: inset 0 0 20px #7DBEA5, 0 0 20px #7DBEA5;
   outline-offset: 80px;
-	color: $white;
+	color: #fff;
 	font-weight: bold;
-	border-color: $inputAndButtons;
+	border-color:#7DBEA5;
 }
-
+/*Ocultar secciones*/
+.net-social-hidden, .invisible, #languages-form, #hobbies-form, #read, #travel, #game, #sports, #cinema, #music, #files, #ventana2, #sound-efx {
+	display: none;
+}
+.visible {
+	display: block;
+}
+.shown{
+	/*visibility: visible;*/
+	display: block;
+}
+.hidden{
+	/*visibility: hidden;*/
+	display: none;
+}
+/*Fin estilos generales*/
 /*Header logo formulario*/
-
+.headlog{
+	height: 70px;
+	min-width: 60px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+.containerlogo{
+	display: flex;
+	flex-direction: row;
+}
+.machinelog{
+	margin-top: 5px;
+	display: block;
+	margin-left: 5px;
+	max-width: 60px;
+	width: 100%;
+}
+.letterslog{
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 10px;
+	max-width: 150px;
+	width: 100%;
+	margin-top: 10px;
+}
+.icons{
+	height: 30px;
+  width: 30px;
+  margin-left: 5px;
+  background-size: cover;
+  align-items: flex-end;
+  text-align: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  border-style: none;
+  cursor: pointer;
+}
 .iconsprev{
 	height: 30px;
   width: 30px;
@@ -98,7 +165,12 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
   border-style: none;
   cursor: pointer
 }
-
+/*header parte marta*/
+.containericonos{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
 .cajaiconsprev{
 	display: flex;
 	flex-direction: row;
@@ -136,28 +208,60 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	background-image: url("../images/btndown.png");
 		display: block;
 }
-
-
+header{
+	width: 100%;
+	height: 60px;
+	background-color: #2E2B24;
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+	padding-top: 0px;
+	margin-top: 0px;
+  z-index: 99;
+	padding-right: 10px;
+}
+#header-fondo {
+	background-image: url(../images/groupMobile.png);
+	background-position: center;
+	background-size: cover;
+	height: 80vh;
+	margin-bottom: 5px;
+}
 .text-crea {
 	margin-top: 20%;
 	margin-left: 20px;
 	font-size: 1.5em;
 	font-family: 'American Typewriter Bold', Arial;
 	font-weight: bold;
-	color: $percentageBarAndInputsAcc;
+	color: #5a392b;
 }
 #button-down {
 	background: none;
 	border: none;
 }
+/* cargar imagen*/
+.thumb{
+	border: 1px solid #000;
+	margin: 10px 5px 0 0;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	-webkit-box-shadow: 8px 14px 42px 1px #3d3d29;
+}
+/*fin cargar imagen*/
 .separador {
-  color: $inputAndButtons;
+  color: #7DBEA5;
 	width: 100%;
 	text-align: center;
 	padding: 4%;
 }
-
-.containerphoto{
+.containerinfo{
+	display: flex;
+	flex-direction: column;
+}
+.containerfoto{
 	display: flex;
 	justify-content: center;
 }
@@ -171,7 +275,20 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	flex-direction: column;
 	align-items: center;
 }
-
+.foto{
+	width: 200px;
+  height: 200px;
+	border-radius: 100px;
+	margin-top: 40px;
+	-webkit-box-shadow: 5px 8px 42px 1px #3d3d29;
+	display: flex;
+	align-self: center;
+	background-image: url("../images/addimg.png");
+	background-color: #cdf7e6;
+	background-size: 150px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 .subirfoto{
 	width: 95px;
 	display: flex;
@@ -194,7 +311,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	margin-top: -20px;
 }
 .thumb2{
-	border: 1px solid $black;
+	border: 1px solid #000;
 	margin: 10px 5px 0 0;
 	width: 200px;
 	height: 200px;
@@ -249,10 +366,10 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 	text-align: center;
 }
 .select-styles{
-	text-shadow: $textShadowInputs 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
 	padding: 2px;
 	border: solid 1px;
-	background-color: $white;
+	background-color: #fff;
 	border-radius: 5px;
 }
 .buttons-container{
@@ -267,7 +384,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 /*Experience and Education preview*/
 .section-title{
 	text-align: center;
-	color: $percentageBarAndInputsAcc;
+	color: #5A392B;
 }
 /* La timeline*/
 .timeline {
@@ -280,7 +397,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
   content: '';
   position: absolute;
   width: 10px;
-  background-color: $percentageBarAndInputsAcc;
+  background-color: #5A392B;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -301,7 +418,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid $percentageBarAndInputsAcc;
+  border: 4px solid #5A392B;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -327,9 +444,9 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid $timeline;
+  border: medium solid rgba(125, 190, 165, 0.36);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent $timeline;
+  border-color: transparent transparent transparent rgba(125, 190, 165, 0.36);
 }
 /* Añade flechas en el contenido de la derecha apuntando hacia la izquierda. */
 .right::before {
@@ -340,14 +457,14 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid $timeline;
+  border: medium solid rgba(125, 190, 165, 0.36);
   border-width: 10px 10px 10px 0;
-  border-color: transparent $timeline transparent transparent;
+  border-color: transparent rgba(125, 190, 165, 0.36) transparent transparent;
 }
 /* Estilo de las cajas con el contenido */
 .content-timeline {
   padding: 10px 30px;
-  background-color: $timeline;
+  background-color: rgba(125, 190, 165, 0.36);
   position: relative;
   border-radius: 6px;
 	font-size: 14px;
@@ -362,7 +479,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 }
 /*Estilos de texto dentro de cajas*/
 .title-year {
-  color: $percentageBarAndInputsAcc;
+  color: #5A392B;
 	margin: 8px;
 	font-size: 20px;
 }
@@ -394,7 +511,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 .skill {
   margin-top: 5px;
 	margin-right: 1%;
-	color: $percentageBarAndInputsAcc;
+	color: #5A392B;
 }
 .skill-pre {
 	margin-left: 15%;
@@ -422,30 +539,33 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
   top: 0;
   left: 0;
   border-radius: 10px;
-  background: $inputAndButtons;
+  background: #7DBEA5;
 }
 /*Languages form container*/
-
-
+#languages-form-container, #hobbies-form-container {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
 .text-form-button {
-	color: $white;
+	color: #ffffff;
 }
 #languages-preview, #hobbies-preview, .social {
 	padding-left: 7%;
 	padding-right: 7%;
 }
 .languages-bar-preview {
-	background-color: $languagesBackground;
+	background-color: #e0e0e0;
 	margin-bottom: 1em;
 }
 .text-bar-preview {
 	text-align: left;
-	color: $white;
+	color: #ffffff;
 	line-height: 2em;
 	padding-left: 1em;
 }
 .percentage-bar {
-	background-color: $percentageBarAndInputsAcc;
+	background-color: #5a392b;
 }
 .input-lang, .input-skill{
 	padding-bottom: 1em;
@@ -465,7 +585,7 @@ src: local('American Typewriter Bold'), url('ufonts.com_american-typewriter-bold
 }
 input[type=checkbox]{
 	-webkit-transform: scale(1.2); /* Safari and Chrome */
-	color: $black;
+	color: #000000;
 }
 #hobbies-form {
 	padding-bottom: 2%;
@@ -548,13 +668,13 @@ text-align: center;
 }
 /*Ventana de alert de error de fecha introducida*/
 .alert-dates{
-	background-color: $whitishBackground;
+	background-color: #FFFEFA;
 	width: 230px;
   height: 110px;
   position: fixed;
   top: 220px;
   left: 17%;
-	border: 2px solid #{$inputAndButtons};
+	border: 2px solid #7DBEA5;
 }
 .button-alert-img{
 	background-color: transparent;
@@ -568,14 +688,49 @@ text-align: center;
 	font-size: 13px;
   margin: 30px 30px;
   text-align: justify;
-  color: $alerts;
+  color: #e64d4d;
 	font-weight: bold;
 }
 .alert-cruise{
 	width: 20px;
   height: 20px;
 }
+/*footer*/
+.infooter{
+	background-color: #252525;
+	font-size: 0.8em;
+	color: #555555;
+	padding: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
 
+.end{
+	margin-left: auto;
+	margin-right: auto;
+}
+.contacto{
+	color: #d5d4cd;
+	text-decoration: none;
+	margin-top: 20px;
+}
+.contacto:hover{
+	color: #7DBEA5;
+}
+.logo{
+	min-width: 200px ;
+	margin-left: auto;
+	margin-right: auto;
+}
+.logoadalab{
+	display: block;
+	margin: 5px auto;
+	max-width: 200px;
+	width: 75%;
+}
 /*flecha subir arriba*/
 #arriba {
 	width: 5px;
@@ -642,8 +797,8 @@ text-align: center;
 }
 .cajas{
   width: 100%;
-	background-color: $boxBackgroundColor;
-	border: solid 1px $boxBorderAndButtonColor;
+	background-color: #F4EDDD;
+	border: solid 1px #514336;
 	padding: 0 12px;
 	height: 40px;
 	border-radius: 9px;
@@ -654,7 +809,7 @@ text-align: center;
 	padding-top: 6px;
 }
 .cajas:focus{
-	border-color: $boxBorderAndButtonColor;
+	border-color: #514336;
 }
 .campos{
  margin: 0 0 1.5rem;
@@ -662,8 +817,8 @@ text-align: center;
  flex-direction: row;
 }
 .boton{
-	color: $boxBorderAndButtonColor;
-	background-color: $inputAndButtons;
+	color: #514336;
+	background-color: #7DBEA5;
 	font-size: 15px;
 	font-weight: bold;
 	z-index: 1;
@@ -674,11 +829,22 @@ text-align: center;
 }
 /*mediaqueries*/
 @media all and (min-width: 350px){
-	.container-logo{
+	.headlog{
+		display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+		}
+	.containerlogo{
 		margin-left: 30px;
+	}
+	.containericonos{
+		margin-right: 20px;
 	}
 }
 @media all and (min-width: 400px){
+	.headercreatucv{
+	height: 60vh;
+	}
 	.nets{
 		display: flex;
 		flex-direction: row;
@@ -691,12 +857,22 @@ text-align: center;
 	}
 }
 @media all and (min-width: 490px){
+	.headercreatucv{
+		height: 80vh;
+	}
 }
+	/*.textcrea{
+		font-size: 40px;
+		margin-top: 50px;
+	}*/
 @media all and (max-width: 600px){
 	.text-form-button{
 		font-size: 18px;
 	}
-
+	.icons{
+		height: 28px;
+	  width: 28px;
+	}
 	/*Mediaqueries de preview de Experiencia y Formación*/
 	/* Poner la línea a la izquierda */
 	.timeline::after {
@@ -715,9 +891,9 @@ text-align: center;
 	/* Para que todas las flechas apunten a la izquierda */
 	.container-timeline::before {
 		left: 60px;
-		border: medium solid $timeline;
+		border: medium solid rgba(125, 190, 165, 0.36);
 		border-width: 10px 10px 10px 0;
-		border-color: transparent $timeline transparent transparent;
+		border-color: transparent rgba(125, 190, 165, 0.36) transparent transparent;
 	}
 	/* Para que todos los círculos estén alineados */
 	.left::after, .right::after {
@@ -725,6 +901,10 @@ text-align: center;
 	}
 }
 @media all and (min-width:600px) {
+	#header-fondo {
+		background-image: url(../images/group.png);
+		height: 100vh;
+	}
 	#button-down {
 		display: none;
 	}
@@ -753,18 +933,72 @@ text-align: center;
 	}
 }
 @media all and (min-width: 810px){
+	.headercreatucv{
+		height: 500vh;
+	}
+	.headlog{
+		height: 100px;
+	}
 	.cajaiconsprev{
 		margin-top: 37px;
 	}
+	.icons{
+		height: 34px;
+		width: 34px;
+		margin: 8px;
+	}
+	.containerlogo{
+		height: 80px;
+		width: 41%;
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	.machinelog{
+		max-width: 85%;
+		margin: 0px;
+		padding: 3px;
+	}
+	.containerleters{
+			width: 1000px;
+	}
+	.letterslog{
+		max-width: 100%;
+		padding-top: 10px;
+		padding-left: -5px;
+	}
 }
 @media all and (min-width:900px) {
+	.headercreatucv{
+		height: 120vh;
+		width: 100%;
+	}
 	#ventana2, #btnshare, #btnprint, #btndownload {
 		display: block;
 	}
 	#btnshareprev, #btnprintprev, #btndownloadprev {
 		display: none;
 	}
-
+	.containerlogo{
+		height: 80px;
+		width: 41%;
+		margin-bottom: 8px;
+	}
+	.machinelog{
+		max-width: 74%;
+	}
+	.containerleters{
+		width: 1000px;
+	}
+	.letterslog{
+		max-width: 100%;
+		padding-top: 10px;
+		padding-left: -5px;
+	}
+	#header-fondo{
+		width: cover;
+		background-image: url(../images/group.png);
+		height: 100vh;
+	}
 	.flexible::before{
 		left: 0;
 		top: 0;
@@ -790,7 +1024,7 @@ text-align: center;
 	.skill, .language, .skill-percent, .percentage {
 		width: 160px;
 	}
-	.form-sec {
+	.formulario-sec {
 		height: 100%;
 		width: 40%
 	}
@@ -820,6 +1054,9 @@ text-align: center;
 	}
 }
 @media all and (min-width: 810px){
+	.headercreatucv{
+		height: 120vh;
+	}
 }
 @media print {
 	.barra, .content-timeline, .languages-bar-preview, .timeline, .printnet {
@@ -831,7 +1068,7 @@ text-align: center;
 	.thumb2{
 		margin-top: 50px;
 	}
-	.form-sec {
+	.formulario-sec {
 		  display: none;
 	}
 	.timeline::after {
@@ -857,16 +1094,15 @@ text-align: center;
 	.left::before {
 	  top: 22px;
 	  left: 319px;
-	  border: medium solid $timeline;
-	  border: medium solid $timeline;
+	  border: medium solid rgba(125, 190, 165, 0.36);
 	  border-width: 10px 0 10px 10px;
-	  border-color: transparent transparent transparent $timeline;
+	  border-color: transparent transparent transparent rgba(125, 190, 165, 0.36);
 	}
 	.right::before {
 	  top: 22px;
 	  left: 30px;
-	  border: medium solid $timeline;
+	  border: medium solid rgba(125, 190, 165, 0.36);
 	  border-width: 10px 10px 10px 0;
-	  border-color: transparent $timeline transparent transparent;
+	  border-color: transparent rgba(125, 190, 165, 0.36) transparent transparent;
 	}
 }

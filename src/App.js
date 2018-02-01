@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './scss/main.css';
 
 import addButton24px from './images/addButton24px.png';

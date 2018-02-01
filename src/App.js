@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import Footer from './components/Footer';
 import './scss/main.css';
+
 
 import addButton24px from './images/addButton24px.png';
 import addButton32px from './images/addButton32px.png';
 import addimg from './images/addimg.png';
-import arriba from './images/arriba.png';
 import btnaddimg from './images/btnaddimg.png';
 import btnclose from './images/btnclose.png';
 import btndown from './images/btndown.png';
@@ -29,7 +30,6 @@ import group from './images/group.png';
 import groupMobile from './images/groupMobile.png';
 import instagram from './images/instagram.png';
 import linkedin from './images/linkedin.png';
-import logoadalab from './images/logoadalab.png';
 import logofinal from './images/logofinal.png';
 import logoLetras from './images/logoLetras.png';
 import logoLetrasRegular from './images/logoLetrasRegular.png';
@@ -458,20 +458,7 @@ class App extends Component {
 
 
 			</div>
-				<footer className="footer">
-					<div className="end"><h3>Scriptoras &copy; 2017</h3></div>
-					<div className="end">
-						<p><a className="link-contact" href="contact.html">Contacta con nosotras</a></p>
-					</div>
-					<div className="logo">
-						<a href="http://adalab.es/" target="blank">
-							<img src={logoadalab} alt="Logo Adalab" className="logo-adalab"/>
-						</a>
-					</div>
-					<a id="arriba" title="Arriba" className="invisible">
-						<img src={arriba} title="Arriba" alt="Arriba"/>
-					</a>
-				</footer>
+				<Footer />
 			 </body>
 			</div>
 

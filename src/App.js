@@ -60,6 +60,12 @@ import videogameSmall from './images/videogameSmall.png'
 import machine from './images/vintage8Machine.png';
 
 class App extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			
+		}
+	}
   render() {
     return (
 			<div className="App">

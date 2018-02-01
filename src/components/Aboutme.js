@@ -4,6 +4,42 @@ import expandbutton from '../images/expandbutton.png';
 import expandarrow from '../images/expandarrow.png';
 
 class Aboutme extends React.Component {
+	const archivo = (evt) => {
+	  const files = evt.target.files;
+	  for (let i = 0, f; f = files[i]; i++) {
+	    if (!f.type.match('image.*')) {
+	      continue;
+	  	}
+	  const reader = new FileReader();
+	  reader.onload = ((theFile) => {
+	    return function(e) {
+
+	      document.getElementById("foto").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+	    };
+	  })(f);
+	    reader.readAsDataURL(f);
+	  }
+	}
+	document.getElementById('files').addEventListener('change', archivo, false);
+	// duplico para img prev
+	const archivo2 = (evt) => {
+		const files = evt.target.files;
+		for (let i = 0, f; f = files[i]; i++) {
+		//Solo admitimos imágenes.
+			if (!f.type.match('image.*')) {
+				continue;
+			}
+			const reader = new FileReader();
+			reader.onload = ((theFile) => {
+				return function(e) {
+				// Creamos la imagen.
+					document.getElementById("prefoto").innerHTML = ['<img class="thumb2" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+				};
+			})(f);
+			reader.readAsDataURL(f);name-formnameForm
+		}
+	}
+	document.getElementById('files').addEventListener('change', archivo2, false);
 	render() {
 		return (
 			<form className="form-section-container" action="index.html" method="post">

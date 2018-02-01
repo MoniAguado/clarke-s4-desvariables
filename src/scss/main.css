@@ -148,12 +148,13 @@
     margin-right: 1%; } }
 
 @media print {
-  header, footer, nav {
-    display: none; }
+ header, footer, nav {
+    /*display: none;*/ }
   .thumb2 {
     margin-top: 50px; }
   .formulario-sec {
-    display: none; } }
+    /*display: none;*/ }
+	}
 
 .header {
   width: 100%;
@@ -319,15 +320,18 @@
 
 #btnshare {
   background-image: url("../images/btnshare2.png");
-  display: none; }
+  /*display: none; */
+}
 
 #btnprint {
   background-image: url("../images/btnprint2.png");
-  display: none; }
+  /*display: none;*/
+ }
 
 #btndownload {
   background-image: url("../images/btndownload2.png");
-  display: none; }
+  /*display: none; */
+}
 
 #btnshareprev {
   background-image: url("../images/btnshare3.png");
@@ -402,7 +406,7 @@ input[type=checkbox] {
 
 @media all and (min-width: 600px) {
   #button-down {
-    display: none; }
+    /*display: none;*/ }
   #empty-container {
     height: 20px; }
   #arriba {
@@ -418,7 +422,7 @@ input[type=checkbox] {
   #ventana2, #btnshare, #btnprint, #btndownload {
     display: block; }
   #btnshareprev, #btnprintprev, #btndownloadprev {
-    display: none; } }
+    /*display: none;*/ } }
 
 .codigoqr > img {
   width: 120px;
@@ -486,7 +490,7 @@ input[type=checkbox] {
 
 @media all and (min-width: 900px) {
   .cross-section-button {
-    display: none; } }
+    /*display: none;*/ } }
 
 /*Estilos generales de la sección de desplegables*/
 .form {
@@ -520,7 +524,7 @@ input[type=checkbox] {
 
 /*ocultar secciones*/
 .net-social-hidden, .invisible, #languages-form, #hobbies-form, #read, #travel, #game, #sports, #cinema, #music, #files, #ventana2, #sound-efx {
-  display: none; }
+  /*display: none;*/ }
 
 .visible {
   display: block; }
@@ -531,7 +535,7 @@ input[type=checkbox] {
 
 .hidden {
   /*visibility: hidden;*/
-  display: none; }
+  /*display: none;*/ }
 
 /*Fin estilos generales*/
 /* cargar imagen*/
@@ -562,7 +566,7 @@ input[type=checkbox] {
   flex-direction: column; }
 
 .boxes-container {
-  display: none;
+  /*display: none;*/
   padding-bottom: 10px; }
 
 .buttons-container {
@@ -578,7 +582,7 @@ input[type=checkbox] {
 
 @media print {
   .form-sec {
-    display: none; } }
+    /*display: none;*/ } }
 
 .info-preview {
   margin-top: 30px;
@@ -804,7 +808,7 @@ input[type=checkbox] {
   margin-left: 0;
   margin-right: 0;
   position: relative;
-  display: none;
+  /*display: none;*/
   margin-top: 5px; }
 
 .barra_front {

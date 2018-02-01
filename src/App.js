@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './scss/main.css';
 
 import addButton24px from './images/addButton24px.png';
 import addButton32px from './images/addButton32px.png';
@@ -14,7 +14,6 @@ import btndownload2 from './images/btndownload2.png';
 import btnfile from './images/btnfile.png';
 import btnfile2 from './images/btnfile2.png';
 import btnprint from './images/btnprint.png';
-import btnprint2 from './images/btnprint2.png';
 import btnprint3 from './images/btnprint3.png';
 import btnshare from './images/btnshare.png';
 import btnshare2 from './images/btnshare2.png';
@@ -40,7 +39,7 @@ import logoPrueba from './images/logoPrueba.png';
 import menos from './images/menos.png';
 import minbutom from './images/minbutom.png';
 import minus from './images/minus.svg';
-import minus from './images/minus.png';
+import minus32 from './images/minus32.png';
 import minus32px from './images/minus32px.png';
 import music from './images/music.png';
 import musicSmall from './images/musicSmall.png';
@@ -116,12 +115,12 @@ class App extends Component {
 									 <img src={expandarrow} alt="minusbuttom"/>
 								 </button>
 							 </div>
-							 <div  id="content-about" className="boxes-container"><!--Oculto-->
+							 <div  id="content-about" className="boxes-container">
 								 <label for="about"></label>
 								 <textarea name="about-me" rows="6" cols="25" placeholder="Introduce una breve descripción sobre ti." className="textarea" id="text-about"></textarea>
 							 </div>
 						 </form>
-						 <form className="form-section-container" id=experience-section action="index.html" method="post">
+						 <form className="form-section-container" id="experience-section" action="index.html" method="post">
 							 <div className="title-container">
 								 <h2 className="title-form text-form-button" onclick="editar('job-box')">Experiencia laboral</h2>
 								 <button id="openButtonExperience" className="open-section-button shown" type="button" name="experience-button" onclick="editar('job-box')" value="openButton">
@@ -193,7 +192,7 @@ class App extends Component {
 						 </form>
 						 <section  className="form-section-container">
 							 <div className="title-container">
-								 <h2 className="title-form text-form-button">Habilidades</h2><!--Mostrado-->
+								 <h2 className="title-form text-form-button">Habilidades</h2>
 								 <button id="openButtonSkill" className="open-section-button shown" type="button" name="skills-button" onclick="editar('content-skills')" value="openButton">
 									 <img src={expandbutton} alt="addButton"/>
 								 </button>
@@ -202,7 +201,7 @@ class App extends Component {
 								 </button>
 							 </div>
 							 <form action="index.html" method="post">
-								 <div id="content-skills" className="boxes-container"><!--Oculto-->
+								 <div id="content-skills" className="boxes-container">
 									 <div className="input-skill">
 										 <input className="inputs skill" type="text" name="skill1" value="" placeholder="Escribe una habilidad" id="skill1"></input>
 										 <input className="inputs skill-percent" type="text" name="percentage1" value="" placeholder="Escribe un porcentaje" id="percentage1"></input>
@@ -332,15 +331,9 @@ class App extends Component {
 				 <section className="preview-section" id="ventana2">
 						 <div className="box-icons-preview">
 							 <button className="cross-section-button" type="button" name="cruz-button" onclick="closePreview('ventana2')">
-<<<<<<< HEAD
-							 <img src={btnclose} alt="cruzbuttom"/></button>
-							 <input className="iconsprev" type="button" onclick="printCurriculum()" id="btnprintprev" title="Imprimir">
-							 <input className="iconsprev" type="button" onclick="download()" id="btndownloadprev" title="Descargar">
-=======
-							 <img src="images/btnclose.png" alt="cruzbuttom"></button>
+							 <img src="images/btnclose.png" alt="cruzbuttom"/></button>
 							 <button className="iconsprev" type="button" onclick="printCurriculum()" id="btnprintprev" title="Imprimir"></button>
 							 <button className="iconsprev" type="button" onclick="download()" id="btndownloadprev" title="Descargar"></button>
->>>>>>> 41af42e43e5ffe05ac5340a72232fd09f67d9350
 						 </div>
 					 <section className="container-pic-preview">
 						 <div id="prefoto"></div>
@@ -464,22 +457,7 @@ class App extends Component {
 			 <div id="btrs">
 			<p><b>Comparte nuestra página en redes sociales</b></p>
 
-			var ub = window.location;
-			var us="https://slack.com/share?url="+"https://adalab.github.io/clarke-s2-scriptoras";
-			var uf="https://www.facebook.com/sharer.php?u="+"https://adalab.github.io/clarke-s2-scriptoras";
-			var ut="https://twitter.com/share?url="+"https://adalab.github.io/clarke-s2-scriptoras";
-			var ug="https://plus.google.com/share?url="+"https://adalab.github.io/clarke-s2-scriptoras";
-			var up="https://www.pinterest.com/pin/create/button/?url="+"https://adalab.github.io/clarke-s2-scriptoras";
-			var ul="https://www.linkedin.com/shareArticle?mini=true&url="+"https://adalab.github.io/clarke-s2-scriptoras";
-			var uw="whatsapp://share?url="+"https://adalab.github.io/clarke-s2-scriptoras";
-			</script>
-			<a href="javascript:void(0);" onclick="window.open(us,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en Slack"><img alt="Compartir en slack" className="sl" height="40" src="https://i.pinimg.com/originals/5c/49/e7/5c49e71075941267cfaf5eb2700e7049.png" title="Compartir en slack" width="40" /></a>
-			<a href="javascript:void(0);" onclick="window.open(uf,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en Facebook"/><img alt="Compartir en facebook" className="fb" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/facebook-long.png" title="Compartir en facebook" width="40" /></a>
-			<a href="javascript:void(0);" onclick="window.open(ug,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en Google+"><img alt="Compartir en google+" className="glg" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/google-long.png" title="Compartir en google+" width="40" /></a>
-			<a href="javascript:void(0);" onclick="window.open(ut,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en Twitter"><img alt="Compartir en twitter" className="twtr" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/twitter-long.png" title="Compartir en twitter" width="40" /></a>
-			<a href="javascript:void(0);" onclick="window.open(up,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en Pinterest"><img alt="Compartir en pinterest" className="pnt" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/pinterest-long.png" title="Compartir en pinterest" width="40" /></a>
-			<a href="javascript:void(0);" onclick="window.open(ul,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en linkedin+"><img alt="Compartir en likedin" className="lkdn" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/linkedin-long.png" title="Compartir en Likedin" width="40" /></a>
-			<a href="javascript:void(0);" data-action=”share/whatsapp/share” onclick="window.open(uw,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en WhatsApp+"><img alt="Compartir en WhatsApp " className="lkdn" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/whatsapp-long.png" title="Compartir en WhatsApp " width="40" /></a>
+
 			</div>
 				<footer className="footer">
 					<div className="end"><h3>Scriptoras &copy; 2017</h3></div>

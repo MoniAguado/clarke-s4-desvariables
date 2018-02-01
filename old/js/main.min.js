@@ -29,7 +29,7 @@ function archivo(evt) {
     reader.onload = (function(theFile) {
     	return function(e) {
       // Creamos la imagen.
-        document.getElementById("foto").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+        document.getElementById("foto").innerHTML = ['<img className="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
          };
          })(f);
       reader.readAsDataURL(f);
@@ -49,7 +49,7 @@ function archivo2(evt) {
 		reader.onload = (function(theFile) {
 			               return function(e) {
 			// Creamos la imagen.
-			 document.getElementById("prefoto").innerHTML = ['<img class="thumb2" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+			 document.getElementById("prefoto").innerHTML = ['<img className="thumb2" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
 			   };
 			  })(f);
 		reader.readAsDataURL(f);name-formnameForm
@@ -200,18 +200,18 @@ function saveNewExperience(){
 	var endMonthJob = document.getElementById("month-job-end").value;
 	var job = document.getElementById("job").value;
 	var company = document.getElementById("company").value;
-	var jobSectionPreviewBegin = '<div class="container-timeline left" id="container-timeline-left"><div class="content-timeline"><div class="dates-output-container"><div class="dates-container"><h3 id="start-job-year-preview"class="title-year">' + startYearJob +'</h3><p id="start-job-month-preview">' + startMonthJob + '</p></div><h3 class="title-year">-</h3><div class="dates-container">'
-	var jobSectionPreviewEnd = '</div></div><div class="work-information-output-container"><p id="job-preview"class="job-title">' + job + '</p><p id="company-preview">' + company + '</p></div></div></div>'
+	var jobSectionPreviewBegin = '<div className="container-timeline left" id="container-timeline-left"><div className="content-timeline"><div className="dates-output-container"><div className="dates-container"><h3 id="start-job-year-preview"className="title-year">' + startYearJob +'</h3><p id="start-job-month-preview">' + startMonthJob + '</p></div><h3 className="title-year">-</h3><div className="dates-container">'
+	var jobSectionPreviewEnd = '</div></div><div className="work-information-output-container"><p id="job-preview"className="job-title">' + job + '</p><p id="company-preview">' + company + '</p></div></div></div>'
 
 	if ((endMonthJob === 'mes' && endYearJob > 0) || (startMonthJob === 'mes' && startYearJob > 0)) {
 		showAlertMonth();
 	}
 	else if ((endMonthJob === 'mes' && endYearJob === 'Actualmente') || endYearJob === 'Actualmente' ) {
-		var jobSectionPreview = jobSectionPreviewBegin + '<h3 id="end-job-year-preview"class="title-year">Actual</h3><p id="end-job-month-preview"> </p>' + jobSectionPreviewEnd;
+		var jobSectionPreview = jobSectionPreviewBegin + '<h3 id="end-job-year-preview"className="title-year">Actual</h3><p id="end-job-month-preview"> </p>' + jobSectionPreviewEnd;
 		jobPreviewBox.innerHTML += jobSectionPreview;
 	} else {
 
-  var jobSectionPreview = jobSectionPreviewBegin + '<h3 id="end-job-year-preview"class="title-year">' + endYearJob + '</h3><p id="end-job-month-preview">' + endMonthJob + '</p>' + jobSectionPreviewEnd;
+  var jobSectionPreview = jobSectionPreviewBegin + '<h3 id="end-job-year-preview"className="title-year">' + endYearJob + '</h3><p id="end-job-month-preview">' + endMonthJob + '</p>' + jobSectionPreviewEnd;
 
 		if(startYearJob > endYearJob){
 			showAlert();
@@ -261,17 +261,17 @@ function saveNewTraining(){
 	var endMonthEd = document.getElementById("month-training-end").value;
 	var educTitle = document.getElementById("educ-title").value;
 	var educCenter = document.getElementById("center").value;
-	var educSectionPreviewBegin = '<div class="container-timeline right"><div class="content-timeline"><div class="dates-output-container"><div class="dates-container"><h3 id="start-education-year-preview" class="title-year">' + startYearEd + '</h3><p id="start-education-month-preview">' + startMonthEd + '</p></div><h3 class="title-year">-</h3><div class="dates-container">';
-	var educSectionPreviewEnd = '</div></div><div class="work-information-output-container"><p id="education-title-preview" class="education-title">' + educTitle + '</p><p id="education-center-preview">' + educCenter + '</p></div></div></div>';
+	var educSectionPreviewBegin = '<div className="container-timeline right"><div className="content-timeline"><div className="dates-output-container"><div className="dates-container"><h3 id="start-education-year-preview" className="title-year">' + startYearEd + '</h3><p id="start-education-month-preview">' + startMonthEd + '</p></div><h3 className="title-year">-</h3><div className="dates-container">';
+	var educSectionPreviewEnd = '</div></div><div className="work-information-output-container"><p id="education-title-preview" className="education-title">' + educTitle + '</p><p id="education-center-preview">' + educCenter + '</p></div></div></div>';
 
 	if ((endMonthEd === 'mes' && endYearEd > 0) || (startMonthEd === 'mes' && startYearEd > 0)) {
 		showAlertMonth();
 	}
 	else if ((endMonthEd === 'mes' && endYearEd === 'Actualmente') || endYearEd === 'Actualmente' ) {
-	var educationSectionPreview = educSectionPreviewBegin + '<h3 id="end-education-year-preview" class="title-year">Actual</h3><p id="end-education-month-preview"></p>' + educSectionPreviewEnd;
+	var educationSectionPreview = educSectionPreviewBegin + '<h3 id="end-education-year-preview" className="title-year">Actual</h3><p id="end-education-month-preview"></p>' + educSectionPreviewEnd;
 	educationPreviewBox.innerHTML += educationSectionPreview;
 	} else {
-	var educationSectionPreview = educSectionPreviewBegin + '<h3 id="end-education-year-preview" class="title-year">' + endYearEd + '</h3><p id="end-education-month-preview">' + endMonthEd + '</p>' + educSectionPreviewEnd;
+	var educationSectionPreview = educSectionPreviewBegin + '<h3 id="end-education-year-preview" className="title-year">' + endYearEd + '</h3><p id="end-education-month-preview">' + endMonthEd + '</p>' + educSectionPreviewEnd;
 		if(document.getElementById("year-training-start").value > document.getElementById("year-training-end").value){
 			showAlert();
 		}else {

@@ -1,11 +1,17 @@
 import React from 'react';
 
-class  extends React.Component {
+class PrevAboutme extends React.Component {
 	render() {
 		return (
-
+			<section>
+			<section>
+				<h2 className="section-title">Sobre mí</h2>
+					<p id="aboutMe-preview" className="section-title"></p>
+			</section>
+			<p className="separator">* * * * * * * * * * * * * * * </p>
+			</section>
 		)
 	}
 }
 
-export default ;
+export default PrevAboutme;

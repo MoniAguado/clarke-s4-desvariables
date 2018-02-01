@@ -14,65 +14,50 @@
 Number.prototype.clamp = function(min, max) {
   return Math.min(Math.max(this, min), max);
 };
-// function rectArea(x, y) {
-//   return x * y;
-// }
-//
-// // ES6
-// const rectArea = (x, y) => {
-//   return x * y;
-// };
-//
-// const rectArea = (x, y) => x * y;
-
-//marta
-//prueba cargar imagen
-function archivo(evt) {
+//Cargar imagen
+const archivo = (evt) => {
   const files = evt.target.files; // FileList object
-	//Obtenemos la imagen del campo "file".
-    for (let i = 0, f; f = files[i]; i++) {
-    //Solo admitimos imágenes.
-      if (!f.type.match('image.*')) {
-        continue;
-        }
+  for (let i = 0, f; f = files[i]; i++) {
+    if (!f.type.match('image.*')) {
+      continue;
+  	}
   const reader = new FileReader();
-    reader.onload = (function(theFile) {
-    	return function(e) {
+  reader.onload = ((theFile) => {
+    return function(e) {
       // Creamos la imagen.
-        document.getElementById("foto").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
-         };
-         })(f);
-      reader.readAsDataURL(f);
-       }
-		 }
-		 		document.getElementById('files').addEventListener('change', archivo, false);
+      document.getElementById("foto").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+    };
+  })(f);
+    reader.readAsDataURL(f);
+  }
+}
+document.getElementById('files').addEventListener('change', archivo, false);
 // duplico para img prev
-function archivo2(evt) {
-	const files = evt.target.files; // FileList object
-	//Obtenemos la imagen del campo "file".
+const archivo2 = (evt) => {
+	const files = evt.target.files;
 	for (let i = 0, f; f = files[i]; i++) {
 	//Solo admitimos imágenes.
 		if (!f.type.match('image.*')) {
-			                continue;
-			           }
+			continue;
+		}
 		const reader = new FileReader();
-		reader.onload = (function(theFile) {
-			               return function(e) {
+		reader.onload = ((theFile) => {
+			return function(e) {
 			// Creamos la imagen.
-			 document.getElementById("prefoto").innerHTML = ['<img class="thumb2" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
-			   };
-			  })(f);
+				document.getElementById("prefoto").innerHTML = ['<img class="thumb2" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+			};
+		})(f);
 		reader.readAsDataURL(f);name-formnameForm
-			  }
-			}
-			document.getElementById('files').addEventListener('change', archivo2, false);
-	//fin cargar imagen
-function simularClick(){
+	}
+}
+document.getElementById('files').addEventListener('change', archivo2, false);
+//Fin cargar imagen
+const simularClick = () => {
 	document.getElementById('files').click()
 }
 //Datos principales
 //guardar datos principales introducidos y pintarlos directamente en la preview
-function guardarDatosPrincipales(){
+const guardarDatosPrincipales = () => {
 	document.getElementById('prenombre').innerHTML = document.getElementById('nameForm').value;
 	document.getElementById('preapellidos').innerHTML = document.getElementById('surnameForm').value;
 	document.getElementById('preprofesion').innerHTML = document.getElementById('professionForm').value;
@@ -90,15 +75,14 @@ mailForm.onkeyup = guardarDatosPrincipales;
 const phoneForm = document.getElementById("phoneForm");
 phoneForm.onkeyup = guardarDatosPrincipales;
 //previsualizacion en otra hoja
-function viewprev(){
+const viewprev = () => {
 	document.getElementById('ventana2').style.display="block";
 	document.getElementById('ventana1').style.display="none";
 	document.getElementById('header-fondo').style.display="none";
 	document.getElementById('button-down').style.display="none";
 	document.getElementById('empty-container').style.display="none";
 	document.querySelector('.cruz-section-button').style.display="block";
-	}
-
+}
 // //Add typed text.
 let idx = 0;
 const txt = 'Crea tu CV con estilo...'.split('');
@@ -113,7 +97,7 @@ function typeWriter() {
   if (idx < txt.length) {
     const tempTxt = textCreaEl.innerHTML;
     textCreaEl.innerHTML += '|';
-    setTimeout(function() {
+    setTimeout(() => {
       textCreaEl.innerHTML = tempTxt + txt[idx];
       idx++;
       soundEfx.play();
@@ -121,23 +105,19 @@ function typeWriter() {
     }, speed/2);
   } else {
     idx = 0;
-    setTimeout(function(){
+    setTimeout(() => {
       textCreaEl.innerHTML = '';
       typeWriter();
     }, waitOnFinish);
   }
 }
-
-//function sound
-
-
-/*--------------------------- ABOUT FUNCTION---------------------------------------*/
-function saveAbout(){
+//ABOUT ME SECTION
+const saveAbout = () => {
 	document.getElementById('aboutMe-preview').innerHTML=document.getElementById('text-about').value;
 }
 const aboutTextArea = document.getElementById('text-about');
 aboutTextArea.onkeyup = saveAbout;
-/*---------------------------END ABOUT FUNCTION--------------------------------------*/
+//END ABOUT SECTION
 
 //función para abrir el desplegable
 function editar(idContent){
@@ -148,7 +128,7 @@ function ocultar(idContent){
 	document.getElementById(idContent).style.display = 'none';
 }
 //funcion cerrar preview
-function closePreview(idContent){
+const closePreview = (idContent) => {
 	document.getElementById(idContent).style.display = 'none';
 	document.getElementById('ventana1').style.display = 'block';
 	document.getElementById('header-fondo').style.display = 'block';
@@ -215,11 +195,11 @@ function saveNewExperience(){
 
 	if ((endMonthJob === 'mes' && endYearJob > 0) || (startMonthJob === 'mes' && startYearJob > 0)) {
 		showAlertMonth();
-	}
+		}
 	else if ((endMonthJob === 'mes' && endYearJob === 'Actualmente') || endYearJob === 'Actualmente' ) {
 		let jobSectionPreview = jobSectionPreviewBegin + '<h3 id="end-job-year-preview"class="title-year">Actual</h3><p id="end-job-month-preview"> </p>' + jobSectionPreviewEnd;
 		jobPreviewBox.innerHTML += jobSectionPreview;
-	} else {
+		} else {
 
   let jobSectionPreview = jobSectionPreviewBegin + '<h3 id="end-job-year-preview"class="title-year">' + endYearJob + '</h3><p id="end-job-month-preview">' + endMonthJob + '</p>' + jobSectionPreviewEnd;
 

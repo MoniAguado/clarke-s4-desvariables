@@ -35,7 +35,7 @@ import logoadalab from './images/logoadalab.png';
 import logofinal from './images/logofinal.png';
 import logoLetras from './images/logoLetras.png';
 import logoLetrasRegular from './images/logoLetrasRegular.png';
-import logoLetrasMaquina from './images/logoLetrasMaquina.png';
+import logoMaquina from './images/logoMaquina.png';
 import logoPrueba from './images/logoPrueba.png';
 import menos from './images/menos.png';
 import minbutom from './images/minbutom.png';
@@ -63,10 +63,10 @@ class App extends Component {
 			 <header className="header">
 				 <div className="container-logo">
 					 <div>
-						 <a href="index.html"><img src="images/logoMaquina.png" alt="logoscriptoras" className="machine-logo"></a>
+						 <a href="index.html"><img src={logoMaquina} alt="logoscriptoras" className="machine-logo"/></a>
 					 </div>
 					 <div className="container-letters">
-						 <a href="index.html"><img src="images/logoLetras.png" alt="logoscriptoras" className="letters-log"></a>
+						 <a href="index.html"><img src={logoLetras} alt="logoscriptoras" className="letters-log"/></a>
 					 </div>
 				 </div>
 				 <div className="container-icons">
@@ -77,26 +77,26 @@ class App extends Component {
 			 <main className="main-wrapper bloque index-main">
 				 <div id="header-fondo" className="header-background">
 					 <h1 className="title-crea text-crea"></h1>
-					 <audio id="sound-efx" src=""></audio>
 				 </div>
-				 <button id="button-down" type="button" name="button-down"><a href="index.html#empty-container"><img src="images/expand-button-medium.png" alt="rellena-los-campos"></a></button>
+				 <button id="button-down" type="button" name="button-down"><a href="index.html#empty-container"><img src={expandbuttonmedium} alt="rellena-los-campos"/></a></button>
 				 <div id="empty-container"></div>
 				 <div className="main-web-sections">
 					 <section className="form-section" id="ventana1">
-						 <form className="form-section-container" id=principal-section action="index.html" method="post">
+						 <form className="form-section-container" id="principal-section" action="index.html" method="post">
 							 <div className="title-container">
 								 <h2 className="title-form text-form-button" onclick="editar('principal-box')">Datos principales</h2>
 								 <button id="openButtonPrincipal" className="open-section-button shown" type="button" name="principales-button" onclick="editar('principal-box')" value="openButton">
-									 <img src="images/expand-button.png" alt="addButton">
+									 <img src={expandbutton} alt="addButton"/>
 								 </button>
 								 <button id="closeButtonPrincipal" className="close-section-button hidden" type="button" name="principales-button" onclick="ocultar('principal-box')" value="closeButton">
-									 <img src="images/expand-arrow.png" alt="minusbuttom">
+									 <img src={expandarrow} alt="minusbuttom"/>
 								 </button>
 							 </div>
 							 <div className="boxes-container" id="principal-box">
 								 <div className="containerinfo">
 									 <input type="file" id="files" name="files[]" className=""/>
-									 <div className="foto photo" title="Subir imagen" onclick="simularClick()"></div>
+									 <div className="foto photo" title="Subir imagen" 			onclick="simularClick()">
+									 </div>
 									 <div className="datosprin">
 										 <input type="text" name="name" placeholder="Introduce nombre" className="inputs name title-name" required id="nameForm">
 										 <input type="text" name="surname" placeholder="Introduce apellidos" className="inputs" required id="surnameForm">
@@ -111,10 +111,10 @@ class App extends Component {
 							 <div className="title-container">
 								 <h2 className="title-form text-form-button" onclick="editar('content-about')">Sobre mí</h2>
 								 <button id="openButtonAbout" className="open-section-button shown" type="button" name="about-me-button" onclick="editar('content-about')" value="openButton">
-									 <img src="images/expand-button.png" alt="addButton">
+									 <img src={expandbutton} alt="addButton"/>
 								 </button>
 								 <button id="closeButtonAbout" className="close-section-button hidden" type="button" name="about-me-button" onclick="ocultar('content-about')" value="closeButton">
-									 <img src="images/expand-arrow.png" alt="minusbuttom">
+									 <img src={expandarrow} alt="minusbuttom"/>
 								 </button>
 							 </div>
 							 <div  id="content-about" className="boxes-container"><!--Oculto-->
@@ -126,10 +126,10 @@ class App extends Component {
 							 <div className="title-container">
 								 <h2 className="title-form text-form-button" onclick="editar('job-box')">Experiencia laboral</h2>
 								 <button id="openButtonExperience" className="open-section-button shown" type="button" name="experience-button" onclick="editar('job-box')" value="openButton">
-									 <img src="images/expand-button.png" alt="addButton">
+									 <img src={expandbutton} alt="addButton"/>
 								 </button>
 								 <button id="closeButtonExperience" className="close-section-button hidden" type="button" name="job-box-button" onclick="ocultar('job-box')" value="closeButton">
-								 <img src="images/expand-arrow.png" alt="minusbuttom">
+								 <img src={expandarrow} alt="minusbuttom"/>
 								 </button>
 							 </div>
 							 <div className="boxes-container" id="job-box">
@@ -162,10 +162,10 @@ class App extends Component {
 							 <div className="title-container">
 								 <h2 className="title-form text-form-button" onclick="editar('education-box')">Formación</h2>
 								 <button id="openButtonFormac" className="open-section-button shown" type="button" name="languageButton" onclick="editar('education-box')" value="openButton">
-									 <img src="images/expand-button.png" alt="addButton">
+									 <img src={expandbutton} alt="addButton"/>
 								 </button>
 								 <button id="closeButtonFormac" className="close-section-button hidden" type="button" name="education-button" onclick="ocultar('education-box')" value="closeButton">
-								 <img src="images/expand-arrow.png" alt="minusbuttom">
+								 <img src={expandarrow} alt="minusbuttom"/>
 								 </button>
 							 </div>
 							 <div className="boxes-container" id="education-box">
@@ -196,10 +196,10 @@ class App extends Component {
 							 <div className="title-container">
 								 <h2 className="title-form text-form-button">Habilidades</h2><!--Mostrado-->
 								 <button id="openButtonSkill" className="open-section-button shown" type="button" name="skills-button" onclick="editar('content-skills')" value="openButton">
-									 <img src="images/expand-button.png" alt="addButton">
+									 <img src={expandbutton} alt="addButton"/>
 								 </button>
 								 <button id="closeButtonSkill" className="close-section-button hidden" type="button" name="content-skills-button" onclick="ocultar('content-skills')" value="closeButton">
-										 <img src="images/expand-arrow.png" alt="minusbuttom">
+										 <img src={expandarrow} alt="minusbuttom"/>
 								 </button>
 							 </div>
 							 <form action="index.html" method="post">
@@ -226,9 +226,9 @@ class App extends Component {
 						 <section id="languages-form-container">
 							 <div className="title-container">
 								 <h2 className="title-form text-form-button">Idiomas</h2>
-								 <button id="openButtonlanguages" className="open-section-button shown" type="button" name="languageButton" onclick="editar('languages-form')" value="openButton"><img src="images/expand-button.png" alt="addButton"></button>
+								 <button id="openButtonlanguages" className="open-section-button shown" type="button" name="languageButton" onclick="editar('languages-form')" value="openButton"><img src={expandbutton} alt="addButton"/></button>
 								 <button id="closeButtonlanguages" className="close-section-button hidden" type="button" name="job-box-button" onclick="ocultar('languages-form')" value="closeButton">
-								 <img src="images/expand-arrow.png" alt="minusbuttom"></button>
+								 <img src={expandarrow} alt="minusbuttom"/></button>
 							 </div>
 							 <form id="languages-form" action="index.html" method="post">
 								 <div className="input-lang">
@@ -248,9 +248,9 @@ class App extends Component {
 						 <section id="hobbies-form-container">
 							 <div className="title-container">
 								 <h2 className="title-form text-form-button">Hobbies</h2>
-								 <button id="openButtonHobbies" className="addLanguageButton open-section-button shown" type="button" name="languageButton" onclick="editar('hobbies-form')" value="openButton"><img src="images/expand-button.png" alt="addButton"></button>
+								 <button id="openButtonHobbies" className="addLanguageButton open-section-button shown" type="button" name="languageButton" onclick="editar('hobbies-form')" value="openButton"><img src={expandbutton} alt="addButton"/></button>
 								 <button id="closeButtonHobbies" className="close-section-button hidden" type="button" name="hobbiesForm-button" onclick="ocultar('hobbies-form')" value="closeButton">
-								 <img src="images/expand-arrow.png" alt="minusbuttom">
+								 <img src={expandarrow} alt="minusbuttom"/>
 								 </button>
 							 </div>
 							 <form id="hobbies-form" action="index.html" method="post">
@@ -284,9 +284,9 @@ class App extends Component {
 							 <div className="title-container">
 								 <h2 className="title-form text-form-button">Redes Sociales</h2>
 									 <button id="openButtonNet" className="open-section-button shown" type="button" name="networksButton" onclick="showNetsocial()" value="openButton">
-										 <img src="images/expand-button.png" alt="addButton"></button>
+										 <img src={expandbutton} alt="addButton"/></button>
 									 <button id="closeButtonNet" className="close-section-button hidden" type="button" name="minredes-button" onclick="ocultar('minredes')" value="closeButton">
-										 <img src="images/expand-arrow.png" alt="minusbuttom">
+										 <img src={expandarrow} alt="minusbuttom"/>
 									 </button>
 							 </div>
 							 <div className="boxes-container net-social-hidden" id="minredes">
@@ -316,10 +316,10 @@ class App extends Component {
 							 <div className="title-container">
 								 <h2 className="title-form text-form-button">Portfolio</h2>
 								 <button  id="openButtonQr" className="open-section-button shown" type="button" name="networksButton" onclick="editar('showNetsocial')" value="openButton">
-									 <img src="images/expand-button.png" alt="addButton">
+									 <img src={expandbutton} alt="addButton"/>
 								 </button>
 								 <button  id="closeButtonQr" className="close-section-button hidden" type="button" name="showNetsocial-button" onclick="ocultar('showNetsocial')" value="closeButton">
-									 <img src="images/expand-arrow.png" alt="minusbuttom">
+									 <img src={expandarrow} alt="minusbuttom"/>
 								 </button>
 							 </div>
 							 <div className="boxes-container net-social-hidden" id="showNetsocial">
@@ -333,7 +333,7 @@ class App extends Component {
 				 <section className="preview-section" id="ventana2">
 						 <div className="box-icons-preview">
 							 <button className="cross-section-button" type="button" name="cruz-button" onclick="closePreview('ventana2')">
-							 <img src="images/btnclose.png" alt="cruzbuttom"></button>
+							 <img src={btnclose} alt="cruzbuttom"/></button>
 							 <input className="iconsprev" type="button" onclick="printCurriculum()" id="btnprintprev" title="Imprimir">
 							 <input className="iconsprev" type="button" onclick="download()" id="btndownloadprev" title="Descargar">
 						 </div>
@@ -404,12 +404,12 @@ class App extends Component {
 					 <section id="hobbies-preview">
 						 <h2 className="title-section">Hobbies</h2>
 						 <div className="all-hobbies-preview">
-							 <img id="read" src="images/readSmall.png" alt="read hobbie">
-							 <img id="travel" src="images/travelSmall.png" alt="travel hobbie">
-							 <img id="game" src="images/videogameSmall.png" alt="game hobbie">
-							 <img id="sports" src="images/sportsSmall.png" alt="sports hobbie">
-							 <img id="cinema" src="images/cinemaSmall.png" alt="cinema hobbie">
-							 <img id="music" src="images/musicSmall.png" alt="music hobbie">
+							 <img id="read" src={readSmall} alt="read hobbie"/>
+							 <img id="travel" src={travelSmall} alt="travel hobbie"/>
+							 <img id="game" src={videogameSmall} alt="game hobbie"/>
+							 <img id="sports" src={sportsSmall} alt="sports hobbie"/>
+							 <img id="cinema" src={cinemaSmall} alt="cinema hobbie"/>
+							 <img id="music" src={musicSmall} alt="music hobbie"/>
 						 </div>
 					 </section>
 					 <p className="separator">* * * * * * * * * * * * * * * </p>
@@ -445,13 +445,13 @@ class App extends Component {
 				 </div>
 				 <div className="alert-dates invisible">
 					 <button className="button-alert-img" type="button" name="button">
-						 <img className="alert-cruise" src="images/btnclose.png" alt="cruise-button">
+						 <img className="alert-cruise" src={btnclose} alt="cruise-button"/>
 					 </button>
 					 <p className="text-alert">¡Ojo! La fecha de inicio no debe ser posterior a la fecha de finalización.</p>
 				 </div>
 				 <div className="alert-dates invisible" id="alert-month">
 					 <button className="button-alert-img" id="close-button-alert-month" type="button" name="button">
-						 <img className="alert-cruise" src="images/btnclose.png" alt="cruise-button">
+						  className="alert-cruise" src={btnclose} alt="cruise-button"/>
 					 </button>
 					 <p className="text-alert">¡Ojo! No has introducido el mes.</p>
 				 </div>
@@ -469,7 +469,7 @@ class App extends Component {
 			var uw="whatsapp://share?url="+"https://adalab.github.io/clarke-s2-scriptoras";
 			</script>
 			<a href="javascript:void(0);" onclick="window.open(us,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en Slack"><img alt="Compartir en slack" className="sl" height="40" src="https://i.pinimg.com/originals/5c/49/e7/5c49e71075941267cfaf5eb2700e7049.png" title="Compartir en slack" width="40" /></a>
-			<a href="javascript:void(0);" onclick="window.open(uf,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en Facebook"><img alt="Compartir en facebook" className="fb" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/facebook-long.png" title="Compartir en facebook" width="40" /></a>
+			<a href="javascript:void(0);" onclick="window.open(uf,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en Facebook"/><img alt="Compartir en facebook" className="fb" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/facebook-long.png" title="Compartir en facebook" width="40" /></a>
 			<a href="javascript:void(0);" onclick="window.open(ug,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en Google+"><img alt="Compartir en google+" className="glg" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/google-long.png" title="Compartir en google+" width="40" /></a>
 			<a href="javascript:void(0);" onclick="window.open(ut,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en Twitter"><img alt="Compartir en twitter" className="twtr" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/twitter-long.png" title="Compartir en twitter" width="40" /></a>
 			<a href="javascript:void(0);" onclick="window.open(up,&quot;gplusshare&quot;,&quot;toolbar=0,status=0,width=548,height=325&quot;);" rel="nofollow" title="Compartir en Pinterest"><img alt="Compartir en pinterest" className="pnt" height="40" src="https://cdn.tahonadedonpio.es/wp-content/uploads/social/pinterest-long.png" title="Compartir en pinterest" width="40" /></a>
@@ -483,11 +483,11 @@ class App extends Component {
 					</div>
 					<div className="logo">
 						<a href="http://adalab.es/" target="blank">
-							<img src="images/logo-adalab.png" alt="Logo Adalab" className="logo-adalab">
+							<img src={logoadalab} alt="Logo Adalab" className="logo-adalab"/>
 						</a>
 					</div>
 					<a id="arriba" title="Arriba" className="invisible">
-						<img src="images/arriba.png" title="Arriba" alt="Arriba">
+						<img src={arriba} title="Arriba" alt="Arriba"/>
 					</a>
 				</footer>
 			 </body>

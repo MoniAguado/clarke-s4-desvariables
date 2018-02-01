@@ -471,34 +471,34 @@
 // text-align: center;
 // }
 /*Ventana de alert de error de fecha introducida*/
-.alert-dates{
-	background-color: $whitishBackground;
-	width: 230px;
-  height: 110px;
-  position: fixed;
-  top: 220px;
-  left: 17%;
-	border: 2px solid #{$inputAndButtons};
-}
-.button-alert-img{
-	background-color: transparent;
-  border: none;
-	position: absolute;
-	top: 3px;
-  right: 0;
-	cursor: pointer;
-}
-.text-alert{
-	font-size: 13px;
-  margin: 30px 30px;
-  text-align: justify;
-  color: $alerts;
-	font-weight: bold;
-}
-.alert-cruise{
-	width: 20px;
-  height: 20px;
-}
+// .alert-dates{
+// 	background-color: $whitishBackground;
+// 	width: 230px;
+//   height: 110px;
+//   position: fixed;
+//   top: 220px;
+//   left: 17%;
+// 	border: 2px solid #{$inputAndButtons};
+// }
+// .button-alert-img{
+// 	background-color: transparent;
+//   border: none;
+// 	position: absolute;
+// 	top: 3px;
+//   right: 0;
+// 	cursor: pointer;
+// }
+// .text-alert{
+// 	font-size: 13px;
+//   margin: 30px 30px;
+//   text-align: justify;
+//   color: $alerts;
+// 	font-weight: bold;
+// }
+// .alert-cruise{
+// 	width: 20px;
+//   height: 20px;
+// }
 
 /*flecha subir arriba*/
 // #arriba {
@@ -537,8 +537,8 @@
 //   background-size: cover;
 //   z-index: 1;
 //   opacity: .5;
-// }
-// .section{
+// // }
+// .seccion{
 // 	padding: 60px 0 50px 0;
 // 	display: flex;
 // 	flex-direction: column;
@@ -580,11 +580,11 @@
 // .cajas:focus{
 // 	border-color: $boxBorderAndButtonColor;
 // }
-.campos{
- margin: 0 0 1.5rem;
- display: flex;
- flex-direction: row;
-}
+// .campos{
+//  margin: 0 0 1.5rem;
+//  display: flex;
+//  flex-direction: row;
+// }
 // .boton{
 // 	color: $boxBorderAndButtonColor;
 // 	background-color: $inputAndButtons;
@@ -657,13 +657,13 @@
 	// }
 	// #btnshareprev, #btnprintprev, #btndownloadprev {
 	// 	display: none;
+	// // }
+	// .flexible::before{
+	// 	left: 0;
+	// 	top: 0;
+	// 	background: url(../images/group.png) left top no-repeat;
+	// 	background-size: cover;
 	// }
-	.flexible::before{
-		left: 0;
-		top: 0;
-		background: url(../images/group.png) left top no-repeat;
-		background-size: cover;
-	}
 	// .text-crea {
 	// 	margin-top: 10%;
 	// 	margin-left: 20px;
@@ -679,16 +679,16 @@
 	// .skill, .language, .skill-percent, .percentage {
 	// 	width: 160px;
 	// }
-
-	main {
-		box-sizing: border-box;
-		display: flex;
-		flex-direction: column;
-	}
-	.formulario-sec {
-		height: 100%;
-		width: 40%
-	}
+	//
+	// main {
+	// 	box-sizing: border-box;
+	// 	display: flex;
+	// 	flex-direction: column;
+	// }
+	// .formulario-sec {
+	// 	height: 100%;
+	// 	width: 40%
+	// }
 	// .cross-section-button{
 	// 	display: none;
 	// }
@@ -714,7 +714,7 @@
 	.thumb2{
 		margin-top: 50px;
 	}
-	.formulario-sec {
-		  display: none;
-	}
+	// .formulario-sec {
+	// 	  display: none;
+	// }
 }

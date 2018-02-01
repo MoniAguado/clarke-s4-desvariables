@@ -1,0 +1,131 @@
+.header{
+	width: 100%;
+	height: 70px;
+	min-width: 60px;
+	background-color: $headerBackground;
+	position: fixed;
+	display: flex;
+	justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+	padding-top: 0px;
+	margin-top: 0px;
+  z-index: 99;
+	padding-right: 10px;
+}
+.header-background {
+	background-image: url(../images/groupMobile.png);
+	background-position: center;
+	background-size: cover;
+	height: 80vh;
+	margin-bottom: 5px;
+}
+.container-logo{
+	display: flex;
+	flex-direction: row;
+}
+.machine-logo{
+	margin-top: 5px;
+	display: block;
+	margin-left: 5px;
+	max-width: 60px;
+	width: 100%;
+}
+.letters-log{
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 10px;
+	max-width: 150px;
+	width: 100%;
+	margin-top: 10px;
+}
+.container-icons{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.icons{
+	height: 30px;
+  width: 30px;
+  margin-left: 5px;
+  background-size: cover;
+  align-items: flex-end;
+  text-align: center;
+  background-color: transparent;
+  box-sizing: border-box;
+  border-style: none;
+  cursor: pointer;
+}
+@media all and (min-width: 350px){
+	.header{
+    justify-content: space-between;
+	}
+	.container-icons{
+		margin-right: 20px;
+	}
+	.container-logo{
+		margin-left: 30px;
+	}
+}
+@media all and (max-width: 600px){
+	.icons{
+		height: 28px;
+	  width: 28px;
+	}
+	.header-background {
+		background-image: url(../images/group.png);
+		height: 100vh;
+	}
+}
+@media all and (min-width: 810px){
+	.header{
+		height: 100px;
+	}
+	.machine-logo{
+		max-width: 85%;
+		margin: 0px;
+		padding: 3px;
+	}
+	.container-logo{
+		height: 80px;
+		width: 41%;
+		margin-bottom: 0px;
+		margin-top: 0px;
+	}
+	.container-letters{
+		width: 1000px;
+	}
+	.letters-log{
+		max-width: 100%;
+		padding-top: 10px;
+		padding-left: -5px;
+	}
+	.icons{
+		height: 34px;
+		width: 34px;
+		margin: 8px;
+	}
+}
+@media all and (min-width:900px) {
+	.header-background{
+		width: cover;
+		background-image: url(../images/group.png);
+		height: 100vh;
+	}
+	.machine-logo{
+		max-width: 74%;
+	}
+	.container-logo{
+		height: 80px;
+		width: 41%;
+		margin-bottom: 8px;
+	}
+	.container-letters{
+		width: 1000px;
+	}
+	.letters-log{
+		max-width: 100%;
+		padding-top: 10px;
+		padding-left: -5px;
+	}
+}

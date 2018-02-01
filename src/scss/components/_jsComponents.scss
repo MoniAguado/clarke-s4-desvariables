@@ -1,0 +1,123 @@
+/*botones*/
+
+#btnview{
+	background-image: url("../images/btnfile2.png");
+}
+#btnshare{
+	background-image: url("../images/btnshare2.png");
+	display: none;
+}
+#btnprint{
+	background-image: url("../images/btnprint2.png");
+	display: none;
+}
+#btndownload{
+	background-image: url("../images/btndownload2.png");
+	display: none;
+}
+#btnshareprev{
+	background-image: url("../images/btnshare3.png");
+	display: block;
+}
+#btnprintprev{
+	background-image: url("../images/btnprint3.png");
+	display: block;
+}
+#btndownloadprev{
+	background-image: url("../images/btndown.png");
+		display: block;
+}
+
+#button-down {
+	background: none;
+	border: none;
+}
+
+/*preview*/
+#aboutMe-preview{
+	text-align: justify;
+	display: flex;
+	justify-content: center;
+	margin:0;
+	color: black;
+}
+
+/*languages*/
+#languages-form-container, #hobbies-form-container {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#languages-preview, #hobbies-preview, .social {
+	padding-left: 7%;
+	padding-right: 7%;
+}
+
+/*checkbox*/
+input[type=checkbox]{
+	-webkit-transform: scale(1.2); /* Safari and Chrome */
+	color: $black;
+}
+#hobbies-form {
+	padding-bottom: 2%;
+}
+
+/*flechas*/
+#arriba {
+	width: 5px;
+	padding: 5px;
+	position: fixed;
+	bottom: 15px;
+	right: 45px;
+	z-index: 1;
+	opacity: 0.9;
+}
+#arriba img{
+	width: 30px;
+	height: 30px;
+	background-color: white;
+	border-radius: 30px;
+	margin-bottom: 60px;
+}
+
+/*comentarios*/
+#comentarios{
+	height: 80px;
+	padding-top: 6px;
+}
+
+/*mediaqueries*/
+@media all and (min-width: 460px){
+	#arriba {
+		 bottom: 15px;
+		 right: 27px;
+	}
+}
+
+@media all and (min-width:600px) {
+	#button-down {
+		display: none;
+	}
+	#empty-container {
+		height: 20px;
+	}
+	#arriba {
+		width: 5px;
+		padding: 5px;
+		position: fixed;
+		bottom: 15px;
+		right: 45px;
+		z-index: 1;
+		opacity: 0.9;
+	}
+}
+
+@media all and (min-width:900px) {
+	#ventana2, #btnshare, #btnprint, #btndownload {
+		display: block;
+	}
+	#btnshareprev, #btnprintprev, #btndownloadprev {
+		display: none;
+	}
+}

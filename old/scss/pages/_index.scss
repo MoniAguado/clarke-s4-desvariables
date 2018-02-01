@@ -1,1 +1,16 @@
-
+@media all and (min-width:900px) {
+	.index-main {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	}
+	.form-section {
+		height: 100%;
+		width: 40%
+	}
+}
+@media print {
+	.form-section {
+		  display: none;
+	}
+}

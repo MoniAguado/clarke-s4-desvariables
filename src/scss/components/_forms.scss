@@ -81,26 +81,6 @@
   flex-direction: row;
   justify-content: center;
 }
-.alert-dates{
-	background-color: $whitishBackground;
-	width: 230px;
-  height: 110px;
-  position: fixed;
-  top: 220px;
-  left: 17%;
-	border: 2px solid #{$inputAndButtons};
-}
-.text-alert{
-	font-size: 13px;
-  margin: 30px 30px;
-  text-align: justify;
-  color: $alerts;
-	font-weight: bold;
-}
-.alert-cruise{
-	width: 20px;
-  height: 20px;
-}
 @media all and (min-width:900px) {
 	.form-sec {
 		height: 100%;

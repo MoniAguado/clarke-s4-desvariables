@@ -94,15 +94,14 @@ class App extends Component {
 							 </div>
 							 <div className="boxes-container" id="principal-box">
 								 <div className="containerinfo">
-									 <input type="file" id="files" name="files[]" className=""/>
-									 <div className="foto photo" title="Subir imagen" 			onclick="simularClick()">
-									 </div>
+									 <input type="file" id="files" name="files[]" className=""></input>
+									 <div className="foto photo" title="Subir imagen" onclick="simularClick()"></div>
 									 <div className="datosprin">
-										 <input type="text" name="name" placeholder="Introduce nombre" className="inputs name title-name" required id="nameForm">
-										 <input type="text" name="surname" placeholder="Introduce apellidos" className="inputs" required id="surnameForm">
-										 <input type="text" name="profesion" placeholder="Introduce profesión" className="inputs" required id="professionForm">
-										 <input type="email" name="mail" placeholder="Introduce email" className="inputs" id="mailForm">
-										 <input type="tel" name="telephone" placeholder="Introduce teléfono móvil" className="inputs" id="phoneForm">
+										 <input type="text" name="name" placeholder="Introduce nombre" className="inputs name title-name" required id="nameForm"></input>
+										 <input type="text" name="surname" placeholder="Introduce apellidos" className="inputs" required id="surnameForm"></input>
+										 <input type="text" name="profesion" placeholder="Introduce profesión" className="inputs" required id="professionForm"></input>
+										 <input type="email" name="mail" placeholder="Introduce email" className="inputs" id="mailForm"></input>
+										 <input type="tel" name="telephone" placeholder="Introduce teléfono móvil" className="inputs" id="phoneForm"></input>
 									 </div>
 								 </div>
 							 </div>
@@ -136,11 +135,11 @@ class App extends Component {
 								 <h3 className="subtitle-section">Puesto de trabajo</h3>
 								 <div>
 									 <label for="job"></label>
-									 <input className="inputs" id="job" type="text" name="job-name" placeholder="Indica el puesto de trabajo"/>
+									 <input className="inputs" id="job" type="text" name="job-name" placeholder="Indica el puesto de trabajo"></input>
 								 </div>
 								 <div>
 									 <label for="company"></label>
-									 <input className="inputs" id="company" type="text" name="company-name" placeholder="Indica el nombre de la empresa">
+									 <input className="inputs" id="company" type="text" name="company-name" placeholder="Indica el nombre de la empresa"></input>
 								 </div>
 								 <div className="dates-boxes">
 									 <label>Fecha de inicio:</label>
@@ -153,8 +152,8 @@ class App extends Component {
 									 <select className="select-styles year" id="year-job-end" name="job-end-year"></select>
 								 </div>
 								 <div className="buttons-container">
-									 <input className="buttons-save-general experiencia" id="button-add-exp" type="button" name="add-exp" value="Añadir">
-									 <input className="buttons-save-general experiencia" id="button-delete-exp" type="button" name="delete-exp" value="Borrar">
+									 <button className="buttons-save-general experiencia" id="button-add-exp" type="button" name="add-exp" value="Añadir"></button>
+									 <button className="buttons-save-general experiencia" id="button-delete-exp" type="button" name="delete-exp" value="Borrar"></button>
 								 </div>
 							 </div>
 						 </form>
@@ -171,10 +170,10 @@ class App extends Component {
 							 <div className="boxes-container" id="education-box">
 								 <h3 className="pic-previewtex-bar-preview">Titulación</h3>
 								 <div>
-									 <input className="inputs" id="educ-title" type="text" name="title-name" placeholder="Indica el nombre de la titulación"/>
+									 <input className="inputs" id="educ-title" type="text" name="title-name" placeholder="Indica el nombre de la titulación"></input>
 								 </div>
 								 <div >
-									 <input className="inputs" id="center" type="text" name="center-name" placeholder="Indica el centro de estudios">
+									 <input className="inputs" id="center" type="text" name="center-name" placeholder="Indica el centro de estudios"></input>
 								 </div>
 								 <div className="dates-boxes">
 									 <label>Fecha de inicio</label>
@@ -187,8 +186,8 @@ class App extends Component {
 									 <select className="select-styles year" id="year-training-end" name="training-end-year"></select>
 								 </div>
 								 <div className="buttons-container">
-									 <input type="button" value="Añadir" name="add-ed" id="button-add-ed" className="buttons-save-general formacion">
-									 <input type="button" value="Borrar" name="delete-ed" id="button-delete-ed" className="buttons-save-general formacion">
+									 <button type="button" value="Añadir" name="add-ed" id="button-add-ed" className="buttons-save-general formacion"></button>
+									 <button type="button" value="Borrar" name="delete-ed" id="button-delete-ed" className="buttons-save-general formacion"></button>
 								 </div>
 							 </div>
 						 </form>
@@ -205,20 +204,20 @@ class App extends Component {
 							 <form action="index.html" method="post">
 								 <div id="content-skills" className="boxes-container"><!--Oculto-->
 									 <div className="input-skill">
-										 <input className="inputs skill" type="text" name="skill1" value="" placeholder="Escribe una habilidad" id="skill1">
-										 <input className="inputs skill-percent" type="text" name="percentage1" value="" placeholder="Escribe un porcentaje" id="percentage1">
+										 <input className="inputs skill" type="text" name="skill1" value="" placeholder="Escribe una habilidad" id="skill1"></input>
+										 <input className="inputs skill-percent" type="text" name="percentage1" value="" placeholder="Escribe un porcentaje" id="percentage1"></input>
 									 </div>
 									 <div className="input-skill">
-										 <input className="inputs skill" type="text" name="skill2" value="" placeholder="Escribe una habilidad" id="skill2">
-										 <input className="inputs skill-percent"  type="text" name="percentage2" value="" placeholder="Escribe un porcentaje" id="percentage2">
+										 <input className="inputs skill" type="text" name="skill2" value="" placeholder="Escribe una habilidad" id="skill2"></input>
+										 <input className="inputs skill-percent"  type="text" name="percentage2" value="" placeholder="Escribe un porcentaje" id="percentage2"></input>
 									 </div>
 									 <div className="input-skill">
-										 <input className="inputs skill"  type="text" name="skill3" value="" placeholder="Escribe una habilidad" id="skill3">
-										 <input className="inputs skill-percent"  type="text" name="percentage3" value="" placeholder="Escribe un porcentaje" id="percentage3">
+										 <input className="inputs skill"  type="text" name="skill3" value="" placeholder="Escribe una habilidad" id="skill3"></input>
+										 <input className="inputs skill-percent"  type="text" name="percentage3" value="" placeholder="Escribe un porcentaje" id="percentage3"></input>
 									 </div>
 									 <div className="input-skill">
-										 <input className="inputs skill" type="text" name="skill4" value="" placeholder="Escribe una habilidad" id="skill4">
-										 <input className="inputs skill-percent" type="text" name="percentage4" value="" placeholder="Escribe un porcentaje" id="percentage4">
+										 <input className="inputs skill" type="text" name="skill4" value="" placeholder="Escribe una habilidad" id="skill4"></input>
+										 <input className="inputs skill-percent" type="text" name="percentage4" value="" placeholder="Escribe un porcentaje" id="percentage4"></input>
 									 </div>
 								 </div>
 							 </form>
@@ -232,16 +231,16 @@ class App extends Component {
 							 </div>
 							 <form id="languages-form" action="index.html" method="post">
 								 <div className="input-lang">
-									 <input className="language inputs" type="text" name="language1" value="" placeholder="Escribe un idioma">
-									 <input className="percentage inputs" type="text" name="percentage1" value="" placeholder="Escribe su porcentaje">
+									 <input className="language inputs" type="text" name="language1" value="" placeholder="Escribe un idioma"></input>
+									 <input className="percentage inputs" type="text" name="percentage1" value="" placeholder="Escribe su porcentaje"></input>
 								 </div>
 								 <div className="input-lang">
-									 <input className="language inputs" type="text" name="language2" value="" placeholder="Escribe un idioma">
-									 <input className="percentage inputs" type="text" name="percentage2" value="" placeholder="Escribe su porcentaje">
+									 <input className="language inputs" type="text" name="language2" value="" placeholder="Escribe un idioma"></input>
+									 <input className="percentage inputs" type="text" name="percentage2" value="" placeholder="Escribe su porcentaje"></input>
 								 </div>
 								 <div className="input-lang">
-									 <input className="language inputs" type="text" name="language3" value="" placeholder="Escribe un idioma">
-									 <input className="percentage inputs" type="text" name="percentage3" value="" placeholder="Escribe su porcentaje">
+									 <input className="language inputs" type="text" name="language3" value="" placeholder="Escribe un idioma"></input>
+									 <input className="percentage inputs" type="text" name="percentage3" value="" placeholder="Escribe su porcentaje"></input>
 								 </div>
 							 </form>
 						 </section>
@@ -256,27 +255,27 @@ class App extends Component {
 							 <form id="hobbies-form" action="index.html" method="post">
 								 <div className="check-box-hobbies">
 									 <label for="hobbie1">Leer</label>
-									 <input id ="hobbie1" type="checkbox" name="read" value="hobbies" onchange="showHobbiesPreview('read')">
+									 <input id ="hobbie1" type="checkbox" name="read" value="hobbies" onchange="showHobbiesPreview('read')"></input>
 								 </div>
 								 <div className="check-box-hobbies">
 									 <label for="hobbie2">Viajar</label>
-									 <input id ="hobbie2" type="checkbox" name="travel" value="hobbies" onchange="showHobbiesPreview('travel')">
+									 <input id ="hobbie2" type="checkbox" name="travel" value="hobbies" onchange="showHobbiesPreview('travel')"></input>
 								 </div>
 								 <div className="check-box-hobbies">
 									 <label for="hobbie3">Videojuegos</label>
-									 <input id ="hobbie3" type="checkbox" name="game" value="hobbies" onchange="showHobbiesPreview('game')">
+									 <input id ="hobbie3" type="checkbox" name="game" value="hobbies" onchange="showHobbiesPreview('game')"></input>
 								 </div>
 								 <div className="check-box-hobbies">
 									 <label for="hobbie4">Deportes</label>
-									 <input id ="hobbie4" type="checkbox" name="sports" value="hobbies" onchange="showHobbiesPreview('sports')">
+									 <input id ="hobbie4" type="checkbox" name="sports" value="hobbies" onchange="showHobbiesPreview('sports')"></input>
 								 </div>
 								 <div className="check-box-hobbies">
 									 <label for="hobbie5">Cine</label>
-									 <input id ="hobbie5" type="checkbox" name="movies" value="hobbies" onchange="showHobbiesPreview('cinema')">
+									 <input id ="hobbie5" type="checkbox" name="movies" value="hobbies" onchange="showHobbiesPreview('cinema')"></input>
 								 </div>
 								 <div className="check-box-hobbies">
 									 <label for="hobbie6">Música</label>
-									 <input id ="hobbie6" type="checkbox" name="music" value="hobbies" onchange="showHobbiesPreview('music')">
+									 <input id ="hobbie6" type="checkbox" name="music" value="hobbies" onchange="showHobbiesPreview('music')"></input>
 								 </div>
 							 </form>
 						 </section>
@@ -292,23 +291,23 @@ class App extends Component {
 							 <div className="boxes-container net-social-hidden" id="minredes">
 								 <div className="nets">
 									 <label className="socialLabel" for="linkedin">Linkedin</label>
-										<input className="users inputs" id="linkedin" type="text" name="net1" placeholder=" Rellena con tu usuario" >
+										<input className="users inputs" id="linkedin" type="text" name="net1" placeholder=" Rellena con tu usuario"></input>
 								 </div>
 								 <div className="nets">
 									 <label className="socialLabel" for="facebook">Facebook</label>
-									 <input className="users inputs" id="facebook" type="text" name="net2" placeholder=" Rellena con tu usuario" >
+									 <input className="users inputs" id="facebook" type="text" name="net2" placeholder=" Rellena con tu usuario"></input>
 								 </div>
 								 <div className="nets">
 									 <label className="socialLabel" for="github">Github</label>
-									 <input className="users inputs" id="github" type="text" name="net3" placeholder=" Rellena con tu usuario" >
+									 <input className="users inputs" id="github" type="text" name="net3" placeholder=" Rellena con tu usuario"></input>
 								 </div>
 								 <div className="nets">
 									 <label className="socialLabel" for="twitter">Twitter</label>
-									 <input className="users inputs" id="twitter" type="text" name="net3" placeholder=" Rellena con tu usuario">
+									 <input className="users inputs" id="twitter" type="text" name="net3" placeholder=" Rellena con tu usuario"></input>
 								 </div>
 								 <div className="nets">
 									 <label className="socialLabel" for="instagram">Instagram</label>
-									 <input className="users inputs" id="instagram" type="text" name="net3" placeholder=" Rellena con tu usuario" >
+									 <input className="users inputs" id="instagram" type="text" name="net3" placeholder=" Rellena con tu usuario"></input>
 								 </div>
 							 </div>
 						 </form>
@@ -324,8 +323,8 @@ class App extends Component {
 							 </div>
 							 <div className="boxes-container net-social-hidden" id="showNetsocial">
 								<div className="nets">
-									<input className="inputPortfolio" id="inputQr" type="text" name="inputQr" placeholder=" Contenido para generar QR">
-									<input type="button" id="button-generateqr" value="Generar" className="buttons-save-general">
+									<input className="inputPortfolio" id="inputQr" type="text" name="inputQr" placeholder=" Contenido para generar QR"></input>
+									<button type="button" id="button-generateqr" value="Generar" className="buttons-save-general"></button>
 								</div>
 							</div>
 						</form>
@@ -333,9 +332,15 @@ class App extends Component {
 				 <section className="preview-section" id="ventana2">
 						 <div className="box-icons-preview">
 							 <button className="cross-section-button" type="button" name="cruz-button" onclick="closePreview('ventana2')">
+<<<<<<< HEAD
 							 <img src={btnclose} alt="cruzbuttom"/></button>
 							 <input className="iconsprev" type="button" onclick="printCurriculum()" id="btnprintprev" title="Imprimir">
 							 <input className="iconsprev" type="button" onclick="download()" id="btndownloadprev" title="Descargar">
+=======
+							 <img src="images/btnclose.png" alt="cruzbuttom"></button>
+							 <button className="iconsprev" type="button" onclick="printCurriculum()" id="btnprintprev" title="Imprimir"></button>
+							 <button className="iconsprev" type="button" onclick="download()" id="btndownloadprev" title="Descargar"></button>
+>>>>>>> 41af42e43e5ffe05ac5340a72232fd09f67d9350
 						 </div>
 					 <section className="container-pic-preview">
 						 <div id="prefoto"></div>

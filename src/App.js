@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import Header from './components/Header';
 import Cover from './components/Cover';
 import Form from './components/Form';
 import Preview from './components/Preview';
+import Alerts from './components/Alerts';
+import Share from './components/Share';
 import Footer from './components/Footer';
 import './scss/main.css';
 
@@ -60,46 +63,16 @@ class App extends Component {
   render() {
     return (
 			<div className="App">
-			<body className="wrapper body" id="contenedorPrincipal">
-			 <header className="header">
-				 <div className="container-logo">
-					 <div>
-						 <a href="index.html"><img src={logoMaquina} alt="logoscriptoras" className="machine-logo"/></a>
-					 </div>
-					 <div className="container-letters">
-						 <a href="index.html"><img src={logoLetras} alt="logoscriptoras" className="letters-log"/></a>
-					 </div>
-				 </div>
-				 <div className="container-icons">
-					<button className="icons" id="btnview" title="Vista previa"></button>
-					<button className="icons" id="btnprint" title="Imprimir"></button>
-				 </div>
-			 </header>
-			 <main className="main-wrapper bloque index-main">
-
-			 		<Form />
-
-
-				 <div className="alert-dates invisible">
-					 <button className="button-alert-img" type="button" name="button">
-						 <img className="alert-cruise" src={btnclose} alt="cruise-button"/>
-					 </button>
-					 <p className="text-alert">¡Ojo! La fecha de inicio no debe ser posterior a la fecha de finalización.</p>
-				 </div>
-				 <div className="alert-dates invisible" id="alert-month">
-					 <button className="button-alert-img" id="close-button-alert-month" type="button" name="button">
-						  className="alert-cruise" src={btnclose} alt="cruise-button"/>
-					 </button>
-					 <p className="text-alert">¡Ojo! No has introducido el mes.</p>
-				 </div>
-			 </main>
-			 <div id="btrs">
-			<p><b>Comparte nuestra página en redes sociales</b></p>
-
-
-			</div>
-				<Footer />
-			 </body>
+				<body className="wrapper body" id="contenedorPrincipal">
+			 		<Header />
+			 		<main className="main-wrapper bloque index-main">
+			 			<Cover />
+			 			<Form />
+						<Alerts />
+			 		</main>
+					<Share />
+					<Footer />
+			 	</body>
 			</div>
 
     );

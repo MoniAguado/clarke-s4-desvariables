@@ -2,19 +2,32 @@ import React from 'react';
 import expandbutton from '../images/expandbutton.png';
 import expandarrow from '../images/expandarrow.png';
 class Education extends React.Component {
+	constructor(props){
+		super(props);
+		this.handleClick = this.handleClick.bind(this);
+		this.state = {
+			open: false
+		}
+
+	}
+	handleClick() {
+		this.setState ({
+			open: !this.state.open
+		})
+	}
 	render() {
 		return (
-			<form className="form-section-container" id="education-section" action="index.html" method="post">
+			<form className="form-section-container" id="education-section" action="index.html" method="post" onClick={this.handleClick}>
 				<div className="title-container">
-					<h2 className="title-form text-form-button" onclick="editar('education-box')">Formación</h2>
-					<button id="openButtonFormac" className="open-section-button shown" type="button" name="languageButton" onclick="editar('education-box')" value="openButton">
+					<h2 className="title-form text-form-button">Formación</h2>
+					<button id="openButtonFormac" className="open-section-button shown" type="button" name="languageButton" value="openButton">
 						<img src={expandbutton} alt="addButton"/>
 					</button>
-					<button id="closeButtonFormac" className="close-section-button hidden" type="button" name="education-button" onclick="ocultar('education-box')" value="closeButton">
+					<button id="closeButtonFormac" className="close-section-button hidden" type="button" name="education-button" value="closeButton">
 					<img src={expandarrow} alt="minusbuttom"/>
 					</button>
 				</div>
-				<div className="boxes-container" id="education-box">
+				<div className="boxes-container" id="education-box" className={`boxes-container box-${this.state.open ? 'open' : 'close'}`}>
 					<h3 className="pic-previewtex-bar-preview">Titulación</h3>
 					<div>
 						<input className="inputs" id="educ-title" type="text" name="title-name" placeholder="Indica el nombre de la titulación"></input>

@@ -4,10 +4,23 @@ import expandbutton from '../images/expandbutton.png';
 import expandarrow from '../images/expandarrow.png';
 
 class QR extends React.Component {
+	constructor(props){
+		super(props);
+		this.handleClick = this.handleClick.bind(this);
+		this.state = {
+			open: false
+		}
+
+	}
+	handleClick() {
+		this.setState ({
+			open: !this.state.open
+		})
+	}
 	render() {
 		return (
 			<section>
-				<form className="form-section-container" action="index.html" method="post">
+				<form className="form-section-container" action="index.html" method="post" onClick={this.handleClick}>
 					<div className="title-container">
 						<h2 className="title-form text-form-button">Portfolio</h2>
 						<button  id="openButtonQr" className="open-section-button shown" type="button" name="networksButton" onclick="editar('showNetsocial')" value="openButton">
@@ -17,7 +30,7 @@ class QR extends React.Component {
 							<img src={expandarrow} alt="minusbuttom"/>
 						</button>
 					</div>
-					<div className="boxes-container net-social-hidden" id="showNetsocial">
+					<div className="boxes-container net-social-hidden" id="showNetsocial" className={`boxes-container box-${this.state.open ? 'open' : 'close'}`}>
 						<div className="nets">
 							<input className="inputPortfolio" id="inputQr" type="text" name="inputQr" placeholder=" Contenido para generar QR"></input>
 							<button type="button" id="button-generateqr" value="Generar" className="buttons-save-general"></button>

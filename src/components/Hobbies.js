@@ -4,17 +4,30 @@ import expandbutton from '../images/expandbutton.png';
 import expandarrow from '../images/expandarrow.png';
 
 class Hobbies extends React.Component {
+	constructor(props){
+		super(props);
+		this.handleClick = this.handleClick.bind(this);
+		this.state = {
+			open: false
+		}
+
+	}
+	handleClick() {
+		this.setState ({
+			open: !this.state.open
+		})
+	}
 	render() {
 		return (
 			<section id="hobbies-form-container">
-				<div className="title-container">
+				<div className="title-container" onClick={this.handleClick}>
 					<h2 className="title-form text-form-button">Hobbies</h2>
-					<button id="openButtonHobbies" className="addLanguageButton open-section-button shown" type="button" name="languageButton" onclick="editar('hobbies-form')" value="openButton"><img src={expandbutton} alt="addButton"/></button>
-					<button id="closeButtonHobbies" className="close-section-button hidden" type="button" name="hobbiesForm-button" onclick="ocultar('hobbies-form')" value="closeButton">
+					<button id="openButtonHobbies" className="addLanguageButton open-section-button shown" type="button" name="languageButton" value="openButton"><img src={expandbutton} alt="addButton"/></button>
+					<button id="closeButtonHobbies" className="close-section-button hidden" type="button" name="hobbiesForm-button" value="closeButton">
 						<img src={expandarrow} alt="minusbuttom"/>
 					</button>
 				</div>
-				<form id="hobbies-form" action="index.html" method="post">
+				<form id="hobbies-form" action="index.html" method="post" className={`boxes-container box-${this.state.open ? 'open' : 'close'}`}>
 					<div className="check-box-hobbies">
 						<label for="hobbie1">Leer</label>
 						<input id ="hobbie1" type="checkbox" name="read" value="hobbies" onchange="showHobbiesPreview('read')"></input>

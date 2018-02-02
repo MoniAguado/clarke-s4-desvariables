@@ -17,7 +17,6 @@ import expandbuttonmedium from '../images/expandbuttonmedium.png';
 class Form extends React.Component {
 	render() {
 		return (
-
 			<section>
 				<button id="button-down" type="button" name="button-down"><a href="index.html#empty-container"><img src={expandbuttonmedium} alt="rellena-los-campos"/></a></button>
 				<div id="empty-container"></div>

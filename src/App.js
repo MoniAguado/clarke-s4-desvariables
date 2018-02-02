@@ -62,9 +62,14 @@ import machine from './images/vintage8Machine.png';
 class App extends Component {
 	constructor(props) {
 		super(props);
-		this.state = {
-			
-		}
+		this.state ={}
+		this.updateState = this.updateState.bind(this);
+	}
+
+	updateState(prop, value){
+		const newState = {};
+		newState[prop] = value;
+		this.setState(newState);
 	}
   render() {
     return (
@@ -73,7 +78,8 @@ class App extends Component {
 			 		<Header />
 			 		<main className="main-wrapper bloque index-main">
 			 			<Cover />
-			 			<Form />
+			 			<Form updatePreview={this.updateState}/>
+						<Preview />
 						<Alerts />
 			 		</main>
 					<Share />

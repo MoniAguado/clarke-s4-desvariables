@@ -4,19 +4,32 @@ import expandbutton from '../images/expandbutton.png';
 import expandarrow from '../images/expandarrow.png';
 
 class Experience extends React.Component {
+	constructor(props){
+		super(props);
+		this.handleClick = this.handleClick.bind(this);
+		this.state = {
+			open: false
+		}
+
+	}
+	handleClick() {
+		this.setState ({
+			open: !this.state.open
+		})
+	}
 	render() {
 		return (
 			<form className="form-section-container" id="experience-section" action="index.html" method="post">
-				<div className="title-container">
-					<h2 className="title-form text-form-button" onclick="editar('job-box')">Experiencia laboral</h2>
-					<button id="openButtonExperience" className="open-section-button shown" type="button" name="experience-button" onclick="editar('job-box')" value="openButton">
+				<div className="title-container"  onClick={this.handleClick}>
+					<h2 className="title-form text-form-button">Experiencia laboral</h2>
+					<button id="openButtonExperience" className="open-section-button shown" type="button" name="experience-button" value="openButton">
 						<img src={expandbutton} alt="addButton"/>
 					</button>
-					<button id="closeButtonExperience" className="close-section-button hidden" type="button" name="job-box-button" onclick="ocultar('job-box')" value="closeButton">
+					<button id="closeButtonExperience" className="close-section-button hidden" type="button" name="job-box-button" value="closeButton">
 					<img src={expandarrow} alt="minusbuttom"/>
 					</button>
 				</div>
-				<div className="boxes-container" id="job-box">
+				<div className="boxes-container" id="job-box" className={`boxes-container box-${this.state.open ? 'open' : 'close'}`}>
 					<h3 className="subtitle-section">Puesto de trabajo</h3>
 					<div>
 						<label for="job"></label>

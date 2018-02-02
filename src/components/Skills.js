@@ -4,19 +4,32 @@ import expandbutton from '../images/expandbutton.png';
 import expandarrow from '../images/expandarrow.png';
 
 class Skills extends React.Component {
+	constructor(props){
+		super(props);
+		this.handleClick = this.handleClick.bind(this);
+		this.state = {
+			open: false
+		}
+
+	}
+	handleClick() {
+		this.setState ({
+			open: !this.state.open
+		})
+	}
 	render() {
 		return (
 			<section  className="form-section-container">
-				<div className="title-container">
+				<div className="title-container" onClick={this.handleClick}>
 					<h2 className="title-form text-form-button">Habilidades</h2>
-					<button id="openButtonSkill" className="open-section-button shown" type="button" name="skills-button" onclick="editar('content-skills')" value="openButton">
+					<button id="openButtonSkill" className="open-section-button shown" type="button" name="skills-button" value="openButton">
 						<img src={expandbutton} alt="addButton"/>
 					</button>
-					<button id="closeButtonSkill" className="close-section-button hidden" type="button" name="content-skills-button" onclick="ocultar('content-skills')" value="closeButton">
+					<button id="closeButtonSkill" className="close-section-button hidden" type="button" name="content-skills-button" value="closeButton">
 						<img src={expandarrow} alt="minusbuttom"/>
 					</button>
 				</div>
-				<form action="index.html" method="post">
+				<form action="index.html" method="post" className={`boxes-container box-${this.state.open ? 'open' : 'close'}`}>
 					<div id="content-skills" className="boxes-container">
 						<div className="input-skill">
 							<input className="inputs skill" type="text" name="skill1" value="" placeholder="Escribe una habilidad" id="skill1"></input>

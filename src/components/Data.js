@@ -2,19 +2,32 @@ import React from 'react';
 import expandbutton from '../images/expandbutton.png';
 import expandarrow from '../images/expandarrow.png';
 class Data extends React.Component {
+	constructor(props){
+		super(props);
+		this.handleClick = this.handleClick.bind(this);
+		this.state = {
+			open: false
+		}
+
+	}
+	handleClick() {
+		this.setState ({
+			open: !this.state.open
+		})
+	}
 	render() {
 		return (
 			<form className="form-section-container" id="principal-section" action="index.html" method="post">
-		 	 <div className="title-container">
-		 		 <h2 className="title-form text-form-button" onclick="editar('principal-box')">Datos principales</h2>
-		 		 <button id="openButtonPrincipal" className="open-section-button shown" type="button" name="principales-button" onclick="editar('principal-box')" value="openButton">
+		 	 <div className="title-container" onClick={this.handleClick}>
+		 		 <h2 className="title-form text-form-button">Datos principales</h2>
+		 		 <button id="openButtonPrincipal" className="open-section-button shown" type="button" name="principales-button" value="openButton">
 		 			 <img src={expandbutton} alt="addButton"/>
 		 		 </button>
-		 		 <button id="closeButtonPrincipal" className="close-section-button hidden" type="button" name="principales-button" onclick="ocultar('principal-box')" value="closeButton">
+		 		 <button id="closeButtonPrincipal" className="close-section-button hidden" type="button" name="principales-button" value="closeButton">
 		 			 <img src={expandarrow} alt="minusbuttom"/>
 		 		 </button>
 		 	 </div>
-		 	 <div className="boxes-container" id="principal-box">
+		 	 <div className="boxes-container" id="principal-box" className={`boxes-container box-${this.state.open ? 'open' : 'close'}`}>
 		 		 <div className="containerinfo">
 		 			 <input type="file" id="files" name="files[]" className=""></input>
 		 			 <div className="foto photo" title="Subir imagen" onclick="simularClick()"></div>

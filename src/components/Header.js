@@ -16,7 +16,7 @@ class Header extends React.Component {
 					</div>
 				</div>
 				<div className="container-icons">
-				 <button className="icons" id="btnview" title="Vista previa"></button>
+					<button className="icons" id="btnview" onClick= {this.props.clickButton} title="Vista previa"></button>
 				 <button className="icons" id="btnprint" title="Imprimir"></button>
 				</div>
 			</header>

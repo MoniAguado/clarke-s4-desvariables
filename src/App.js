@@ -64,14 +64,14 @@ class App extends Component {
 		super(props);
 		this.handleClick = this.handleClick.bind(this);
 		this.state = {
-			previewVisible: false
-			formVisible: true
+			previewvisible: false,
+			formvisible: true
 		}
+	}
 		handleClick() {
 			this.setState ({
-				previewVisible:  !this.state.false
-				formVisible:  !this.state.true
-				open: !this.state.open
+				previewvisible:  !this.state.previewvisible,
+				formvisible:  !this.state.formvisible
 			})
 	}
 
@@ -79,18 +79,20 @@ class App extends Component {
     return (
 			<div className="App">
 				<body className="wrapper body" id="contenedorPrincipal">
-			 		<Header clickButton =""/>
+			 		<Header clickButton ={this.handleClick}/>
 			 		<main className="main-wrapper bloque index-main">
 			 			<Cover />
 						<section>
 							<button id="button-down" type="button" name="button-down"><a href="index.html#empty-container"><img src={expandbuttonmedium} alt="rellena-los-campos"/></a></button>
 							<div id="empty-container"></div>
 							<div className="main-web-sections">
-			 			<Form />
-						<Preview />
-						<Alerts />
-						</div>
-					</section>
+								{this.state.formvisible === true?
+									<Form /> : null}
+								{this.state.previewvisible === true?
+									<Preview /> : null}
+								<Alerts />
+							</div>
+						</section>
 			 		</main>
 					<Share />
 					<Footer />

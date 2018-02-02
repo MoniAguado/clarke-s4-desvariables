@@ -88,13 +88,13 @@
   justify-content: center;
 }
 @media all and (min-width:900px) {
-	.form-sec {
+	.form-section {
 		height: 100%;
 		width: 40%;
 	}
 }
 @media print {
-	.form-sec {
+	.form-section {
 		  display: none;
 	}
 }

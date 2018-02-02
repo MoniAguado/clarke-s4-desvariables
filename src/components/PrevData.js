@@ -12,7 +12,7 @@ class PrevData extends React.Component {
 				<section className="main-details-preview" id="preprincipales-link">
 					<p id="prenombre" className="name">{this.props.name}</p>
 					<p id="preapellidos">{this.props.surname}</p>
-					<p id="preprofesion">{this.props.profession}</p>
+					<p id="preprofesion">{this.props.job}</p>
 					<p id="preemail">{this.props.email}</p>
 					<p id="pretelefono">{this.props.phone}</p>
 			</section>
@@ -21,13 +21,13 @@ class PrevData extends React.Component {
 		)
 	}
 }
-// PrevData.defaultProps = {
-// 	name: "Nombre",
-// 	surname: "Apellido",
-// 	job: "Profesión",
-// 	email: "Email",
-// 	phone: "Teléfono"
-// }
+PrevData.defaultProps = {
+	name: "Nombre",
+	surname: "Apellido",
+	job: "Profesión",
+	email: "Email",
+	phone: "Teléfono"
+}
 
 
 

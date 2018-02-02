@@ -29,7 +29,7 @@ class Aboutme extends React.Component {
 						<img src={expandarrow} alt="minusbuttom"/>
 					</button>
 				</div>
-					<div id="content-about" className={`boxes-container box-${this.state.open ? 'open' : 'close'}`}>
+				<div id="content-about" className={`boxes-container box-${this.state.open ? 'open' : 'close'}`}>
 						<label for="about"></label>
 						<textarea name="about-me" rows="6" cols="25" placeholder="Introduce una breve descripción sobre ti." className="textarea" id="text-about"></textarea>
 					</div>

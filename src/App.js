@@ -73,6 +73,7 @@ class App extends Component {
 				previewvisible:  !this.state.previewvisible,
 				formvisible:  !this.state.formvisible
 			})
+			console.log(this.state.formvisible)
 	}
 
   render() {
@@ -86,10 +87,8 @@ class App extends Component {
 							<button id="button-down" type="button" name="button-down"><a href="index.html#empty-container"><img src={expandbuttonmedium} alt="rellena-los-campos"/></a></button>
 							<div id="empty-container"></div>
 							<div className="main-web-sections">
-								{this.state.formvisible === true?
-									<Form /> : null}
-								{this.state.previewvisible === true?
-									<Preview /> : null}
+								<Form className={`boxes-container box-${this.state.formvisible ? 'visible' : 'invisible'}`}/>
+								<Preview className={`boxes-container box-${this.state.previewvisible ? 'visible' : 'invisible'}`}/>
 								<Alerts />
 							</div>
 						</section>

@@ -43,7 +43,12 @@
 /*visibility: hidden;*/
 	display: none;
 }
-
+.box-visible {
+	display: block;
+}
+.box-invisible {
+	display: none;
+}
 /*Fin estilos generales*/
 /* cargar imagen*/
 .thumb{
@@ -91,6 +96,9 @@
 	.form-section {
 		height: 100%;
 		width: 40%;
+	}
+	.box-invisible {
+		display: block;
 	}
 }
 @media print {

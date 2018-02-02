@@ -501,6 +501,12 @@ input[type=checkbox] {
   /*visibility: hidden;*/
   display: none; }
 
+.box-visible {
+  display: block; }
+
+.box-invisible {
+  display: none; }
+
 /*Fin estilos generales*/
 /* cargar imagen*/
 .thumb {
@@ -547,7 +553,9 @@ input[type=checkbox] {
 @media all and (min-width: 900px) {
   .form-section {
     height: 100%;
-    width: 40%; } }
+    width: 40%; }
+  .box-invisible {
+    display: block; } }
 
 @media print {
   .form-section {

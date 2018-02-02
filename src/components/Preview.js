@@ -22,7 +22,7 @@ import videogameSmall from '../images/videogameSmall.png'
 class Preview extends React.Component {
 	render() {
 		return (
-			<section className="preview-section" id="ventana2">
+			<section className={`preview-section box-${this.props.visible ? 'visible' : 'invisible'}`} id="ventana2">
 					<div className="box-icons-preview">
 						<button className="cross-section-button" type="button" name="cruz-button" onclick="closePreview('ventana2')">
 						<img src="images/btnclose.png" alt="cruzbuttom"/></button>

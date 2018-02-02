@@ -102,6 +102,7 @@ class App extends Component {
 							<button id="button-down" type="button" name="button-down"><a href="index.html#empty-container"><img src={expandbuttonmedium} alt="rellena-los-campos"/></a></button>
 							<div id="empty-container"></div>
 							<div className="main-web-sections">
+								
 								<Form fill={this.updateState} visible={this.state.formvisible}/>
 								<section className={`preview-section box-${this.state.previewvisible ? 'visible' : 'invisible'}`} id="ventana2">
 									<div className="box-icons-preview">
@@ -128,6 +129,7 @@ class App extends Component {
 										<PrevQR />
 									</section>
 								</section>
+
 								<Alerts />
 							</div>
 						</section>

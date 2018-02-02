@@ -485,7 +485,7 @@ input[type=checkbox] {
   background: #5a392b; }
 
 /*ocultar secciones*/
-.net-social-hidden, .invisible, #read, #travel, #game, #sports, #cinema, #music, #files, #ventana2, #sound-efx {
+.net-social-hidden, .invisible, #read, #travel, #game, #sports, #cinema, #music, #files, #sound-efx {
   display: none; }
 
 .visible {

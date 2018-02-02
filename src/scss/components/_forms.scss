@@ -29,7 +29,7 @@
 	background: $percentageBarAndInputsAcc;
 }
 /*ocultar secciones*/
-.net-social-hidden, .invisible, #read, #travel, #game, #sports, #cinema, #music, #files, #ventana2, #sound-efx {
+.net-social-hidden, .invisible, #read, #travel, #game, #sports, #cinema, #music, #files, #sound-efx {
 	display: none;
 }
 .visible {
@@ -90,7 +90,7 @@
 @media all and (min-width:900px) {
 	.form-sec {
 		height: 100%;
-		width: 40%
+		width: 40%;
 	}
 }
 @media print {

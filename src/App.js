@@ -60,17 +60,7 @@ import videogameSmall from './images/videogameSmall.png'
 import machine from './images/vintage8Machine.png';
 
 class App extends Component {
-	constructor(props) {
-		super(props);
-		this.state ={}
-		this.updateState = this.updateState.bind(this);
-	}
 
-	updateState(prop, value){
-		const newState = {};
-		newState[prop] = value;
-		this.setState(newState);
-	}
   render() {
     return (
 			<div className="App">
@@ -78,9 +68,15 @@ class App extends Component {
 			 		<Header />
 			 		<main className="main-wrapper bloque index-main">
 			 			<Cover />
-			 			<Form updatePreview={this.updateState}/>
+						<section>
+							<button id="button-down" type="button" name="button-down"><a href="index.html#empty-container"><img src={expandbuttonmedium} alt="rellena-los-campos"/></a></button>
+							<div id="empty-container"></div>
+							<div className="main-web-sections">
+			 			<Form />
 						<Preview />
 						<Alerts />
+						</div>
+					</section>
 			 		</main>
 					<Share />
 					<Footer />

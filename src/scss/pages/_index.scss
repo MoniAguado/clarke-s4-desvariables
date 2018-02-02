@@ -1,1 +1,14 @@
 
+@media all and (min-width:900px) {
+		.flexible::before{
+		left: 0;
+		top: 0;
+		background: url(../images/group.png) left top no-repeat;
+		background-size: cover;
+	}
+		.main-web-sections {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin-top: 67px;
+	}

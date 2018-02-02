@@ -15,10 +15,18 @@ import expandarrow from '../images/expandarrow.png';
 import expandbuttonmedium from '../images/expandbuttonmedium.png';
 
 class Form extends React.Component {
+	constructor(props){
+		super(props);
+		this.handleChange = this.handleChange.bind(this);
+	}
+		handleChange(event){
+			this.props.updatePreview(event.target.name, event.target.value)
+		}
+
 	render() {
 		return (
 					<section className={`form-section box-${this.props.visible ? 'visible' : 'invisible'}`} id="ventana1">
-						<Data />
+						<Data onChange={this.handleChange}/>
 						<Aboutme />
 						<Experience />
 						<Education />

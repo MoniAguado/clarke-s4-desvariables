@@ -2,11 +2,19 @@ import React, { Component } from 'react';
 import Header from './components/Header';
 import Cover from './components/Cover';
 import Form from './components/Form';
-import Preview from './components/Preview';
 import Alerts from './components/Alerts';
 import Share from './components/Share';
 import Footer from './components/Footer';
 import './scss/main.css';
+
+import PrevData from './components/PrevData';
+import PrevAboutme from './components/PrevAboutme';
+import PrevExperienceEducation from './components/PrevExperienceEducation';
+import PrevSkills from './components/PrevSkills';
+import PrevLanguages from './components/PrevLanguages';
+import PrevHobbies from './components/PrevHobbies';
+import PrevRRSS from './components/PrevRRSS';
+import PrevQR from './components/PrevQR';
 
 
 import addButton24px from './images/addButton24px.png';
@@ -67,13 +75,21 @@ class App extends Component {
 			previewvisible: false,
 			formvisible: true
 		}
+		this.updateState = this.updateState.bind(this);
 	}
+
 		handleClick() {
 			this.setState ({
 				previewvisible:  !this.state.previewvisible,
 				formvisible:  !this.state.formvisible
 			})
 	}
+
+		updateState(prop, value){
+			const newState = {};
+			newState[prop] = value;
+			this.setState(newState);
+		}
 
   render() {
     return (
@@ -86,8 +102,32 @@ class App extends Component {
 							<button id="button-down" type="button" name="button-down"><a href="index.html#empty-container"><img src={expandbuttonmedium} alt="rellena-los-campos"/></a></button>
 							<div id="empty-container"></div>
 							<div className="main-web-sections">
-								<Form visible={this.state.formvisible}/>
-								<Preview visible={this.state.previewvisible}/>
+								<Form fill={this.updateState} visible={this.state.formvisible}/>
+								<section className={`preview-section box-${this.state.previewvisible ? 'visible' : 'invisible'}`} id="ventana2">
+									<div className="box-icons-preview">
+										<button className="cross-section-button" type="button" name="cruz-button" onclick="closePreview('ventana2')">
+											<img src="images/btnclose.png" alt="cruzbuttom"/></button>
+										<button className="iconsprev" type="button" onclick="printCurriculum()" id="btnprintprev" title="Imprimir"></button>
+										<button className="iconsprev" type="button" onclick="download()" id="btndownloadprev" title="Descargar"></button>
+									</div>
+									<PrevData
+										name={this.state.name}
+										surname={this.state.surname}
+										job={this.state.job}
+										email={this.state.email}
+										phone={this.state.telephone}/>
+									<PrevAboutme />
+									<PrevExperienceEducation />
+									<PrevSkills />
+									<PrevLanguages />
+									<PrevHobbies />
+
+
+									<section>
+										<prevRRSS />
+										<PrevQR />
+									</section>
+								</section>
 								<Alerts />
 							</div>
 						</section>

@@ -17,7 +17,7 @@ import expandbuttonmedium from '../images/expandbuttonmedium.png';
 class Form extends React.Component {
 	render() {
 		return (
-					<section className="form-section" id="ventana1">
+					<section className={`form-section box-${this.props.visible ? 'visible' : 'invisible'}`} id="ventana1">
 						<Data />
 						<Aboutme />
 						<Experience />

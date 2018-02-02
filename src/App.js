@@ -60,12 +60,26 @@ import videogameSmall from './images/videogameSmall.png'
 import machine from './images/vintage8Machine.png';
 
 class App extends Component {
+	constructor(props){
+		super(props);
+		this.handleClick = this.handleClick.bind(this);
+		this.state = {
+			previewVisible: false
+			formVisible: true
+		}
+		handleClick() {
+			this.setState ({
+				previewVisible:  !this.state.false
+				formVisible:  !this.state.true
+				open: !this.state.open
+			})
+	}
 
   render() {
     return (
 			<div className="App">
 				<body className="wrapper body" id="contenedorPrincipal">
-			 		<Header />
+			 		<Header clickButton =""/>
 			 		<main className="main-wrapper bloque index-main">
 			 			<Cover />
 						<section>

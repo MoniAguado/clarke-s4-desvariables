@@ -26,12 +26,8 @@ class Form extends React.Component {
 	render() {
 		return (
 					<section className={`form-section box-${this.props.visible ? 'visible' : 'invisible'}`} id="ventana1">
-<<<<<<< HEAD
-						<Data onChange={this.handleChange}/>
-=======
-						<Data />
->>>>>>> c52aa3207c32383a65c434ae9adb22edb8b71622
-						<Aboutme />
+						<Data functionOnchange = {this.handleChange}/>
+						<Aboutme onChange = {this.handleChange} />
 						<Experience />
 						<Education />
 						<Skills />

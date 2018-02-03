@@ -14,7 +14,6 @@ import PrevSkills from './components/PrevSkills';
 import PrevLanguages from './components/PrevLanguages';
 import PrevHobbies from './components/PrevHobbies';
 import PrevRRSS from './components/PrevRRSS';
-import PrevQR from './components/PrevQR';
 
 
 import addButton24px from './images/addButton24px.png';
@@ -142,7 +141,7 @@ class App extends Component {
 
 									<section>
 										<prevRRSS />
-										<PrevQR />
+
 									</section>
 								</section>
 

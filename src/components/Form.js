@@ -34,7 +34,7 @@ class Form extends React.Component {
 						<Languages functionOnchange = {this.handleChange}/>
 						<Hobbies />
 						<RRSS />
-						<QR />
+						
 
 					</section>
 

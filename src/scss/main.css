@@ -785,8 +785,13 @@ input[type=checkbox] {
   margin-left: 0;
   margin-right: 0;
   position: relative;
-  display: none;
   margin-top: 5px; }
+
+.barra_invisible {
+  display: block; }
+
+.barra_visible {
+  display: block; }
 
 .barra_front {
   width: 0;

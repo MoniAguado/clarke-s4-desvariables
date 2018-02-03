@@ -89,7 +89,6 @@ class App extends Component {
 			const newState = {};
 			newState[prop] = value;
 			this.setState(newState);
-			console.log(newState)
 		}
 
   render() {
@@ -124,7 +123,12 @@ class App extends Component {
 										skill1 = {this.state.skill1}
 										skill2 = {this.state.skill2}
 										skill3 = {this.state.skill3}
-										skill4 = {this.state.skill4}/>
+										skill4 = {this.state.skill4}
+										percentage1 = {this.state.percentage1}
+										percentage2 = {this.state.percentage2}
+										percentage3 = {this.state.percentage3}
+										percentage4 = {this.state.percentage4}
+										visible = {this.state.visible}/>
 									<PrevLanguages />
 									<PrevHobbies />
 

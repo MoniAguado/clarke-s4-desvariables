@@ -30,8 +30,8 @@ class Aboutme extends React.Component {
 					</button>
 				</div>
 				<div id="content-about" className={`boxes-container box-${this.state.open ? 'open' : 'close'}`}>
-						<label for="about"></label>
-						<textarea name="about-me" rows="6" cols="25" placeholder="Introduce una breve descripción sobre ti." className="textarea" id="text-about"></textarea>
+					<label for="about"></label>
+					<textarea name="about" rows="6" cols="25" placeholder="Introduce una breve descripción sobre ti." className="textarea" id="text-about" onChange={this.props.functionOnchange}></textarea>
 					</div>
 
 			</form>

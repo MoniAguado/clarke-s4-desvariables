@@ -1,0 +1,49 @@
+.share{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.share-box{
+	width: 40px;
+	height: 0;
+	padding-top: 40px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin: 5px;
+	transition: transform ease 1s;
+}
+
+.share-box:hover{
+	transform: rotate(360deg);
+}
+
+.share-slack{
+	background-image: url("https://i.pinimg.com/originals/5c/49/e7/5c49e71075941267cfaf5eb2700e7049.png");
+}
+
+.share-fb{
+	background-image: url("https://cdn.tahonadedonpio.es/wp-content/uploads/social/facebook-long.png");
+}
+
+.share-gog{
+	background-image: url("https://cdn.tahonadedonpio.es/wp-content/uploads/social/google-long.png");
+}
+
+.share-tw{
+	background-image: url("https://cdn.tahonadedonpio.es/wp-content/uploads/social/twitter-long.png");
+}
+
+.share-pint{
+	background-image: url("https://cdn.tahonadedonpio.es/wp-content/uploads/social/pinterest-long.png");
+}
+
+.share-li{
+	background-image: url("https://cdn.tahonadedonpio.es/wp-content/uploads/social/linkedin-long.png");
+}
+
+.share-wp{
+	background-image: url("https://cdn.tahonadedonpio.es/wp-content/uploads/social/whatsapp-long.png");
+}

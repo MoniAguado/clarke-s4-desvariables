@@ -117,7 +117,7 @@ class App extends Component {
 										job={this.state.job}
 										email={this.state.email}
 										phone={this.state.telephone}/>
-									<PrevAboutme />
+									<PrevAboutme about = {this.state.about}/>
 									<PrevExperienceEducation />
 									<PrevSkills
 										skill1 = {this.state.skill1}

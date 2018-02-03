@@ -20,8 +20,8 @@ class RRSS extends React.Component {
 	render() {
 		return (
 			<section>
-				<form className="form-section-container" action="index.html" method="post" onClick={this.handleClick}>
-					<div className="title-container">
+				<form className="form-section-container" action="index.html" method="post">
+					<div className="title-container" onClick={this.handleClick}>
 						<h2 className="title-form text-form-button">Redes Sociales</h2>
 						<button id="openButtonNet" className="open-section-button shown" type="button" name="networksButton" value="openButton">
 							<img src={expandbutton} alt="addButton"/></button>

@@ -31,7 +31,7 @@ class Form extends React.Component {
 						<Experience />
 						<Education />
 						<Skills functionOnchange = {this.handleChange}/>
-						<Languages />
+						<Languages functionOnchange = {this.handleChange}/>
 						<Hobbies />
 						<RRSS />
 						<QR />

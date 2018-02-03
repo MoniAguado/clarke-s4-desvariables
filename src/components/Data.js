@@ -27,7 +27,7 @@ class Data extends React.Component {
 						<img src={expandarrow} alt="minusbuttom"/>
 					</button>
 				</div>
-				<div className="boxes-container" id="principal-box" className={`boxes-container box-${this.state.open ? 'open' : 'close'}`}>
+				<div id="principal-box" className={`boxes-container box-${this.state.open ? 'open' : 'close'}`}>
 					<div className="containerinfo">
 						<input type="file" id="files" name="name" className="" ></input>
 						<div className="foto photo" title="Subir imagen" onclick="simularClick()"></div>

@@ -804,7 +804,8 @@ input[type=checkbox] {
 
 .languages-bar-preview {
   background-color: #e0e0e0;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  display: block; }
 
 /* cargar imagen*/
 .thumb {

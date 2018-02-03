@@ -129,7 +129,14 @@ class App extends Component {
 										percentage3 = {this.state.percentage3}
 										percentage4 = {this.state.percentage4}
 										visible = {this.state.visible}/>
-									<PrevLanguages />
+									<PrevLanguages
+										lang1 = {this.state.lang1}
+										lang2 = {this.state.lang2}
+										lang3 = {this.state.lang3}
+										percentage1 = {this.state.percentage1}
+										percentage2 = {this.state.percentage2}
+										percentage3 = {this.state.percentage3}
+										visible = {this.state.visible}/>
 									<PrevHobbies />
 
 

@@ -32,19 +32,19 @@ class Skills extends React.Component {
 				<form action="index.html" method="post" className={`boxes-container box-${this.state.open ? 'open' : 'close'}`}>
 					<div id="content-skills" className="boxes-container">
 						<div className="input-skill">
-							<input className="inputs skill" type="text" name="skill1" value="" placeholder="Escribe una habilidad" id="skill1"></input>
+							<input className="inputs skill" type="text" name="skill1" placeholder="Escribe una habilidad" id="skill1" onChange = {this.props.functionOnchange}></input>
 							<input className="inputs skill-percent" type="text" name="percentage1" value="" placeholder="Escribe un porcentaje" id="percentage1"></input>
 						</div>
 						<div className="input-skill">
-							<input className="inputs skill" type="text" name="skill2" value="" placeholder="Escribe una habilidad" id="skill2"></input>
+							<input className="inputs skill" type="text" name="skill2" placeholder="Escribe una habilidad" id="skill2" onChange = {this.props.functionOnchange}></input>
 							<input className="inputs skill-percent"  type="text" name="percentage2" value="" placeholder="Escribe un porcentaje" id="percentage2"></input>
 						</div>
 						<div className="input-skill">
-							<input className="inputs skill"  type="text" name="skill3" value="" placeholder="Escribe una habilidad" id="skill3"></input>
+							<input className="inputs skill"  type="text" name="skill3" placeholder="Escribe una habilidad" id="skill3" onChange = {this.props.functionOnchange}></input>
 							<input className="inputs skill-percent"  type="text" name="percentage3" value="" placeholder="Escribe un porcentaje" id="percentage3"></input>
 						</div>
 						<div className="input-skill">
-							<input className="inputs skill" type="text" name="skill4" value="" placeholder="Escribe una habilidad" id="skill4"></input>
+							<input className="inputs skill" type="text" name="skill4" placeholder="Escribe una habilidad" id="skill4" onChange = {this.props.functionOnchange}></input>
 							<input className="inputs skill-percent" type="text" name="percentage4" value="" placeholder="Escribe un porcentaje" id="percentage4"></input>
 						</div>
 					</div>

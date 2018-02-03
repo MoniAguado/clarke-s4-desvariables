@@ -30,7 +30,7 @@ class Form extends React.Component {
 						<Aboutme onChange = {this.handleChange} />
 						<Experience />
 						<Education />
-						<Skills />
+						<Skills functionOnchange = {this.handleChange}/>
 						<Languages />
 						<Hobbies />
 						<RRSS />

@@ -120,7 +120,11 @@ class App extends Component {
 										phone={this.state.telephone}/>
 									<PrevAboutme />
 									<PrevExperienceEducation />
-									<PrevSkills />
+									<PrevSkills
+										skill1 = {this.state.skill1}
+										skill2 = {this.state.skill2}
+										skill3 = {this.state.skill3}
+										skill4 = {this.state.skill4}/>
 									<PrevLanguages />
 									<PrevHobbies />
 

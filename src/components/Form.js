@@ -32,9 +32,9 @@ class Form extends React.Component {
 						<Education />
 						<Skills functionOnchange = {this.handleChange}/>
 						<Languages functionOnchange = {this.handleChange}/>
-						<Hobbies />
-						<RRSS />
-						
+						<Hobbies functionOnchange = {this.handleChange}/>
+						<RRSS functionOnchange = {this.handleChange}/>
+
 
 					</section>
 

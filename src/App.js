@@ -136,11 +136,23 @@ class App extends Component {
 										percentage2 = {this.state.percentage2}
 										percentage3 = {this.state.percentage3}
 										visible = {this.state.visible}/>
-									<PrevHobbies />
+									<PrevHobbies
+										read = {this.state.read}
+										travel = {this.state.travel}
+										games = {this.state.games}
+										sports = {this.state.sports}
+										cinema = {this.state.cinema}
+										music = {this.state.music}/>
 
 
 									<section>
-										<prevRRSS />
+										<prevRRSS
+										 	Linkedin = {this.state.Linkedin}
+											facebook = {this.state.facebook}
+											github = {this.state.github}
+											twitter = {this.state.twitter}
+											instagram = {this.state.instagram}/>
+
 
 									</section>
 								</section>

@@ -219,6 +219,8 @@
     height: 80px;
     width: 41%;
     margin-bottom: 8px; }
+  .container-icons {
+    display: none; }
   .container-letters {
     width: 1000px; }
   .letters-log {
@@ -869,7 +871,7 @@ input[type=checkbox] {
 /* cargar imagen*/
 /*styles pre*/
 .thumb2 {
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   margin: 10px 5px 0 0;
@@ -1022,7 +1024,7 @@ input[type=checkbox] {
   margin-top: 15%;
   margin-left: 20px;
   font-size: 2em;
-  font-family: 'Gabriela', serif;
+  font-family: 'American Typewriter Bold', Arial;
   font-weight: bold;
   color: #5a392b; }
 

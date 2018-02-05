@@ -73,6 +73,7 @@ class App extends React.Component {
 		this.state = {
 			previewvisible: false,
 			formvisible: true,
+			imagevisible: true,
 			file: '',
 			imagePreviewUrl: ''
 		}
@@ -111,7 +112,8 @@ class App extends React.Component {
 			this.setState ({
 				open: !this.state.open,
 				previewvisible:  !this.state.previewvisible,
-				formvisible:  !this.state.formvisible
+				formvisible:  !this.state.formvisible,
+				imagevisible: !this.state.imagevisible
 			});
 		}
 
@@ -136,16 +138,11 @@ class App extends React.Component {
 								<section className="complete-form">
 									<Image onSubmitFunction = {(e)=>this.handleSubmit(e)}
 										onChangeUploadImage = {(e)=>this.handleImageChange(e)}
-										newImagePreview = {$imagePreview}/>
+										newImagePreview = {$imagePreview} visible={this.state.imagevisible}/>
 									<Form updatePreview={this.updateState} visible={this.state.formvisible}/>
 								</section>
 								<section className={`preview-section box-${this.state.previewvisible ? 'visible' : 'invisible'}`} id="ventana2">
-									<div className="box-icons-preview">
-										<button className="cross-section-button" type="button" name="cruz-button" onclick="closePreview('ventana2')">
-											<img src="images/btnclose.png" alt="cruzbuttom"/></button>
-										<button className="iconsprev" type="button" onclick="printCurriculum()" id="btnprintprev" title="Imprimir"></button>
-										<button className="iconsprev" type="button" onclick="download()" id="btndownloadprev" title="Descargar"></button>
-									</div>
+
 									<section className="container-pic-preview">
 										<div id="prefoto">{$imagePreview}
 										</div>

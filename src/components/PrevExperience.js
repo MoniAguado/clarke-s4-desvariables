@@ -10,13 +10,13 @@ class PrevExperience extends React.Component {
 						<div class="container-timeline left" id="container-timeline-left"><div class="content-timeline">
 							<div class="dates-output-container">
 								<div class="dates-container">
-									<h3 id="start-job-year-preview" class="title-year"></h3>
-									<p id="start-job-month-preview"></p>
+									<h3 id="start-job-year-preview" class="title-year">{this.props.experiencieStartYear}</h3>
+									<p id="start-job-month-preview">{this.props.experiencieStartMonth}</p>
 								</div>
 								<h3 class="title-year"></h3>
 								<div class="dates-container">
-									<h3 id="end-job-year-preview" class="title-year"></h3>
-									<p id="end-job-month-preview"></p>
+									<h3 id="end-job-year-preview" class="title-year">{this.props.experiencieEndYear}</h3>
+									<p id="end-job-month-preview">{this.props.experiencieEndMonth}</p>
 								</div>
 							</div>
 							<div class="work-information-output-container">

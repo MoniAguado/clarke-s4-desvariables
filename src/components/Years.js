@@ -6,9 +6,9 @@ class Years extends React.Component {
     let yearsInput = [];
 		let actual = <option></option>;
 		 yearsInput.push (actual);
-    for (let i = 1950; i <= 2018; i++) {
-			if (i === 2000){
-				yearsInput.push(<option key={i} value={i} selected="selected">{i} </option>);
+    for (let i = 1950; i <= 2019; i++) {
+			if (i === 2019){
+				yearsInput.push(<option key={i} value="Año" selected="selected">Año</option>);
 			} else{
      		yearsInput.push(<option key={i} value={i}>{i}</option>);
     	}

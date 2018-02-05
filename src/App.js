@@ -156,10 +156,18 @@ class App extends React.Component {
 									<PrevAboutme about = {this.state.about}/>
 									<PrevExperience
 										jobname = {this.state.jobname}
-										companyname = {this.state.companyname}/>
+										companyname = {this.state.companyname}
+										experiencieStartYear ={this.state.experiencieStartYear}
+										experiencieEndYear ={this.state.experiencieEndYear}
+										experiencieStartMonth = {this.state.experiencieStartMonth}
+										experiencieEndMonth = {this.state.experiencieEndMonth}/>
 									<PrevEducation
 										careertitle = {this.state.careertitle}
-										studiescenter = {this.state.studiescenter}/>
+										studiescenter = {this.state.studiescenter}
+										experiencieStartYear ={this.state.experiencieStartYear}
+										experiencieEndYear ={this.state.experiencieEndYear}
+										experiencieStartMonth = {this.state.experiencieStartMonth}
+										experiencieEndMonth = {this.state.experiencieEndMonth}/>
 										<PrevSkills
 										skill1 = {this.state.skill1}
 										skill2 = {this.state.skill2}

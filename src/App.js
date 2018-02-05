@@ -10,7 +10,8 @@ import './scss/main.css';
 
 import PrevData from './components/PrevData';
 import PrevAboutme from './components/PrevAboutme';
-import PrevExperienceEducation from './components/PrevExperienceEducation';
+import PrevExperience from './components/PrevExperience';
+import PrevEducation from './components/PrevEducation';
 import PrevSkills from './components/PrevSkills';
 import PrevLanguages from './components/PrevLanguages';
 import PrevHobbies from './components/PrevHobbies';
@@ -156,10 +157,14 @@ class App extends React.Component {
 										email={this.state.email}
 										phone={this.state.telephone}/>
 									<PrevAboutme about = {this.state.about}/>
-									<PrevExperienceEducation
+									<PrevExperience
 										jobname = {this.state.jobname}
 										companyname = {this.state.companyname}/>
-									<PrevSkills
+									<PrevEducation
+										careertitle = {this.state.careertitle}
+										studiescenter = {this.state.studiescenter}/
+									>
+										<PrevSkills
 										skill1 = {this.state.skill1}
 										skill2 = {this.state.skill2}
 										skill3 = {this.state.skill3}

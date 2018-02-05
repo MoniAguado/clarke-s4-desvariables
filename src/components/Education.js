@@ -24,16 +24,16 @@ class Education extends React.Component {
 						<img src={expandbutton} alt="addButton"/>
 					</button>
 					<button id="closeButtonFormac" className="close-section-button hidden" type="button" name="education-button" value="closeButton">
-					<img src={expandarrow} alt="minusbuttom"/>
+						<img src={expandarrow} alt="minusbuttom"/>
 					</button>
 				</div>
 				<div className="boxes-container" id="education-box" className={`boxes-container box-${this.state.open ? 'open' : 'close'}`}>
 					<h3 className="pic-previewtex-bar-preview">Titulación</h3>
 					<div>
-						<input className="inputs" id="educ-title" type="text" name="title-name" placeholder="Indica el nombre de la titulación"></input>
+						<input className="inputs" id="educ-title" type="text" name="title-name" placeholder="Indica el nombre de la titulación" onChange={this.props.functionOnchange}></input>
 					</div>
 					<div >
-						<input className="inputs" id="center" type="text" name="center-name" placeholder="Indica el centro de estudios"></input>
+						<input className="inputs" id="center" type="text" name="center-name" placeholder="Indica el centro de estudios" onChange={this.props.functionOnchange}></input>
 					</div>
 					<div className="dates-boxes">
 						<label>Fecha de inicio</label>

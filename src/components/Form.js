@@ -2,6 +2,7 @@ import React from 'react';
 
 import Aboutme from './Aboutme';
 import Data from './Data';
+import Experience from './Experience';
 import Education from './Education';
 import Skills from './Skills';
 import Languages from './Languages';
@@ -42,8 +43,8 @@ class Form extends React.Component {
 					<section className={`form-section box-${this.props.visible ? 'visible' : 'invisible'}`} id="ventana1">
 						<Data functionOnchange = {this.handleChange}/>
 						<Aboutme functionOnchange = {this.handleChange}/>
-						{/* <Experience functionOnclick = {this.handleClick} addNewJob={this.state.addNewJob}/> */}
-						<Education />
+						<Experience functionOnchange = {this.handleChange}/>
+						<Education functionOnchange = {this.handleChange}/>
 						<Skills functionOnchange = {this.handleChange}/>
 						<Languages functionOnchange = {this.handleChange}/>
 						<Hobbies functionOnchange = {this.handleCheck}/>

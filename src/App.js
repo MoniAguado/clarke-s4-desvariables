@@ -162,8 +162,7 @@ class App extends React.Component {
 										companyname = {this.state.companyname}/>
 									<PrevEducation
 										careertitle = {this.state.careertitle}
-										studiescenter = {this.state.studiescenter}/
-									>
+										studiescenter = {this.state.studiescenter}/>
 										<PrevSkills
 										skill1 = {this.state.skill1}
 										skill2 = {this.state.skill2}

@@ -5,7 +5,6 @@ class PrevEducation extends React.Component {
 		return (
 			<section>
 				<section>
-					<h2 className="section-title">Experiencia y Formación</h2>
 					<section className="timeline">
 
 						<div class="container-timeline right" id="container-timeline-right"><div class="content-timeline">
@@ -21,8 +20,8 @@ class PrevEducation extends React.Component {
 								</div>
 							</div>
 							<div class="work-information-output-container">
-								<p id="job-preview" class="job-title"></p>
-								<p id="company-preview"></p>
+								<p id="job-preview" class="job-title" name="careertitle">{this.props.careertitle}</p>
+								<p id="company-preview" name="studiescenter">{this.props.studiescenter}</p>
 							</div>
 						</div>
 						</div>

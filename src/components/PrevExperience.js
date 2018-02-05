@@ -28,7 +28,6 @@ class PrevExperience extends React.Component {
 
 					</section>
 				</section>
-				<p className="separator">* * * * * * * * * * * * * * * </p>
 			</section>
 		)
 	}

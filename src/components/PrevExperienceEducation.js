@@ -20,8 +20,8 @@ class PrevExperienceEducation extends React.Component {
 								</div>
 							</div>
 							<div class="work-information-output-container">
-								<p id="job-preview" class="job-title"></p>
-								<p id="company-preview"></p>
+								<p id="job-preview" class="job-title">{this.props.jobname}</p>
+								<p id="company-preview">{this.props.companyname}</p>
 							</div>
 						</div>
 						</div>

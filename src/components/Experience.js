@@ -26,18 +26,18 @@ class Experience extends React.Component {
 						<img src={expandbutton} alt="addButton"/>
 					</button>
 					<button id="closeButtonExperience" className="close-section-button hidden" type="button" name="job-box-button" value="closeButton">
-					<img src={expandarrow} alt="minusbuttom"/>
+						<img src={expandarrow} alt="minusbuttom"/>
 					</button>
 				</div>
 				<div className="boxes-container" id="job-box" className={`boxes-container box-${this.state.open ? 'open' : 'close'}`}>
 					<h3 className="subtitle-section">Puesto de trabajo</h3>
 					<div>
 						<label for="job"></label>
-						<input className="inputs" id="job" type="text" name="job-name" placeholder="Indica el puesto de trabajo"></input>
+						<input className="inputs" id="job" type="text" name="job-name" placeholder="Indica el puesto de trabajo" onChange={this.props.functionOnlick}></input>
 					</div>
 					<div>
 						<label for="company"></label>
-						<input className="inputs" id="company" type="text" name="company-name" placeholder="Indica el nombre de la empresa"></input>
+						<input className="inputs" id="company" type="text" name="company-name" placeholder="Indica el nombre de la empresa" onChange={this.props.functionOnclick}></input>
 					</div>
 					<div className="dates-boxes">
 						<label>Fecha de inicio:</label>
@@ -50,7 +50,7 @@ class Experience extends React.Component {
 						<select className="select-styles year" id="year-job-end" name="job-end-year"></select>
 					</div>
 					<div className="buttons-container">
-						<button className="buttons-save-general experiencia" id="button-add-exp" type="button" name="add-exp" value="Añadir"></button>
+						<button className="buttons-save-general experiencia" id="button-add-exp" type="button" name="add-exp" value="Añadir" onClick={this.props.functionOnclick}></button>
 						<button className="buttons-save-general experiencia" id="button-delete-exp" type="button" name="delete-exp" value="Borrar"></button>
 					</div>
 				</div>

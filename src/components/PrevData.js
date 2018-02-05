@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from './Image';
 
 
 class PrevData extends React.Component {
@@ -6,7 +7,7 @@ class PrevData extends React.Component {
 		return (
 			<section>
 				<section className="container-pic-preview">
-					<div id="prefoto"></div>
+					<div id="prefoto">{this.props.imagePreview}</div>
 				</section>
 				<p className="separator">* * * * * * * * * * * * * * * </p>
 				<section className="main-details-preview" id="preprincipales-link">

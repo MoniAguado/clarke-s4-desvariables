@@ -18,8 +18,16 @@ class Form extends React.Component {
 	constructor(props){
 		super(props);
 		this.handleChange = this.handleChange.bind(this);
+		this.handleClick = this.handleClick.bind(this);
 	}
 		handleChange(event){
+			if (this.props.value === 'hobbies'){
+				console.log('Aloha')
+			}
+			this.props.updatePreview(event.target.name, event.target.value)
+		}
+
+		handleClick(event){
 			this.props.updatePreview(event.target.name, event.target.value)
 		}
 
@@ -28,13 +36,13 @@ class Form extends React.Component {
 					<section className={`form-section box-${this.props.visible ? 'visible' : 'invisible'}`} id="ventana1">
 						<Data functionOnchange = {this.handleChange}/>
 						<Aboutme functionOnchange = {this.handleChange}/>
-						<Experience />
+						<Experience functionOnclick = {this.handleClick}/>
 						<Education />
 						<Skills functionOnchange = {this.handleChange}/>
 						<Languages functionOnchange = {this.handleChange}/>
-						<Hobbies />
+						<Hobbies functionOnchange = {this.handleChange}/>
 						<RRSS />
-						
+
 
 					</section>
 

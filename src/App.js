@@ -117,7 +117,9 @@ class App extends Component {
 										email={this.state.email}
 										phone={this.state.telephone}/>
 									<PrevAboutme about = {this.state.about}/>
-									<PrevExperienceEducation />
+									<PrevExperienceEducation
+										jobname = {this.state.jobname}
+										companyname = {this.state.companyname}/>
 									<PrevSkills
 										skill1 = {this.state.skill1}
 										skill2 = {this.state.skill2}
@@ -136,11 +138,22 @@ class App extends Component {
 										percentage2 = {this.state.percentage2}
 										percentage3 = {this.state.percentage3}
 										visible = {this.state.visible}/>
-									<PrevHobbies />
+									<PrevHobbies
+										read = {this.state.read}
+										travel = {this.state.travel}
+										games = {this.state.games}
+										sports = {this.state.sports}
+										cinema = {this.state.cinema}
+										music = {this.state.music}/>
 
 
 									<section>
-										<prevRRSS />
+										<prevRRSS
+											linkedin = {this.state.linkedin}
+											facebook = {this.state.facebok}
+											github = {this.state.github}
+											twitter = {this.state.twitter}
+											instagram = {this.state.instagram}/>
 
 									</section>
 								</section>

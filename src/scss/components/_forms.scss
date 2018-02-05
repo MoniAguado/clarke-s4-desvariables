@@ -29,7 +29,9 @@
 	background: $percentageBarAndInputsAcc;
 }
 /*ocultar secciones*/
-.net-social-hidden, .invisible, #read, #travel, #game, #sports, #cinema, #music, #files, #sound-efx {
+.net-social-hidden, .invisible, #read, #travel, #game, #sports, #cinema, #music,
+// #files
+, #sound-efx {
 	display: none;
 }
 .visible {

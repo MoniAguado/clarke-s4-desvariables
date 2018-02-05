@@ -78,7 +78,7 @@ class App extends React.Component {
 			previewvisible: false,
 			formvisible: true,
 			file: '',
-			imagePreviewUrl: '',
+			imagePreviewUrl: ''
 		}
 
 	}

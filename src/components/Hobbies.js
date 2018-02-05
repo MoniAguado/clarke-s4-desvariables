@@ -15,6 +15,7 @@ class Hobbies extends React.Component {
 	handleClick() {
 		this.setState ({
 			open: !this.state.open
+
 		})
 	}
 	render() {
@@ -30,27 +31,27 @@ class Hobbies extends React.Component {
 				<form id="hobbies-form" action="index.html" method="post" className={`boxes-container box-${this.state.open ? 'open' : 'close'}`}>
 					<div className="check-box-hobbies">
 						<label for="hobbie1">Leer</label>
-						<input id ="hobbie1" type="checkbox" name="read" value="hobbies" onChange={this.props.functionOnchange}></input>
+						<input id ="hobbie1" type="checkbox" name="read" onChange={this.props.functionOnchange}></input>
 					</div>
 					<div className="check-box-hobbies">
 						<label for="hobbie2">Viajar</label>
-						<input id ="hobbie2" type="checkbox" name="travel" value="hobbies" onChange={this.props.functionOnchange}></input>
+						<input id ="hobbie2" type="checkbox" name="travel" onChange={this.props.functionOnchange}></input>
 					</div>
 					<div className="check-box-hobbies">
 						<label for="hobbie3">Videojuegos</label>
-						<input id ="hobbie3" type="checkbox" name="game" value="hobbies" onChange={this.props.functionOnchange}></input>
+						<input id ="hobbie3" type="checkbox" name="games" onChange={this.props.functionOnchange}></input>
 					</div>
 					<div className="check-box-hobbies">
 						<label for="hobbie4">Deportes</label>
-						<input id ="hobbie4" type="checkbox" name="sports" value="hobbies" onChange={this.props.functionOnchange}></input>
+						<input id ="hobbie4" type="checkbox" name="sports" onChange={this.props.functionOnchange}></input>
 					</div>
 					<div className="check-box-hobbies">
 						<label for="hobbie5">Cine</label>
-						<input id ="hobbie5" type="checkbox" name="movies" value="hobbies" onChange={this.props.functionOnchange}></input>
+						<input id ="hobbie5" type="checkbox" name="cinema" onChange={this.props.functionOnchange}></input>
 					</div>
 					<div className="check-box-hobbies">
 						<label for="hobbie6">Música</label>
-						<input id ="hobbie6" type="checkbox" name="music" value="hobbies" onChange={this.props.functionOnchange}></input>
+						<input id ="hobbie6" type="checkbox" name="music" onChange={this.props.functionOnchange}></input>
 					</div>
 				</form>
 			</section>

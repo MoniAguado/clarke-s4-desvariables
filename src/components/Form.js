@@ -19,17 +19,20 @@ class Form extends React.Component {
 		super(props);
 		this.handleChange = this.handleChange.bind(this);
 		this.handleClick = this.handleClick.bind(this);
+		this.handleCheck = this.handleCheck.bind(this);
 	}
 		handleChange(event){
-			if (this.props.value === 'hobbies'){
-				console.log('Aloha')
-			}
 			this.props.updatePreview(event.target.name, event.target.value)
 		}
 
 		handleClick(event){
 			this.props.updatePreview(event.target.name, event.target.value)
 		}
+
+		handleCheck(event){
+			this.props.updatePreview(event.target.name, event.target.checked)
+		}
+
 
 	render() {
 		return (
@@ -40,7 +43,7 @@ class Form extends React.Component {
 						<Education />
 						<Skills functionOnchange = {this.handleChange}/>
 						<Languages functionOnchange = {this.handleChange}/>
-						<Hobbies functionOnchange = {this.handleChange}/>
+						<Hobbies functionOnchange = {this.handleCheck}/>
 						<RRSS functionOnchange = {this.handleChange}/>
 
 

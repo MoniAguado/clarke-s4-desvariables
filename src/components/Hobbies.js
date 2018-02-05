@@ -9,9 +9,7 @@ class Hobbies extends React.Component {
 		this.handleClick = this.handleClick.bind(this);
 		this.state = {
 			open: false
-			hobbies = ['read', 'travel', 'games', 'sports', 'cinema', 'music'],
 		}
-	console.log(this,state.hobbies)
 
 	}
 	handleClick() {

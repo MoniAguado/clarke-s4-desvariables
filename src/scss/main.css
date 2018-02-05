@@ -458,7 +458,13 @@ input[type=checkbox] {
 
 /*Estilos generales de la sección de desplegables*/
 .form {
-  width: 50%; }
+  width: 100%; }
+
+.container-image {
+  padding: 20px; }
+
+.button-upload {
+  margin: 20px; }
 
 .form-section-container {
   display: flex;
@@ -522,7 +528,7 @@ input[type=checkbox] {
   width: 200px;
   height: 200px;
   border-radius: 100px;
-  margin-top: 40px;
+  margin: auto;
   -webkit-box-shadow: 5px 8px 42px 1px #3d3d29;
   display: flex;
   align-self: center;
@@ -554,9 +560,14 @@ input[type=checkbox] {
 @media all and (min-width: 900px) {
   .form-section {
     height: 100%;
-    width: 40%; }
+    width: 90%; }
   .box-invisible {
-    display: block; } }
+    display: block; }
+  .complete-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%; } }
 
 @media print {
   .form-section {
@@ -849,17 +860,11 @@ input[type=checkbox] {
   display: block; }
 
 /* cargar imagen*/
-.thumb {
-  border: 1px solid #000;
-  margin: 10px 5px 0 0;
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  -webkit-box-shadow: 8px 14px 42px 1px #3d3d29; }
-
 /*styles pre*/
 .thumb2 {
-  border: 1px solid #000;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 10px 5px 0 0;
   width: 200px;
   height: 200px;

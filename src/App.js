@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Header from './components/Header';
 import Cover from './components/Cover';
+import Image from './components/Image';
 import Form from './components/Form';
 import Alerts from './components/Alerts';
 import Share from './components/Share';
@@ -66,23 +67,43 @@ import videogame from './images/videogame.png';
 import videogameSmall from './images/videogameSmall.png'
 import machine from './images/vintage8Machine.png';
 
-class App extends Component {
+class App extends React.Component {
 	constructor(props){
 		super(props);
+		this.updateState = this.updateState.bind(this);
 		this.handleClick = this.handleClick.bind(this);
+		this.handleSubmit = this.handleSubmit.bind(this);
+		this.handleImageChange = this.handleImageChange.bind(this);
 		this.state = {
 			previewvisible: false,
-			formvisible: true
+			formvisible: true,
+			file: '',
+			imagePreviewUrl: '',
 		}
-		this.updateState = this.updateState.bind(this);
+
 	}
 
-		handleClick() {
-			this.setState ({
-				previewvisible:  !this.state.previewvisible,
-				formvisible:  !this.state.formvisible
-			})
-	}
+		handleSubmit(e) {
+			e.preventDefault();
+			console.log('handle uploading-', this.state.file);
+		}
+
+		handleImageChange(e) {
+			e.preventDefault();
+
+			let reader = new FileReader();
+			let file = e.target.files[0];
+
+			reader.onloadend = () => {
+				this.setState({
+					file: file,
+					imagePreviewUrl: reader.result,
+
+				});
+			}
+
+			reader.readAsDataURL(file)
+		}
 
 		updateState(prop, value){
 			const newState = {};
@@ -90,7 +111,22 @@ class App extends Component {
 			this.setState(newState);
 		}
 
+		handleClick() {
+			this.setState ({
+				open: !this.state.open,
+				previewvisible:  !this.state.previewvisible,
+				formvisible:  !this.state.formvisible
+			});
+		}
+
+
   render() {
+		let {imagePreviewUrl} = this.state;
+		let $imagePreview = null;
+		if (imagePreviewUrl) {
+			$imagePreview = (<div className="thumb2" style={{backgroundImage: `url(${imagePreviewUrl})`}}></div>);
+		}
+
     return (
 			<div className="App">
 				<body className="wrapper body" id="contenedorPrincipal">
@@ -101,8 +137,12 @@ class App extends Component {
 							<button id="button-down" type="button" name="button-down"><a href="index.html#empty-container"><img src={expandbuttonmedium} alt="rellena-los-campos"/></a></button>
 							<div id="empty-container"></div>
 							<div className="main-web-sections">
-
-								<Form updatePreview={this.updateState} visible={this.state.formvisible}/>
+								<section className="complete-form">
+									<Image onSubmitFunction = {(e)=>this.handleSubmit(e)}
+										onChangeUploadImage = {(e)=>this.handleImageChange(e)}
+										newImagePreview = {$imagePreview}/>
+									<Form updatePreview={this.updateState} visible={this.state.formvisible}/>
+								</section>
 								<section className={`preview-section box-${this.state.previewvisible ? 'visible' : 'invisible'}`} id="ventana2">
 									<div className="box-icons-preview">
 										<button className="cross-section-button" type="button" name="cruz-button" onclick="closePreview('ventana2')">
@@ -110,6 +150,10 @@ class App extends Component {
 										<button className="iconsprev" type="button" onclick="printCurriculum()" id="btnprintprev" title="Imprimir"></button>
 										<button className="iconsprev" type="button" onclick="download()" id="btndownloadprev" title="Descargar"></button>
 									</div>
+									<section className="container-pic-preview">
+										<div id="prefoto">{$imagePreview}
+										</div>
+									</section>
 									<PrevData
 										name={this.state.name}
 										surname={this.state.surname}

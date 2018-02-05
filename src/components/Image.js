@@ -1,14 +1,15 @@
 import React from 'react';
 
 
+
 class Image extends React.Component{
 
   render() {
     return (
-			<div>
-				<input type="file" id="files" name="name" className="" onChange={this.props.onChangeUploadImage}>{this.props.newImagePreview}</input>
-				<div className="foto photo" title="Subir imagen" onSubmit = {this.props.onSubmitFunction}  ></div>
-			</div>
+			<form className="container-image" onSubmit={this.props.onSubmitFunction}>{this.props.newImagePreview}
+				<div className="foto photo" title="Subir imagen"></div>
+				<input type="file" id="files" name="name" className="button-upload" onChange={this.props.onChangeUploadImage}></input>
+			</form>
 	);
 }
 }

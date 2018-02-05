@@ -1,14 +1,10 @@
 import React from 'react';
-import Image from './Image';
 
 
 class PrevData extends React.Component {
 	render() {
 		return (
 			<section>
-				<section className="container-pic-preview">
-					<div id="prefoto">{this.props.imagePreview}</div>
-				</section>
 				<p className="separator">* * * * * * * * * * * * * * * </p>
 				<section className="main-details-preview" id="preprincipales-link">
 					<p id="prenombre" className="name">{this.props.name}</p>

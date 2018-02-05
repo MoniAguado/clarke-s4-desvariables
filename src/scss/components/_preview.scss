@@ -194,18 +194,20 @@
 	display: block;
 }
 /* cargar imagen*/
-.thumb{
-	border: 1px solid $black;
-	margin: 10px 5px 0 0;
-	width: 200px;
-	height: 200px;
-	border-radius: 100px;
-	-webkit-box-shadow: 8px 14px 42px 1px $imageBoxShadow;
-}
+// .thumb{
+// 	border: 1px solid $black;
+// 	margin: 10px 5px 0 0;
+// 	width: 200px;
+// 	height: 200px;
+// 	border-radius: 100px;
+// 	-webkit-box-shadow: 8px 14px 42px 1px $imageBoxShadow;
+// }
 /*styles pre*/
 
 .thumb2{
-	border: 1px solid $black;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 	margin: 10px 5px 0 0;
 	width: 200px;
 	height: 200px;

@@ -46,8 +46,8 @@ class Education extends React.Component {
 						<select className="select-styles year" id="year-training-end" name="training-end-year"></select>
 					</div>
 					<div className="buttons-container">
-						<button type="button" value="Añadir" name="add-ed" id="button-add-ed" className="buttons-save-general formacion"></button>
-						<button type="button" value="Borrar" name="delete-ed" id="button-delete-ed" className="buttons-save-general formacion"></button>
+						<button type="button" value="Añadir" name="add-ed" id="button-add-ed" className="buttons-save-general formacion">Añadir</button>
+						<button type="button" value="Borrar" name="delete-ed" id="button-delete-ed" className="buttons-save-general formacion">Borrar</button>
 					</div>
 				</div>
 			</form>

@@ -147,7 +147,7 @@ class App extends Component {
 
 									<section>
 										<prevRRSS
-										 	Linkedin = {this.state.Linkedin}
+										 	Linkedin = {this.state.linkedin}
 											facebook = {this.state.facebook}
 											github = {this.state.github}
 											twitter = {this.state.twitter}

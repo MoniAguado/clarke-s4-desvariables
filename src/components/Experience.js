@@ -50,8 +50,8 @@ class Experience extends React.Component {
 						<select className="select-styles year" id="year-job-end" name="job-end-year"></select>
 					</div>
 					<div className="buttons-container">
-						<button className="buttons-save-general experiencia" id="button-add-exp" type="button" name="add-exp" value="Añadir"></button>
-						<button className="buttons-save-general experiencia" id="button-delete-exp" type="button" name="delete-exp" value="Borrar"></button>
+						<button className="buttons-save-general experiencia" id="button-add-exp" type="button" name="add-exp" value="Añadir">Añadir</button>
+						<button className="buttons-save-general experiencia" id="button-delete-exp" type="button" name="delete-exp" value="Borrar">Borrar</button>
 					</div>
 				</div>
 			</form>

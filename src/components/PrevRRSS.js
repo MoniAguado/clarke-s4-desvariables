@@ -6,8 +6,8 @@ class PrevRRSS extends React.Component {
 			<div className="sociality">
 				<div className="socialNetworks">
 					<ul className="social">
-						<li className="linkedin invisible">
-							<a id="a-linkedin" className="printnet" href="https://www.linkedin.com/in/" target="_blank">linkedin</a>
+						<li className="linkedin invisible">{this.props.Linkedin}
+							<a id="a-linkedin" className="printnet" href="https://www.linkedin.com/in/" target="_blank">{this.props.Linkedin}linkedin</a>
 						</li>
 						<li className="facebook invisible">
 							<a id="a-facebook" className="printnet" href="https://www.facebook.com/" target="_blank">facebook</a>

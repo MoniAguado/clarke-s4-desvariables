@@ -8,10 +8,11 @@ import sportsSmall from '../images/sportsSmall.png';
 import videogameSmall from '../images/videogameSmall.png';
 
 class PrevHobbies extends React.Component {
-	
+
 	render() {
 		return (
 			<section>
+
 				<section id="hobbies-preview">
 					<h2 className="title-section">Hobbies</h2>
 					<div className="all-hobbies-preview">
@@ -24,6 +25,7 @@ class PrevHobbies extends React.Component {
 					</div>
 				</section>
 				<p className="separator">* * * * * * * * * * * * * * * </p>
+
 			</section>
 		)
 	}

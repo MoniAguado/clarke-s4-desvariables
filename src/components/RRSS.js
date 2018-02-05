@@ -32,23 +32,23 @@ class RRSS extends React.Component {
 						<div className="boxes-container net-social-hidden" id="minredes" className={`boxes-container box-${this.state.open ? 'open' : 'close'}`}>
 							<div className="nets">
 								<label className="socialLabel" for="linkedin">Linkedin</label>
-								<input className="users inputs" id="linkedin" type="text" name="net1" placeholder=" Rellena con tu usuario"></input>
+								<input className="users inputs" id="linkedin" type="text" name="net1" placeholder=" Rellena con tu usuario" onChange={this.props.functionOnchange}></input>
 							</div>
 							<div className="nets">
 								<label className="socialLabel" for="facebook">Facebook</label>
-								<input className="users inputs" id="facebook" type="text" name="net2" placeholder=" Rellena con tu usuario"></input>
+								<input className="users inputs" id="facebook" type="text" name="net2" placeholder=" Rellena con tu usuario" onChange={this.props.functionOnchange}></input>
 							</div>
 							<div className="nets">
 								<label className="socialLabel" for="github">Github</label>
-								<input className="users inputs" id="github" type="text" name="net3" placeholder=" Rellena con tu usuario"></input>
+								<input className="users inputs" id="github" type="text" name="net3" placeholder=" Rellena con tu usuario" onChange={this.props.functionOnchange}></input>
 							</div>
 							<div className="nets">
 								<label className="socialLabel" for="twitter">Twitter</label>
-								<input className="users inputs" id="twitter" type="text" name="net3" placeholder=" Rellena con tu usuario"></input>
+								<input className="users inputs" id="twitter" type="text" name="net3" placeholder=" Rellena con tu usuario" onChange={this.props.functionOnchange}></input>
 							</div>
 							<div className="nets">
 								<label className="socialLabel" for="instagram">Instagram</label>
-								<input className="users inputs" id="instagram" type="text" name="net3" placeholder=" Rellena con tu usuario"></input>
+								<input className="users inputs" id="instagram" type="text" name="net3" placeholder=" Rellena con tu usuario" onChange={this.props.functionOnchange}></input>
 							</div>
 						</div>
 					</form>

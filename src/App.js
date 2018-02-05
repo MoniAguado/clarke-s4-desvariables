@@ -38,12 +38,8 @@ import cinemaSmall from './images/cinemaSmall.png';
 import expandarrow from './images/expandarrow.png';
 import expandbuttonmedium from './images/expandbuttonmedium.png';
 import expandbutton from './images/expandbutton.png';
-import facebook from './images/facebook.png';
-import github from './images/github.png';
 import group from './images/group.png';
 import groupMobile from './images/groupMobile.png';
-import instagram from './images/instagram.png';
-import linkedin from './images/linkedin.png';
 import logofinal from './images/logofinal.png';
 import logoLetras from './images/logoLetras.png';
 import logoLetrasRegular from './images/logoLetrasRegular.png';
@@ -62,7 +58,6 @@ import sports from './images/sports.png';
 import sportsSmall from './images/sportsSmall.png';
 import travel from './images/travel.png';
 import travelSmall from './images/travelSmall.png';
-import twitter from './images/twitter.png';
 import videogame from './images/videogame.png';
 import videogameSmall from './images/videogameSmall.png'
 import machine from './images/vintage8Machine.png';
@@ -192,8 +187,8 @@ class App extends React.Component {
 
 
 									<section>
-										<prevRRSS
-										 	Linkedin = {this.state.linkedin}
+										<PrevRRSS
+										 	linkedin = {this.state.linkedin}
 											facebook = {this.state.facebook}
 											github = {this.state.github}
 											twitter = {this.state.twitter}

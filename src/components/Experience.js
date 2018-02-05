@@ -4,18 +4,39 @@ import expandbutton from '../images/expandbutton.png';
 import expandarrow from '../images/expandarrow.png';
 
 class Experience extends React.Component {
-	constructor(props){
+
+	+	constructor(props){
 		super(props);
 		this.handleClick = this.handleClick.bind(this);
 		this.state = {
-			open: false
+			open: false,
+			job: {
+				name: "",
+				company: ""
+			}
 		}
 
 	}
+
+
 	handleClick() {
 		this.setState ({
 			open: !this.state.open
 		})
+	}
+
+
+	saveJobName(e) {
+		this.setState({job:
+			name: e.target.value
+		})
+	}
+
+	addJob(){
+		const job = this.state.job;
+		this.setState()
+		this.state.jobList.push(job);
+		this.props.addNewJob(jobList)
 	}
 	render() {
 		return (
@@ -33,7 +54,7 @@ class Experience extends React.Component {
 					<h3 className="subtitle-section">Puesto de trabajo</h3>
 					<div>
 						<label for="job"></label>
-						<input className="inputs" id="job" type="text" name="job-name" placeholder="Indica el puesto de trabajo" onChange={this.props.functionOnlick}></input>
+						<input className="inputs" id="job" type="text" name="job-name" placeholder="Indica el puesto de trabajo" onChange={this.saveJobName}></input>
 					</div>
 					<div>
 						<label for="company"></label>
@@ -51,7 +72,7 @@ class Experience extends React.Component {
 					</div>
 					<div className="buttons-container">
 						<button className="buttons-save-general experiencia" id="button-add-exp" type="button" name="add-exp" value="Añadir">Añadir</button>
-						<button className="buttons-save-general experiencia" id="button-delete-exp" type="button" name="delete-exp" value="Borrar" onClick={this.props.functionOnclick}>Borrar</button>
+						<button className="buttons-save-general experiencia" id="button-delete-exp" type="button" name="delete-exp" value="Borrar" onClick={this.props.}>Borrar</button>
 					</div>
 				</div>
 			</form>

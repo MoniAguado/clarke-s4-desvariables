@@ -2,7 +2,6 @@ import React from 'react';
 
 import Aboutme from './Aboutme';
 import Data from './Data';
-import Experience from './Experience';
 import Education from './Education';
 import Skills from './Skills';
 import Languages from './Languages';
@@ -33,13 +32,17 @@ class Form extends React.Component {
 			this.props.updatePreview(event.target.name, event.target.checked)
 		}
 
+		addNewJob(jobList) {
+			this.props.updatePreview("jobList", jobList)
+		}
+
 
 	render() {
 		return (
 					<section className={`form-section box-${this.props.visible ? 'visible' : 'invisible'}`} id="ventana1">
 						<Data functionOnchange = {this.handleChange}/>
 						<Aboutme functionOnchange = {this.handleChange}/>
-						<Experience functionOnclick = {this.handleClick}/>
+						{/* <Experience functionOnclick = {this.handleClick} addNewJob={this.state.addNewJob}/> */}
 						<Education />
 						<Skills functionOnchange = {this.handleChange}/>
 						<Languages functionOnchange = {this.handleChange}/>

@@ -894,7 +894,10 @@ input[type=checkbox] {
 .percentage-bar {
   background-color: #5a392b; }
 
-.linkedin a {
+.social {
+  list-style: none; }
+
+.add-linkedin {
   background: url("../images/linkedin.png");
   overflow: hidden;
   display: block;
@@ -903,7 +906,7 @@ input[type=checkbox] {
   height: 0;
   width: 40px; }
 
-.facebook a {
+.add-facebook {
   background: url("../images/facebook.png");
   overflow: hidden;
   display: block;
@@ -912,7 +915,7 @@ input[type=checkbox] {
   height: 0;
   width: 40px; }
 
-.github a {
+.add-github {
   background: url("../images/github.png");
   overflow: hidden;
   display: block;
@@ -921,7 +924,7 @@ input[type=checkbox] {
   height: 0;
   width: 40px; }
 
-.twitter a {
+.add-twitter {
   background: url("../images/twitter.png");
   overflow: hidden;
   display: block;
@@ -930,7 +933,7 @@ input[type=checkbox] {
   height: 0;
   width: 40px; }
 
-.instagram a {
+.add-instagram {
   background: url("../images/instagram.png");
   overflow: hidden;
   display: block;

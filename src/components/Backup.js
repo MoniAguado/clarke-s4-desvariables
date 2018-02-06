@@ -6,7 +6,7 @@ import Years from './Years';
 
 class Experience extends React.Component {
 
-	+	constructor(props){
+		constructor(props){
 		super(props);
 		this.handleClick = this.handleClick.bind(this);
 		this.state = {
@@ -16,29 +16,28 @@ class Experience extends React.Component {
 				company: ""
 			}
 		}
-
 	}
 
 
-		handleClick() {
-			this.setState ({
-				open: !this.state.open
-			})
-		}
+	handleClick() {
+		this.setState ({
+			open: !this.state.open
+		})
+	}
 
 
-		saveJobName(e) {
-			this.setState({job:
-				name: e.target.value
-			})
-		}
+	saveJobName(e) {
+		this.setState({job:
+			name: e.target.value
+		})
+	}
 
-		addJob(){
-			const job = this.state.job;
-			this.setState()
-			this.state.jobList.push(job);
-			this.props.addNewJob(jobList)
-		}
+	addJob(){
+		const job = this.state.job;
+		this.setState()
+		this.state.jobList.push(job);
+		this.props.addNewJob(jobList)
+	}
 
 	render() {
 		return (

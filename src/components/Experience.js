@@ -7,18 +7,20 @@ import Months from './Months';
 
 class Experience extends React.Component {
 
-		constructor(props){
+	constructor(props){
 		super(props);
 		this.handleClick = this.handleClick.bind(this);
 		this.state = {
 			open: false
 		}
 	}
+
 	handleClick() {
 		this.setState ({
 			open: !this.state.open
 		})
 	}
+	
 	render() {
 		return (
 			<form className="form-section-container" id="experience-section" action="index.html" method="post">
@@ -43,13 +45,13 @@ class Experience extends React.Component {
 					</div>
 					<div className="dates-boxes">
 						<label className="label-dates">Fecha de inicio:</label>
-						<Months onChangeSelect ={this.props.functionOnchange} name='ExperiencieStartMonth' />
-						<Years onChangeSelect ={this.props.functionOnchange} name='ExperiencieStartYear' />
+						<Months onChangeSelect ={this.props.functionOnchange} name='experiencieStartMonth' />
+						<Years onChangeSelect ={this.props.functionOnchange} name='experiencieStartYear' />
 					</div>
 					<div className="dates-boxes">
 						<label className="label-dates">Fecha de finalización</label>
-						<Months onChangeSelect ={this.props.functionOnchange} name='ExperiencieEndMonth' />
-						<Years onChangeSelect ={this.props.functionOnchange} name='ExperiencieEndYear' />
+						<Months onChangeSelect ={this.props.functionOnchange} name='experiencieEndMonth' />
+						<Years onChangeSelect ={this.props.functionOnchange} name='experiencieEndYear' />
 
 					</div>
 

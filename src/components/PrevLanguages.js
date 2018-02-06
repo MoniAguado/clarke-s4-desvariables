@@ -22,7 +22,7 @@ class PrevLanguages extends React.Component {
 						</div>
 					</div>
 				</section>
-			<p className="separator">* * * * * * * * * * * * * * * </p>
+				<p className="separator">* * * * * * * * * * * * * * * </p>
 			</section>
 		)
 	}

@@ -10,13 +10,14 @@ class Languages extends React.Component {
 		this.state = {
 			open: false
 		}
-
 	}
+
 	handleClick() {
 		this.setState ({
 			open: !this.state.open
 		})
 	}
+
 	render() {
 		return (
 			<section id="languages-form-container">
@@ -38,11 +39,11 @@ class Languages extends React.Component {
 					<div className="input-lang">
 						<input className="language inputs" type="text" name="lang3"  placeholder="Escribe un idioma" onChange = {this.props.functionOnchange}></input>
 						<input className="percentage inputs" type="text" name="percentage3"  placeholder="Escribe su porcentaje" onChange = {this.props.functionOnchange}></input>
-						</div>
-					</form>
-				</section>
-		)
+					</div>
+				</form>
+			</section>
+			)
+		}
 	}
-}
 
-export default Languages;
+	export default Languages;

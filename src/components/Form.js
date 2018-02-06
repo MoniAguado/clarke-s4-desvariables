@@ -21,6 +21,7 @@ class Form extends React.Component {
 		this.handleClick = this.handleClick.bind(this);
 		this.handleCheck = this.handleCheck.bind(this);
 	}
+
 		handleChange(event){
 			this.props.updatePreview(event.target.name, event.target.value)
 		}
@@ -49,11 +50,7 @@ class Form extends React.Component {
 						<Languages functionOnchange = {this.handleChange}/>
 						<Hobbies functionOnchange = {this.handleCheck}/>
 						<RRSS functionOnchange = {this.handleChange}/>
-
-
-
 					</section>
-
 		)
 	}
 }

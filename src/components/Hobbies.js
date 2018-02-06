@@ -10,14 +10,15 @@ class Hobbies extends React.Component {
 		this.state = {
 			open: false
 		}
-
 	}
+
 	handleClick() {
 		this.setState ({
 			open: !this.state.open
 
 		})
 	}
+	
 	render() {
 		return (
 			<section id="hobbies-form-container">

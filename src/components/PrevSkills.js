@@ -24,8 +24,8 @@ class PrevSkills extends React.Component {
 							<div className="barra_front" id="barra4" style={{width:`${this.props.percentage4}%`}}></div>
 						</div>
 					</div>
-			</section>
-			<p className="separator">* * * * * * * * * * * * * * * </p>
+				</section>
+				<p className="separator">* * * * * * * * * * * * * * * </p>
 			</section>
 		)
 	}

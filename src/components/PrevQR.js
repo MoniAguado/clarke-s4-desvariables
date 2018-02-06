@@ -4,8 +4,8 @@ class PrevQR extends React.Component {
 	render() {
 		return (
 			<a href='' id='qrlink'>
-			<div id="codigoqr" className="codigoqr">
-			</div>
+				<div id="codigoqr" className="codigoqr">
+				</div>
 			</a>
 		)
 	}

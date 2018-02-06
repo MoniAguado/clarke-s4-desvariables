@@ -4,19 +4,19 @@ import expandbutton from '../images/expandbutton.png';
 import expandarrow from '../images/expandarrow.png';
 
 class Aboutme extends React.Component {
-		constructor(props){
-			super(props);
-			this.handleClick = this.handleClick.bind(this);
-			this.state = {
-				open: false
-			}
+	constructor(props){
+		super(props);
+		this.handleClick = this.handleClick.bind(this);
+		this.state = {
+			open: false
+		}
 
-		}
-		handleClick() {
-			this.setState ({
-				open: !this.state.open
-			})
-		}
+	}
+	handleClick() {
+		this.setState ({
+			open: !this.state.open
+		})
+	}
 	render() {
 		return (
 			<form className="form-section-container" action="index.html" method="post">
@@ -32,7 +32,7 @@ class Aboutme extends React.Component {
 				<div id="content-about" className={`boxes-container box-${this.state.open ? 'open' : 'close'}`}>
 					<label for="about"></label>
 					<textarea name="about" rows="6" cols="25" placeholder="Introduce una breve descripción sobre ti." className="textarea" id="text-about" onChange={this.props.functionOnchange}></textarea>
-					</div>
+				</div>
 
 			</form>
 

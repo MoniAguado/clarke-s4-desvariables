@@ -10,13 +10,14 @@ class RRSS extends React.Component {
 		this.state = {
 			open: false
 		}
-
 	}
+
 	handleClick() {
 		this.setState ({
 			open: !this.state.open
 		})
 	}
+
 	render() {
 		return (
 			<section>
@@ -53,8 +54,8 @@ class RRSS extends React.Component {
 					</div>
 				</form>
 			</section>
-		)
+			)
+		}
 	}
-}
 
-export default RRSS;
+	export default RRSS;

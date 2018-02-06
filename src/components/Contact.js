@@ -53,14 +53,14 @@ class Contact extends React.Component {
 					<div className="logo">
 						<a href="http://adalab.es/" target="blank">
 							<img src="images/logo-adalab.png" alt="Logo Adalab" className="logo-adalab"></img>
-									</a>
-								</div>
-							</footer>
+						</a>
+					</div>
+				</footer>
 
-						</body>
+			</body>
 
-		)
-	}
+	)
+}
 }
 
 export default Contact;

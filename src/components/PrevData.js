@@ -12,8 +12,8 @@ class PrevData extends React.Component {
 					<p id="preprofesion">{this.props.job}</p>
 					<p id="preemail">{this.props.email}</p>
 					<p id="pretelefono">{this.props.phone}</p>
-			</section>
-			<p className="separator">* * * * * * * * * * * * * * * </p>
+				</section>
+				<p className="separator">* * * * * * * * * * * * * * * </p>
 			</section>
 		)
 	}

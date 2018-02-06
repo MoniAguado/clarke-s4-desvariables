@@ -1,4 +1,5 @@
 import React from 'react';
+
 import instagram from '../images/instagram.png';
 import linkedin from '../images/linkedin.png';
 import facebook from '../images/facebook.png';
@@ -29,9 +30,9 @@ class PrevRRSS extends React.Component {
 						</li>
 					</ul>
 				</div>
-				</div>
-		)
+			</div>
+			)
+		}
 	}
-}
 
-export default PrevRRSS;
+	export default PrevRRSS;

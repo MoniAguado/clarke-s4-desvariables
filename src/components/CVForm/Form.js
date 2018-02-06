@@ -10,9 +10,9 @@ import Hobbies from './Hobbies';
 import RRSS from './RRSS';
 import QR from './QR';
 
-import expandbutton from '../images/expandbutton.png';
-import expandarrow from '../images/expandarrow.png';
-import expandbuttonmedium from '../images/expandbuttonmedium.png';
+import expandbutton from '../../images/expandbutton.png';
+import expandarrow from '../../images/expandarrow.png';
+import expandbuttonmedium from '../../images/expandbuttonmedium.png';
 
 class Form extends React.Component {
 	constructor(props){

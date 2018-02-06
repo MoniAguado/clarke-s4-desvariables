@@ -9,13 +9,13 @@ class PrevEducation extends React.Component {
 						<div class="container-timeline right" id="container-timeline-right"><div class="content-timeline">
 							<div class="dates-output-container">
 								<div class="dates-container">
-									<h3 id="start-job-year-preview" class="title-year">{this.props.experiencieStartYear}</h3>
-									<p id="start-job-month-preview">{this.props.experiencieStartMonth}</p>
+									<h3 id="start-job-year-preview" class="title-year">{this.props.educationStartYear}</h3>
+									<p id="start-job-month-preview">{this.props.educationStartMonth}</p>
 								</div>
 								<h3 class="title-year"></h3>
 								<div class="dates-container">
-									<h3 id="end-job-year-preview" class="title-year">{this.props.experiencieEndYear}</h3>
-									<p id="end-job-month-preview">{this.props.experiencieEndMonth}</p>
+									<h3 id="end-job-year-preview" class="title-year">{this.props.educationEndYear}</h3>
+									<p id="end-job-month-preview">{this.props.educationEndMonth}</p>
 								</div>
 							</div>
 							<div className="work-information-output-container">

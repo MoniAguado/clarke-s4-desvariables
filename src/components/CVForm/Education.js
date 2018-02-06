@@ -1,7 +1,7 @@
 import React from 'react';
 
-import expandbutton from '../images/expandbutton.png';
-import expandarrow from '../images/expandarrow.png';
+import expandbutton from '../../images/expandbutton.png';
+import expandarrow from '../../images/expandarrow.png';
 import Years from './Years';
 import Months from './Months';
 
@@ -42,13 +42,13 @@ class Education extends React.Component {
 					</div>
 					<div className="dates-boxes">
 						<label className="label-dates">Fecha de inicio</label>
-						<Months onChangeSelect ={this.props.functionOnchange} name='experiencieStartMonth' />
-						<Years onChangeSelect ={this.props.functionOnchange} name='experiencieStartYear' />
+						<Months onChangeSelect ={this.props.functionOnchange} name='educationStartMonth' />
+						<Years onChangeSelect ={this.props.functionOnchange} name='educationStartYear' />
 					</div>
 					<div className="dates-boxes">
 						<label className="label-dates">Fecha de finalización</label>
-						<Months onChangeSelect ={this.props.functionOnchange} name='experiencieEndMonth' />
-						<Years onChangeSelect ={this.props.functionOnchange} name='experiencieEndYear' />
+						<Months onChangeSelect ={this.props.functionOnchange} name='educationEndMonth' />
+						<Years onChangeSelect ={this.props.functionOnchange} name='educationEndYear' />
 					</div>
 				</div>
 			</form>

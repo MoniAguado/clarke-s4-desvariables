@@ -1,11 +1,11 @@
 import React from 'react';
 
-import cinemaSmall from '../images/cinemaSmall.png';
-import musicSmall from '../images/musicSmall.png';
-import readSmall from '../images/readSmall.png';
-import travelSmall from '../images/travelSmall.png';
-import sportsSmall from '../images/sportsSmall.png';
-import videogameSmall from '../images/videogameSmall.png';
+import cinemaSmall from '../../images/cinemaSmall.png';
+import musicSmall from '../../images/musicSmall.png';
+import readSmall from '../../images/readSmall.png';
+import travelSmall from '../../images/travelSmall.png';
+import sportsSmall from '../../images/sportsSmall.png';
+import videogameSmall from '../../images/videogameSmall.png';
 
 class PrevHobbies extends React.Component {
 

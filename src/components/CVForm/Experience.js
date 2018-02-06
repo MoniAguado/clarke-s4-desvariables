@@ -1,7 +1,7 @@
 import React from 'react';
 
-import expandbutton from '../images/expandbutton.png';
-import expandarrow from '../images/expandarrow.png';
+import expandbutton from '../../images/expandbutton.png';
+import expandarrow from '../../images/expandarrow.png';
 import Years from './Years';
 import Months from './Months';
 

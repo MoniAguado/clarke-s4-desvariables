@@ -1,7 +1,7 @@
 import React from 'react';
 
-import expandbutton from '../images/expandbutton.png';
-import expandarrow from '../images/expandarrow.png';
+import expandbutton from '../../images/expandbutton.png';
+import expandarrow from '../../images/expandarrow.png';
 
 class Hobbies extends React.Component {
 	constructor(props){
@@ -18,7 +18,7 @@ class Hobbies extends React.Component {
 
 		})
 	}
-	
+
 	render() {
 		return (
 			<section id="hobbies-form-container">

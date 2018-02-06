@@ -1,7 +1,7 @@
 import React from 'react';
 
-import expandbutton from '../images/expandbutton.png';
-import expandarrow from '../images/expandarrow.png';
+import expandbutton from '../../images/expandbutton.png';
+import expandarrow from '../../images/expandarrow.png';
 
 class QR extends React.Component {
 	constructor(props){
@@ -17,7 +17,7 @@ class QR extends React.Component {
 			open: !this.state.open
 		})
 	}
-	
+
 	render() {
 		return (
 			<section>

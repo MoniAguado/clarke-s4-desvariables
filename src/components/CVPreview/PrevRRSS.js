@@ -1,10 +1,10 @@
 import React from 'react';
 
-import instagram from '../images/instagram.png';
-import linkedin from '../images/linkedin.png';
-import facebook from '../images/facebook.png';
-import github from '../images/github.png';
-import twitter from '../images/twitter.png';
+import instagram from '../../images/instagram.png';
+import linkedin from '../../images/linkedin.png';
+import facebook from '../../images/facebook.png';
+import github from '../../images/github.png';
+import twitter from '../../images/twitter.png';
 
 class PrevRRSS extends React.Component {
 	render() {

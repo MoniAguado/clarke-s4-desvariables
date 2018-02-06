@@ -1,21 +1,21 @@
 import React from 'react';
 import Header from './components/Header';
 import Cover from './components/Cover';
-import Image from './components/Image';
-import Form from './components/Form';
-import Alerts from './components/Alerts';
+import Image from './components/CVForm/Image';
+import Form from './components/CVForm/Form';
+import Alerts from './components/CVForm/Alerts';
 import Share from './components/Share';
 import Footer from './components/Footer';
 import './scss/main.css';
 
-import PrevData from './components/PrevData';
-import PrevAboutme from './components/PrevAboutme';
-import PrevExperience from './components/PrevExperience';
-import PrevEducation from './components/PrevEducation';
-import PrevSkills from './components/PrevSkills';
-import PrevLanguages from './components/PrevLanguages';
-import PrevHobbies from './components/PrevHobbies';
-import PrevRRSS from './components/PrevRRSS';
+import PrevData from './components/CVPreview/PrevData';
+import PrevAboutme from './components/CVPreview/PrevAboutme';
+import PrevExperience from './components/CVPreview/PrevExperience';
+import PrevEducation from './components/CVPreview/PrevEducation';
+import PrevSkills from './components/CVPreview/PrevSkills';
+import PrevLanguages from './components/CVPreview/PrevLanguages';
+import PrevHobbies from './components/CVPreview/PrevHobbies';
+import PrevRRSS from './components/CVPreview/PrevRRSS';
 
 
 import addButton24px from './images/addButton24px.png';
@@ -164,10 +164,10 @@ class App extends React.Component {
 									<PrevEducation
 										careertitle = {this.state.careertitle}
 										studiescenter = {this.state.studiescenter}
-										experiencieStartYear ={this.state.experiencieStartYear}
-										experiencieEndYear ={this.state.experiencieEndYear}
-										experiencieStartMonth = {this.state.experiencieStartMonth}
-										experiencieEndMonth = {this.state.experiencieEndMonth}/>
+										educationStartYear ={this.state.educationStartYear}
+										educationEndYear ={this.state.educationEndYear}
+										educationStartMonth = {this.state.educationStartMonth}
+										educationEndMonth = {this.state.educationEndMonth}/>
 										<PrevSkills
 										skill1 = {this.state.skill1}
 										skill2 = {this.state.skill2}

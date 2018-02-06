@@ -1,6 +1,6 @@
 import React from 'react';
 
-import btnclose from '../images/btnclose.png';
+import btnclose from '../../images/btnclose.png';
 
 class Alerts extends React.Component {
 	render() {

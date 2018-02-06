@@ -34,10 +34,10 @@ class Education extends React.Component {
 				<div id="education-box" className={`boxes-container box-${this.state.open ? 'open' : 'close'}`}>
 					<h3 className="pic-previewtex-bar-preview">Titulación</h3>
 					<div>
-						<input className="inputs" type="text" name="title-name" placeholder="Indica el nombre de la titulación" onChange={this.props.functionOnchange}></input>
+						<input className="inputs" type="text" name="careertitle" placeholder="Indica el nombre de la titulación" onChange={this.props.functionOnchange}></input>
 					</div>
 					<div >
-						<input className="inputs" id="center" type="text" name="center-name" placeholder="Indica el centro de estudios" onChange={this.props.functionOnchange}></input>
+						<input className="inputs" id="center" type="text" name="studiescenter" placeholder="Indica el centro de estudios" onChange={this.props.functionOnchange}></input>
 					</div>
 					<div className="dates-boxes">
 						<label className="label-dates">Fecha de inicio</label>
